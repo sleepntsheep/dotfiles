@@ -14,7 +14,7 @@
     ~/.mpd: mpd
 
 - create:
-    .config
+    ~/.config
 
 
 
