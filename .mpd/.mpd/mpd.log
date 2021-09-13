@@ -1,0 +1,260 @@
+Aug 06 16:32 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 16:32 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 16:33 : player: played "Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3"
+Aug 06 16:34 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 16:59 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 17:17 : player: played "Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3"
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:20 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 17:21 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 17:36 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 17:37 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 17:40 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 18:02 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 18:02 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 18:02 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 18:02 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 18:48 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 18:48 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 18:48 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 18:54 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 18:54 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 19:08 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 19:08 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:10 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:10 : exception: Failed to access /home/r4yish/Music: No such file or directory
+Aug 06 19:10 : avahi: Service 'Music Player @ r4yish' successfully established.
+Aug 06 19:10 : update: removing N3WPORT - Power (feat. braev) [NCS Release].mp3
+Aug 06 19:10 : update: removing Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
+Aug 06 19:10 : update: removing Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
+Aug 06 19:10 : update: removing Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
+Aug 06 19:10 : update: removing NEFFEX - Grateful [Copyright Free].mp3
+Aug 06 19:10 : update: added /cinnamons, evening cinema - TOKIMEKI of winter.mp3
+Aug 06 19:10 : update: added /Kyoresu - Lalala.mp3
+Aug 06 19:10 : update: added /SawanoHiroyuki[nZk]-Laco - Hands Up to the Sky.mp3
+Aug 06 19:10 : update: added /7!! - オレンジ-Acoustic Ver.-.mp3
+Aug 06 19:10 : update: added /Akano - Ghost In A Flower (From 'A Whisker Away').mp3
+Aug 06 19:10 : update: added /Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3
+Aug 06 19:10 : update: added /Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3
+Aug 06 19:10 : update: added /Akano, Jonatan King - Kaibutsu (From 'BEASTARS Season 2').mp3
+Aug 06 19:10 : update: added /Angel G - 不可思議のカルテ - Jazzhop Mix.mp3
+Aug 06 19:10 : update: added /AnimeHub - Chika Dance.mp3
+Aug 06 19:10 : update: added /Berioska - Torikago (Darling in the Franxx) Ending 1.mp3
+Aug 06 19:10 : update: added /Chika Fujiwara - Chikatto Chika Chika​.mp3
+Aug 06 19:10 : update: added /Chitose Morinaga - Michino Timothy Kimino Kimochi.mp3
+Aug 06 19:10 : update: added /ChouCho - 優しさの理由.mp3
+Aug 06 19:10 : update: added /dj-Jo - Fukashigi no Carte - Lofi Remix.mp3
+Aug 06 19:10 : update: added /halca - FIRST DROP.mp3
+Aug 06 19:10 : update: added /halca - 告白バンジージャンプ.mp3
+Aug 06 19:10 : update: added /HalcyonMusic - Nanairo Symphony (From 'Your Lie in April') [Piano Arrangement].mp3
+Aug 06 19:10 : update: added /Heiakim - Darling..mp3
+Aug 06 19:10 : update: added /Heiakim - sayonara.mp3
+Aug 06 19:10 : update: added /Hige Driver, Shully - ミラクルすぎてヤバイ.mp3
+Aug 06 19:10 : update: added /Hikaru Station, Navarone Boo - Bravely You.mp3
+Aug 06 19:10 : update: added /Kano - Nadamesukashi Negotiation.mp3
+Aug 06 19:10 : update: added /KanoeRana - Tsukito Hoshizora.mp3
+Aug 06 19:10 : update: added /Kenzie Smith Piano - Madoromi no Yakusoku (From 'Hyouka').mp3
+Aug 06 19:10 : update: added /LilyPichu - dreamy night.mp3
+Aug 06 19:10 : update: added /Maggie, Nyan, Brilliant Music - 하계.mp3
+Aug 06 19:10 : update: added /Miura Jam - A Cruel Angel's Thesis (From 'Evangelion').mp3
+Aug 06 19:10 : update: added /Miura Jam - Centimeter (From 'Rent a Girlfriend- Kanojo, Okarishimasu').mp3
+Aug 06 19:10 : update: added /Myuk - 魔法 - Anime Size.mp3
+Aug 06 19:10 : update: added /Myun - Sweets Parade - Inu x Boku SS.mp3
+Aug 06 19:10 : update: added /RADWIMPS - Nandemonaiya - movie ver..mp3
+Aug 06 19:10 : update: added /Rainych - Renai Circulation.mp3
+Aug 06 19:10 : update: added /Rainych - Say So - Japanese Version.mp3
+Aug 06 19:10 : update: added /Rainych - summertime.mp3
+Aug 06 19:10 : update: added /ReoNa - 虹の彼方に - From THE FIRST TAKE.mp3
+Aug 06 19:10 : update: added /Sakurakou K-ON Bu - Cagayake! Girls (From 'K-On!').mp3
+Aug 06 19:10 : update: added /Sliverk - Iro Kousui (From 'Horimiya OP').mp3
+Aug 06 19:10 : update: added /the peggies - BABY!.mp3
+Aug 06 19:10 : update: added /the peggies - はちみつ.mp3
+Aug 06 19:10 : update: added /the peggies - センチメートル.mp3
+Aug 06 19:10 : update: added /the peggies - 君のせい.mp3
+Aug 06 19:10 : update: added /the peggies - 明日.mp3
+Aug 06 19:10 : update: added /Ujita Mai - Hitoriuta ~September How YOU doin'~.mp3
+Aug 06 19:10 : update: added /V0RA - This Game (From 'No Game No Life').mp3
+Aug 06 19:10 : update: added /yanaginagi - ユキトキ.mp3
+Aug 06 19:10 : update: added /Yefium - Kimi NO Toriko X Summertime.mp3
+Aug 06 19:10 : update: added /Yoh kamiyama - 色香水.mp3
+Aug 06 19:10 : update: added /フレンズ - 約束.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - A Tender Moon Tempo.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - Fluorite Eye's Song.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - Happiness -Instrumental-.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - Happiness.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - My Code.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - Sing My Pleasure -Instrumental-.mp3
+Aug 06 19:10 : update: added /ヴィヴィ(Vo.八木海莉) - Sing My Pleasure.mp3
+Aug 06 19:10 : update: added /上田麗奈 - リテラチュア.mp3
+Aug 06 19:10 : update: added /佐々木恵梨 - Ring of Fortune.mp3
+Aug 06 19:10 : update: added /福原 遥 - 風に吹かれて.mp3
+Aug 06 19:10 : update: added /稲葉曇 - Lost Umbrella.mp3
+Aug 06 19:11 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:11 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:11 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:11 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:12 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Aug 06 19:16 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Aug 06 19:17 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:17 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:17 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:17 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:17 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:19 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Aug 06 19:23 : exception: Failed to open /home/r4yish/.mpd/playlists: No such file or directory
+Aug 06 19:28 : player: played "7!! - オレンジ-Acoustic Ver.-.mp3"
+Aug 06 19:32 : player: played "LilyPichu - dreamy night.mp3"
+Aug 06 19:34 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Aug 06 19:38 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Aug 06 19:40 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Aug 06 21:20 : player: played "LilyPichu - dreamy night.mp3"
+Aug 06 21:22 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Aug 06 21:26 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Aug 06 21:28 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Aug 06 21:32 : player: played "Miura Jam - Centimeter (From 'Rent a Girlfriend- Kanojo, Okarishimasu').mp3"
+Aug 06 21:38 : player: played "7!! - オレンジ-Acoustic Ver.-.mp3"
+Aug 06 21:42 : player: played "LilyPichu - dreamy night.mp3"
+Aug 06 21:43 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Aug 06 21:44 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Aug 06 21:47 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Aug 06 21:50 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Aug 06 22:20 : player: played "Miura Jam - Centimeter (From 'Rent a Girlfriend- Kanojo, Okarishimasu').mp3"
+Aug 06 22:25 : player: played "7!! - オレンジ-Acoustic Ver.-.mp3"
+Aug 06 22:30 : player: played "LilyPichu - dreamy night.mp3"
+Aug 06 22:31 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Aug 06 22:35 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Aug 06 22:38 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Aug 06 22:41 : player: played "Miura Jam - Centimeter (From 'Rent a Girlfriend- Kanojo, Okarishimasu').mp3"
+Aug 31 17:36 : avahi: Service 'Music Player @ fedora' successfully established.
+Aug 31 17:36 : exception: Failed to open /home/sleepntsheep/.mpd/playlists: No such file or directory
+Sep 13 18:57 : avahi: Failed to create client: Daemon not running
+Sep 13 18:57 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 13 18:57 : update: no read permissions on /7!! - オレンジ-Acoustic Ver.-.mp3
+Sep 13 18:57 : update: no read permissions on /After the Rain, Soraru, Mafumafu - 1・2・3.mp3
+Sep 13 18:57 : update: no read permissions on /Akano - Ghost In A Flower (From 'A Whisker Away').mp3
+Sep 13 18:57 : update: no read permissions on /Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3
+Sep 13 18:57 : update: no read permissions on /Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3
+Sep 13 18:57 : update: no read permissions on /Akano, Jonatan King - Kaibutsu (From 'BEASTARS Season 2').mp3
+Sep 13 18:57 : update: no read permissions on /Angel G - 不可思議のカルテ - Jazzhop Mix.mp3
+Sep 13 18:57 : update: no read permissions on /AnimeHub - Chika Dance.mp3
+Sep 13 18:57 : update: no read permissions on /beat mints boyz, a.k.a., Kenta Matsukuma, JxSxK - スパーク.mp3
+Sep 13 18:57 : update: no read permissions on /Berioska - Torikago (Darling in the Franxx) Ending 1.mp3
+Sep 13 18:57 : update: no read permissions on /Chika Fujiwara - Chikatto Chika Chika​.mp3
+Sep 13 18:57 : update: no read permissions on /Chitose Morinaga - Michino Timothy Kimino Kimochi.mp3
+Sep 13 18:57 : update: no read permissions on /ChouCho - 優しさの理由.mp3
+Sep 13 18:57 : update: added /cinnamons, evening cinema - TOKIMEKI of winter.mp3
+Sep 13 18:57 : update: no read permissions on /DIALOGUE+ - Omoide Shiritori.mp3
+Sep 13 18:57 : update: no read permissions on /dj-Jo - Fukashigi no Carte - Lofi Remix.mp3
+Sep 13 18:57 : update: no read permissions on /halca - FIRST DROP.mp3
+Sep 13 18:57 : update: no read permissions on /halca - 告白バンジージャンプ.mp3
+Sep 13 18:57 : update: no read permissions on /HalcyonMusic - Nanairo Symphony (From 'Your Lie in April') [Piano Arrangement].mp3
+Sep 13 18:57 : update: no read permissions on /Heiakim - Darling..mp3
+Sep 13 18:57 : update: no read permissions on /Heiakim - sayonara.mp3
+Sep 13 18:57 : update: no read permissions on /Hige Driver, Shully - ミラクルすぎてヤバイ.mp3
+Sep 13 18:57 : update: no read permissions on /Hikaru Station, Navarone Boo - Bravely You.mp3
+Sep 13 18:57 : update: no read permissions on /Kano - Nadamesukashi Negotiation.mp3
+Sep 13 18:57 : update: no read permissions on /KanoeRana - Tsukito Hoshizora.mp3
+Sep 13 18:57 : update: no read permissions on /Kenzie Smith Piano - Madoromi no Yakusoku (From 'Hyouka').mp3
+Sep 13 18:57 : update: no read permissions on /Kyoresu - Lalala.mp3
+Sep 13 18:57 : update: no read permissions on /LilyPichu - dreamy night.mp3
+Sep 13 18:57 : update: no read permissions on /LiSA - ADAMAS.mp3
+Sep 13 18:57 : update: no read permissions on /Mafumafu - Onnanoko Ni Naritai.mp3
+Sep 13 18:57 : update: no read permissions on /Mafumafu - Sacrifice.mp3
+Sep 13 18:57 : update: no read permissions on /Mafumafu - Sore Wo Ai To Yobudake.mp3
+Sep 13 18:57 : update: no read permissions on /Mafumafu - 輪廻転生.mp3
+Sep 13 18:57 : update: no read permissions on /Maggie, Nyan, Brilliant Music - 하계.mp3
+Sep 13 18:57 : update: no read permissions on /Miura Jam - A Cruel Angel's Thesis (From 'Evangelion').mp3
+Sep 13 18:57 : update: no read permissions on /Miura Jam - Centimeter (From 'Rent a Girlfriend- Kanojo, Okarishimasu').mp3
+Sep 13 18:57 : update: no read permissions on /moumoon - Hello, shooting-star.mp3
+Sep 13 18:57 : update: no read permissions on /Myuk - 魔法 - Anime Size.mp3
+Sep 13 18:57 : update: no read permissions on /Myun - Sweets Parade - Inu x Boku SS.mp3
+Sep 13 18:57 : update: no read permissions on /Rachie - Just a Sunny Day for You.mp3
+Sep 13 18:57 : update: no read permissions on /RADWIMPS - Nandemonaiya - movie ver..mp3
+Sep 13 18:57 : update: no read permissions on /Rainych - Renai Circulation.mp3
+Sep 13 18:57 : update: no read permissions on /Rainych - Say So - Japanese Version.mp3
+Sep 13 18:57 : update: no read permissions on /Rainych - summertime.mp3
+Sep 13 18:57 : update: no read permissions on /Rei Takahashi - Anata wo Suki ni natte shimau jibunga kiraida.mp3
+Sep 13 18:57 : update: no read permissions on /ReoNa - 虹の彼方に - From THE FIRST TAKE.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - Alice -Album version-.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - Mela!.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - Re.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - sabotage.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - Shout Baby.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - ずっとずっとずっと.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - たとえたとえ.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - またね.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - アーユーレディー.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - キラキラ.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - 君が望む世界.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - 始まりの歌.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - 恋って.mp3
+Sep 13 18:57 : update: no read permissions on /Ryokuoushoku Shakai - 真夜中ドライブ.mp3
+Sep 13 18:57 : update: no read permissions on /Sakurakou K-ON Bu - Cagayake! Girls (From 'K-On!').mp3
+Sep 13 18:57 : update: no read permissions on /SawanoHiroyuki[nZk]-Laco - Hands Up to the Sky.mp3
+Sep 13 18:57 : update: no read permissions on /Sliverk - Iro Kousui (From 'Horimiya OP').mp3
+Sep 13 18:57 : update: no read permissions on /the peggies - BABY!.mp3
+Sep 13 18:57 : update: no read permissions on /the peggies - はちみつ.mp3
+Sep 13 18:57 : update: no read permissions on /the peggies - センチメートル.mp3
+Sep 13 18:57 : update: no read permissions on /the peggies - 君のせい.mp3
+Sep 13 18:57 : update: no read permissions on /the peggies - 明日.mp3
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/01 I Gotta Feeling.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/02 Baby.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/03 Down.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/04 Replay.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/05 Nothin' On You.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/06 Knock You Down.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/07 Sexy Love.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/08 Love In This Club.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/09 Whatcha Say.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/10 Forever.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/11 Umbrella.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/12 No One.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/13 Bleeding Love.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/14 Miss Independent.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/15 Paparazzi.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/16 Touch My Body.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/17 Tske A Bow.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/18 Be Without You.flac
+Sep 13 18:57 : update: no read permissions on Tokyo-Acoustic Cafe [Flac]/19 Hate That I Love You.flac
+Sep 13 18:57 : update: no read permissions on /Ujita Mai - Hitoriuta ~September How YOU doin'~.mp3
+Sep 13 18:57 : update: no read permissions on /V0RA - This Game (From 'No Game No Life').mp3
+Sep 13 18:57 : update: no read permissions on /yanaginagi - ユキトキ.mp3
+Sep 13 18:57 : update: no read permissions on /Yefium - Kimi NO Toriko X Summertime.mp3
+Sep 13 18:57 : update: no read permissions on /YOASOBI - あの夢をなぞって.mp3
+Sep 13 18:57 : update: no read permissions on /YOASOBI - たぶん.mp3
+Sep 13 18:57 : update: no read permissions on /YOASOBI - 夜に駆ける.mp3
+Sep 13 18:57 : update: no read permissions on /Yoh kamiyama - 色香水.mp3
+Sep 13 18:57 : update: no read permissions on [2021.07.21] 美波 2nd EP「DROP」[FLAC 48kHz／24bit]/01. アメヲマツ、.flac
+Sep 13 18:57 : update: no read permissions on [2021.07.21] 美波 2nd EP「DROP」[FLAC 48kHz／24bit]/02. フライハイト.flac
+Sep 13 18:57 : update: no read permissions on [2021.07.21] 美波 2nd EP「DROP」[FLAC 48kHz／24bit]/03. DROP.flac
+Sep 13 18:57 : update: no read permissions on [2021.07.21] 美波 2nd EP「DROP」[FLAC 48kHz／24bit]/04. この街に晴れはこない.flac
+Sep 13 18:57 : update: no read permissions on [2021.07.21] 美波 2nd EP「DROP」[FLAC 48kHz／24bit]/05. 君と僕の154小節戦争.flac
+Sep 13 18:57 : update: no read permissions on /フレンズ - 約束.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - A Tender Moon Tempo.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - Fluorite Eye's Song.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - Happiness -Instrumental-.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - Happiness.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - My Code.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - Sing My Pleasure -Instrumental-.mp3
+Sep 13 18:57 : update: no read permissions on /ヴィヴィ(Vo.八木海莉) - Sing My Pleasure.mp3
+Sep 13 18:57 : update: no read permissions on /上田麗奈 - リテラチュア.mp3
+Sep 13 18:57 : update: added /佐々木恵梨 - Ring of Fortune.mp3
+Sep 13 18:57 : update: no read permissions on /宮内れんげ (CV.小岩井ことり), 一条 蛍 (CV.村川梨衣), 越谷夏海 (CV.佐倉綾音), 越谷小鞠 (CV.阿澄佳奈) - のんのん日和.mp3
+Sep 13 18:57 : update: no read permissions on /福原 遥 - 風に吹かれて.mp3
+Sep 13 18:57 : update: no read permissions on /稲葉曇 - Lost Umbrella.mp3
+Sep 13 18:57 : update: no read permissions on /美波 - DROP.mp3
+Sep 13 18:57 : update: no read permissions on /美波 - カワキヲアメク.mp3
