@@ -6,17 +6,12 @@
 - clean: ['~']
 
 - link:
-    ~/.tmux: tmux
+    ~/.tmux.conf.local: tmux.conf.local
     ~/.vimrc: vimrc
     ~/.config/nvim: nvim
     ~/.ncmpcpp: ncmpcpp
     ~/.config/fish: fish
     ~/.mpd: mpd
-
-- create:
-    ~/.config
-
-
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
