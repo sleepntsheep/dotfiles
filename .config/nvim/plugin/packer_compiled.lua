@@ -118,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/mountain-theme/vim"
+  },
+  ["wal.vim"] = {
+    loaded = true,
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/wal.vim",
+    url = "https://github.com/dylanaraps/wal.vim"
   }
 }
 

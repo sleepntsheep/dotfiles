@@ -14,4 +14,5 @@ return require('packer').startup(function()
   use 'akinsho/bufferline.nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'neovim/nvim-lspconfig'
+  use 'dylanaraps/wal.vim'
 end)

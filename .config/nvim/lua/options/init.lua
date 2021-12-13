@@ -15,7 +15,7 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
-vim.opt.termguicolors = true
+--vim.opt.termguicolors = true
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.updatetime = 300
@@ -29,4 +29,5 @@ vim.o.signcolumn = 'yes'
 vim.o.wrap = true
 vim.o.cursorline = true
 
-vim.cmd('colorscheme mountain')
+--vim.cmd('colorscheme mountain')
+vim.cmd('colorscheme wal')
