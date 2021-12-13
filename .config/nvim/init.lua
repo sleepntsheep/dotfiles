@@ -1,4 +1,7 @@
 require('plugins')
 require('treesitter-config')
-require('lua-line')
+require('lualine-config')
+require('nvim-tree-config')
+require('bufferline-config')
+require('keybind')
 require('options')

@@ -10,5 +10,8 @@ return require('packer').startup(function()
   use 'preservim/nerdtree'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'nvim-lualine/lualine.nvim'
-  requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  use 'kyazdani42/nvim-web-devicons'
+  use 'akinsho/bufferline.nvim'
+  use 'kyazdani42/nvim-tree.lua'
+  use 'neovim/nvim-lspconfig'
 end)
