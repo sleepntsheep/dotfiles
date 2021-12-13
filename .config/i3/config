@@ -1,7 +1,20 @@
 set $mod Mod4
+set $alt Mod1
+
+set $mon HDMI1
+set $lap eDP1
+
+workspace 1  output HDMI1
+workspace 2  output HDMI1
+workspace 3  output HDMI1
+workspace 4  output HDMI1
+workspace 5  output HDMI1
+workspace 6  output HDMI1
+workspace 7  output HDMI1
+workspace 8  output HDMI1
+workspace 9  output HDMI1
 
 font pango:monospace 8
-
 #font pango:DejaVu Sans Mono 8
 
 exec --no-startup-id dex --autostart --environment i3
@@ -10,7 +23,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
 
-set $refresh_i3status killall -SIGUSR1 i3status
+set $refresh_i3status killall -SIGUSR1 i3blocks
+
+bindsym $alt+e exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym $alt+w exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym $alt+q exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
@@ -140,12 +159,21 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+        position top
         status_command i3blocks
+        font pango:Fixedsys Excelsior, FontAwesome5Free, FontAwesome5Brands, SymbolsNerdFont 12
+        status_command i3blocks
+        mode dock
+        modifier None
 }
 
-exec_always xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
-exec_always feh --bg-scale ~/Pictures/wall.jpg
-exec_always setxkbmap -layout 'us,Manoonchai_xkb' -option 'grp:caps_toggle'
+exec_always --no-startup-id xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output  HDMI1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wall.jpg
+exec_always --no-startup-id setxkbmap -layout 'us,Manoonchai_xkb' -option 'grp:caps_toggle'
 
 gaps inner 8
 gaps outer 10
+
+bindsym $alt+s exec flameshot gui
+
+bindsym $mod+Escape exec betterlockscreen -l
