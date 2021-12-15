@@ -10,12 +10,12 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "~/.cache/wal/colors-rofi-dark"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
 window {
     transparency:                   "real";
-    background-color:               @bg;
-    text-color:                     @fg;
+    background-color:               @background;
+    text-color:                     @foreground;
 	border:							0px 0px 4px 0px;
 	border-color:					@ac;
     border-radius:                  0px;
@@ -28,15 +28,15 @@ window {
 prompt {
     enabled: 						true;
 	padding: 						2px 0px 0px 4px;
-	background-color: 				@al;
-	text-color: 					@fg;
+	background-color: 				@background;
+	text-color: 					@foreground;
 	font:							"feather 12";
 }
 
 entry {
-    background-color:               @al;
-    text-color:                     @fg;
-    placeholder-color:              @fg;
+    background-color:               @background;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
     expand:                         true;
     horizontal-align:               0;
     placeholder:                    "Search...";
@@ -46,8 +46,8 @@ entry {
 
 inputbar {
 	children: 						[ prompt, entry ];
-    background-color:               @bga;
-    text-color:                     @fg;
+    background-color:               @background;
+    text-color:                     @foreground;
     expand:                         false;
 	border:							0px;
     border-radius:                  0px;
@@ -57,7 +57,7 @@ inputbar {
 }
 
 listview {
-    background-color:               @al;
+    background-color:               @background;
     padding:                        0px;
     columns:                        2;
     lines:                          7;
@@ -68,7 +68,7 @@ listview {
 }
 
 mainbox {
-    background-color:               @al;
+    background-color:               @background;
 	border:							0px;
     border-radius:                  0px;
 	border-color:					@ac;
@@ -78,8 +78,8 @@ mainbox {
 }
 
 element {
-    background-color:               @al;
-    text-color:                     @fga;
+    background-color:               @background;
+    text-color:                     @foregrounda;
     orientation:                    horizontal;
     border-radius:                  0px;
     padding:                        8px;
@@ -98,8 +98,8 @@ element-text {
 }
 
 element selected {
-    background-color:               @bga;
-    text-color:                     @fg;
+    background-color:               @background;
+    text-color:                     @foreground;
 	border:							0px 0px 0px 0px;
     border-radius:                  0px;
     border-color:                  	@ac;
