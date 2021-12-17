@@ -4,16 +4,6 @@ set $alt Mod1
 set $mon HDMI1
 set $lap eDP1
 
-workspace 1  output HDMI1
-workspace 2  output HDMI1
-workspace 3  output HDMI1
-workspace 4  output HDMI1
-workspace 5  output HDMI1
-workspace 6  output HDMI1
-workspace 7  output HDMI1
-workspace 8  output HDMI1
-workspace 9  output HDMI1
-
 set_from_resource $fg i3wm.color5 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 # class                 border  backgr. text indicator child_border
@@ -23,11 +13,7 @@ set_from_resource $bg i3wm.color2 #f0f0f0
  client.urgent           $bg     $bg     $fg  $bg       $bg
  client.placeholder      $bg     $bg     $fg  $bg       $bg
 
-font pango:JetbrainsMono NF 8
-
-exec --no-startup-id nm-applet
-
-set $refresh_i3status killall -SIGUSR1 i3blocks
+font pango:terminus
 
 bindsym $alt+e exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym $alt+w exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
@@ -83,16 +69,26 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1 term"
+set $ws2 "2 browse"
+set $ws3 "3 discord"
+set $ws4 "4 note"
+set $ws5 "5 media"
+set $ws6 "6 vm"
+set $ws7 "7 mis1"
+set $ws8 "8 mis2"
+set $ws9 "9 mis3"
+set $ws10 "10 mis4"
+
+workspace $ws1 output HDMI1
+workspace $ws2 output HDMI1
+workspace $ws3 output HDMI1
+workspace $ws4 output HDMI1
+workspace $ws5 output HDMI1
+workspace $ws6 output HDMI1
+workspace $ws7 output HDMI1
+workspace $ws8 output HDMI1
+workspace $ws9 output HDMI1
 
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -138,7 +134,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output  HDMI1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
-#exec_always --no-startup-id wal -i ~/Pictures/wall6
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id setxkbmap -model pc104 -layout us,th -variant ,mnc -option grp:caps_toggle
 
@@ -158,3 +153,7 @@ exec_always --no-startup-id picom --experimental-backends
 #bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 bindsym $mod+d exec rofi -modi drun -show drun
 bindsym $mod+Shift+s exec rofi -modi ssh -show ssh
+
+exec_always --no-startup-id wal -i ~/Pictures/wall6
+exec --no-startup-id discord --start-minimized
+
