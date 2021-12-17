@@ -1,5 +1,5 @@
 configuration {
-	font:							"Iosevka Nerd Font 10";
+	font:							"terminus 10";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     disable-history:                false;
@@ -14,11 +14,11 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-	border:							0px 0px 4px 0px;
+	border:							0px 0px 0px 0px;
 	border-color:					@border-color;
     border-radius:                  0px;
-	width:							150px;
-    height:                         300px;
+	width:							180px;
+    height:                         290px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
