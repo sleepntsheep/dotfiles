@@ -1,11 +1,11 @@
 configuration {
-	font:							"Iosevka Nerd Font 10";
+	font:							"terminus 10";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
-    fullscreen:                     false;
+    fullscreen:                     true;
 	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }

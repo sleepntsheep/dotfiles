@@ -74,7 +74,7 @@ set $ws2 "2 browse"
 set $ws3 "3 discord"
 set $ws4 "4 note"
 set $ws5 "5 media"
-set $ws6 "6 vm"
+set $ws6 "6 game"
 set $ws7 "7 mis1"
 set $ws8 "8 mis2"
 set $ws9 "9 mis3"
@@ -148,7 +148,7 @@ bindsym $mod+Shift+Return exec nautilus
 for_window [class="^.*"] border pixel 0
 #for_window [class="^.*"] border radius 15
 
-exec_always --no-startup-id picom --experimental-backends
+#exec_always --no-startup-id picom --experimental-backends
 
 #bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 bindsym $mod+d exec rofi -modi drun -show drun
