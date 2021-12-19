@@ -1,5 +1,5 @@
 # pywal colors
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
@@ -7,11 +7,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sheep/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="lambda"
 
 CASE_SENSITIVE="true"
 
-HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"}}}
 
 DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -31,8 +31,6 @@ export EDITOR=vim
 alias vi='nvim'
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-shisutemu
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

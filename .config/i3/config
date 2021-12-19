@@ -5,15 +5,18 @@ set $mon HDMI1
 set $lap eDP1
 
 set_from_resource $fg i3wm.color5 #f0f0f0
+set_from_resource $bd i3wm.color6 #f0f0f0
+set_from_resource $bda i3wm.color0 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
-# class                 border  backgr. text indicator child_border
- client.focused          $fg     $fg     $fg  $fg       $fg
-#client.focused_inactive $fg     $bg     $fg  $bg       $bg
- client.unfocused        $bg     $bg     $fg  $bg       $bg
- client.urgent           $bg     $bg     $fg  $bg       $bg
- client.placeholder      $bg     $bg     $fg  $bg       $bg
 
-font pango:terminus
+# class                 border  backgr. text indicator child_border
+client.focused          $bda    $fg     $fg  $fg       $bda
+client.focused_inactive $bd     $bg     $fg  $bg       $bd
+client.unfocused        $bd     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+font pango:azukifontB
 
 bindsym $alt+e exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym $alt+w exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
@@ -139,13 +142,13 @@ exec_always --no-startup-id setxkbmap -model pc104 -layout us,th -variant ,mnc -
 
 gaps inner 15
 gaps outer 5
-gaps top 30
+gaps top 50
 
 bindsym $alt+s exec flameshot gui
 bindsym $mod+Escape exec betterlockscreen -l
 bindsym $mod+Shift+Return exec nautilus
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 #for_window [class="^.*"] border radius 15
 
 #exec_always --no-startup-id picom --experimental-backends
@@ -154,6 +157,5 @@ for_window [class="^.*"] border pixel 0
 bindsym $mod+d exec rofi -modi drun -show drun
 bindsym $mod+Shift+s exec rofi -modi ssh -show ssh
 
-exec_always --no-startup-id wal -i ~/Pictures/wall6
+#exec_always --no-startup-id wal -i ~/Pictures/wall6
 exec --no-startup-id discord --start-minimized
-
