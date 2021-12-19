@@ -38,4 +38,4 @@ export NVM_DIR="$HOME/.nvm"
 
 #. "${HOME}/.cache/wal/colors.sh"
 
-fet.sh
+shisutemu
