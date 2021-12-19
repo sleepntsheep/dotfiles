@@ -7,14 +7,15 @@ set $lap eDP1
 set_from_resource $fg i3wm.color5 #f0f0f0
 set_from_resource $bd i3wm.color6 #f0f0f0
 set_from_resource $bda i3wm.color0 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $bg #282828 i3wm.color8
+set_from_resource $ag i3wm.color7 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bda    $fg     $fg  $fg       $bda
+client.focused          $bda    $bg     $fg  $fg       $bda
 client.focused_inactive $bd     $bg     $fg  $bg       $bd
 client.unfocused        $bd     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.urgent           $bd     $bg     $fg  $bg       $bg
+client.placeholder      $bd     $bg     $fg  $bg       $bg
 
 font pango:azukifontB
 
@@ -159,3 +160,4 @@ bindsym $mod+Shift+s exec rofi -modi ssh -show ssh
 
 #exec_always --no-startup-id wal -i ~/Pictures/wall6
 exec --no-startup-id discord --start-minimized
+exec feh --bg-scale ~/Pictures/wall7

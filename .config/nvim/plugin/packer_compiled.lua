@@ -79,10 +79,20 @@ _G.packer_plugins = {
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   nerdtree = {
     loaded = true,

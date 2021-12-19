@@ -17644,3 +17644,6 @@ Dec 18 18:57 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/02. Min
 Dec 19 14:48 : player: played "YOASOBI - 夜に駆ける (2019) [FLAC] [16B-44.1kHz]/01. YOASOBI - 夜に駆ける.flac"
 Dec 19 14:51 : config: option 'device' on line 20 was not recognized
 Dec 19 14:51 : config: option 'mixer_control' on line 21 was not recognized
+Dec 19 21:33 : config: option 'device' on line 20 was not recognized
+Dec 19 21:33 : config: option 'mixer_control' on line 21 was not recognized
+Dec 19 21:42 : player: played "Miles Davis - Kind Of Blue/1. So What.flac"

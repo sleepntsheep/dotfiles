@@ -16,4 +16,5 @@ return require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'dylanaraps/wal.vim'
   use 'wakatime/vim-wakatime'
+  use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
 end)

@@ -29,5 +29,5 @@ vim.o.signcolumn = 'yes'
 vim.o.wrap = true
 vim.o.cursorline = true
 
---vim.cmd('colorscheme mountain')
-vim.cmd('colorscheme wal')
+vim.o.background = "light" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])

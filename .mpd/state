@@ -1,8 +1,8 @@
-sw_volume: 50
+sw_volume: 78
 audio_device_state:1:My MPD PulseAudio Output
 state: pause
-current: 0
-time: 1.345000
+current: 5
+time: 27.967000
 random: 0
 repeat: 0
 single: 0
@@ -15,4 +15,6 @@ playlist_begin
 1:YOASOBI - Romance.mp3
 2:Minami - DROP (2021) [FLAC] [24B-44.1kHz]/01. Minami - Ame Wo Matsu.flac
 3:Minami - DROP (2021) [FLAC] [24B-44.1kHz]/02. Minami - Freiheit.flac
+4:Miles Davis - Kind Of Blue/1. So What.flac
+5:Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac
 playlist_end
