@@ -17413,3 +17413,234 @@ Dec 14 23:56 : exception: Failed to open "default detected output" (alsa); Faile
 Dec 14 23:58 : player: played "Bill Evans - Sunday at Village Vanguard/1. Gloria's Step.flac"
 Dec 14 23:58 : config: option 'device' on line 20 was not recognized
 Dec 14 23:58 : config: option 'mixer_control' on line 21 was not recognized
+Dec 15 00:21 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0001"
+Dec 15 09:01 : config: option 'device' on line 20 was not recognized
+Dec 15 09:01 : config: option 'mixer_control' on line 21 was not recognized
+Dec 15 11:14 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0002"
+Dec 15 11:22 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0003"
+Dec 15 11:31 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0004"
+Dec 15 11:35 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0005"
+Dec 15 11:41 : player: played "Bill Evans - Sunday at Village Vanguard/1. Gloria's Step.flac"
+Dec 15 11:47 : player: played "Bill Evans - Sunday at Village Vanguard/2. My Man's Gone Now.flac"
+Dec 15 11:56 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 15 13:56 : player: played "Bill Evans - Sunday at Village Vanguard/5. All of You.flac"
+Dec 15 13:59 : update: added Miles Davis - Kind Of Blue/2. Freddie Freeloader.flac
+Dec 15 13:59 : update: added Miles Davis - Kind Of Blue/5. Flamenco Sketches.flac
+Dec 15 13:59 : update: added Miles Davis - Kind Of Blue/3. Blue in Green.flac
+Dec 15 13:59 : update: added Miles Davis - Kind Of Blue/4. All Blues.flac
+Dec 15 13:59 : update: added Miles Davis - Kind Of Blue/1. So What.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/09. Everytime We Say Goodbye.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/07. Mr. P.C..flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/02. Cousin Mary.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/01. Giant Steps.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/10. Summertime.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/03. Countdown.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/05. Syeeda's Song Flute.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/06. Naima.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/04. Spiral.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/08. My Favorite Things.flac
+Dec 15 13:59 : update: added John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/11. But Not for Me.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/B2 - Kathy's Waltz.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/B4 - Pick Up Sticks.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/B1 - Three to Get Ready.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/A2 - Strange Meadow Lark.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/A3 - Take Five.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/B3 - Everybody's Jumpin'.flac
+Dec 15 13:59 : update: added Dave Brubeck Quartet - Time Out [1959]/A1 - Blue Rondo à la Turk.flac
+Dec 15 17:41 : player: played "Bill Evans - Sunday at Village Vanguard/6. Jade Visions.flac"
+Dec 15 20:22 : player: played "John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/01. Giant Steps.flac"
+Dec 15 21:14 : config: option 'device' on line 20 was not recognized
+Dec 15 21:14 : config: option 'mixer_control' on line 21 was not recognized
+Dec 16 12:36 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Dec 16 12:40 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Dec 16 12:42 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Dec 16 13:58 : player: played "Bill Evans - Sunday at Village Vanguard/1. Gloria's Step.flac"
+Dec 16 14:04 : player: played "Bill Evans - Sunday at Village Vanguard/2. My Man's Gone Now.flac"
+Dec 16 15:06 : config: option 'device' on line 20 was not recognized
+Dec 16 15:06 : config: option 'mixer_control' on line 21 was not recognized
+Dec 16 15:06 : exception: Failed to commit /home/sheep/.mpd/state: File exists
+Dec 16 15:06 : player: played "John Coltrane - Ultimate Jazz Classics- Giant Steps & My Favorite Things - 1960-1961-2021 (24-96)/02. Cousin Mary.flac"
+Dec 16 15:06 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 16 15:06 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 16 15:07 : config: option 'device' on line 20 was not recognized
+Dec 16 15:07 : config: option 'mixer_control' on line 21 was not recognized
+Dec 16 15:08 : config: option 'device' on line 20 was not recognized
+Dec 16 15:08 : config: option 'mixer_control' on line 21 was not recognized
+Dec 16 16:29 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 16 16:37 : player: played "Bill Evans - Sunday at Village Vanguard/4. Alice in Wonderland.flac"
+Dec 16 16:46 : player: played "Bill Evans - Sunday at Village Vanguard/5. All of You.flac"
+Dec 16 16:49 : player: played "Bill Evans - Sunday at Village Vanguard/6. Jade Visions.flac"
+Dec 16 17:00 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0001"
+Dec 16 19:31 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0002"
+Dec 16 22:40 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0003"
+Dec 16 22:48 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0004"
+Dec 16 23:46 : config: option 'device' on line 20 was not recognized
+Dec 16 23:46 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 13:45 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0005"
+Dec 17 13:51 : player: played "Dave Brubeck Quartet - Time Out [1959]/A1 - Blue Rondo à la Turk.flac"
+Dec 17 13:59 : player: played "Dave Brubeck Quartet - Time Out [1959]/A2 - Strange Meadow Lark.flac"
+Dec 17 14:04 : player: played "Dave Brubeck Quartet - Time Out [1959]/A3 - Take Five.flac"
+Dec 17 14:10 : player: played "Dave Brubeck Quartet - Time Out [1959]/B1 - Three to Get Ready.flac"
+Dec 17 14:15 : player: played "Dave Brubeck Quartet - Time Out [1959]/B2 - Kathy's Waltz.flac"
+Dec 17 14:19 : player: played "Dave Brubeck Quartet - Time Out [1959]/B3 - Everybody's Jumpin'.flac"
+Dec 17 14:23 : player: played "Dave Brubeck Quartet - Time Out [1959]/B4 - Pick Up Sticks.flac"
+Dec 17 14:33 : player: played "Akano - Harumodoki (From 'OreGairu- My Youth Romantic Comedy Is Wrong, As I Expected').mp3"
+Dec 17 14:37 : player: played "Akano - Ghost In A Flower (From 'A Whisker Away').mp3"
+Dec 17 14:39 : player: played "Akano - Koi no Uta (From 'TONIKAWA- Tonikaku Kawaii').mp3"
+Dec 17 14:51 : player: played "Bill Evans - Sunday at Village Vanguard/1. Gloria's Step.flac"
+Dec 17 17:48 : player: played "Bill Evans - Sunday at Village Vanguard/2. My Man's Gone Now.flac"
+Dec 17 17:48 : player: played "Cannonball Adderley - Somethin' Else (1958, 2016, Blue Note-Japan)/Somethin' Else.cue/track0005"
+Dec 17 17:48 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 17:50 : config: option 'device' on line 20 was not recognized
+Dec 17 17:50 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 17:51 : config: option 'device' on line 20 was not recognized
+Dec 17 17:51 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 17:52 : config: option 'device' on line 20 was not recognized
+Dec 17 17:52 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 17:54 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 17:54 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 17:54 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 17:56 : config: option 'device' on line 20 was not recognized
+Dec 17 17:56 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 17:57 : config: option 'device' on line 20 was not recognized
+Dec 17 17:57 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 17:59 : config: option 'device' on line 20 was not recognized
+Dec 17 17:59 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 18:38 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 18:38 : exception: Failed to commit /home/sheep/.mpd/state: File exists
+Dec 17 18:38 : exception: Failed to commit /home/sheep/.mpd/state: File exists
+Dec 17 18:38 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 18:38 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 18:40 : config: option 'device' on line 20 was not recognized
+Dec 17 18:40 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 18:42 : config: option 'device' on line 20 was not recognized
+Dec 17 18:42 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 18:45 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 18:45 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 18:47 : config: option 'device' on line 20 was not recognized
+Dec 17 18:47 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 18:48 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 18:49 : config: option 'device' on line 20 was not recognized
+Dec 17 18:49 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 18:49 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 19:18 : config: option 'device' on line 20 was not recognized
+Dec 17 19:18 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 19:19 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 19:32 : config: option 'device' on line 20 was not recognized
+Dec 17 19:32 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 19:32 : output: Failed to pause "My MPD PulseAudio Output" (pulse): failed to connect the stream: Connection terminated
+Dec 17 20:16 : config: option 'device' on line 20 was not recognized
+Dec 17 20:16 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:18 : config: option 'device' on line 20 was not recognized
+Dec 17 20:18 : config: option 'mixer_control' on line 21 was not recognized
+                                                                                                                                                                            Dec 17 20:23 : config: option 'device' on line 20 was not recognized
+Dec 17 20:23 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:31 : config: option 'device' on line 20 was not recognized
+Dec 17 20:31 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:33 : config: option 'device' on line 20 was not recognized
+Dec 17 20:33 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:33 : config: option 'device' on line 20 was not recognized
+Dec 17 20:33 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:37 : config: option 'device' on line 20 was not recognized
+Dec 17 20:37 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:38 : config: option 'device' on line 20 was not recognized
+Dec 17 20:38 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:48 : config: option 'device' on line 20 was not recognized
+Dec 17 20:48 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:49 : config: option 'device' on line 20 was not recognized
+Dec 17 20:49 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:56 : config: option 'device' on line 20 was not recognized
+Dec 17 20:56 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:57 : config: option 'device' on line 20 was not recognized
+Dec 17 20:57 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 20:58 : config: option 'device' on line 20 was not recognized
+Dec 17 20:58 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 21:00 : config: option 'device' on line 20 was not recognized
+Dec 17 21:00 : config: option 'mixer_control' on line 21 was not recognized
+Dec 17 21:23 : player: played "Bill Evans - Sunday at Village Vanguard/2. My Man's Gone Now.flac"
+Dec 17 21:32 : player: played "Bill Evans - Sunday at Village Vanguard/3. Solar.flac"
+Dec 17 23:47 : exception: Failed to commit /home/sheep/.mpd/state: File exists
+Dec 17 23:47 : player: played "Bill Evans - Sunday at Village Vanguard/4. Alice in Wonderland.flac"
+Dec 18 09:35 : config: option 'device' on line 20 was not recognized
+Dec 18 09:35 : config: option 'mixer_control' on line 21 was not recognized
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/05. YOASOBI - RGB.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/04. YOASOBI - Comet.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/01. YOASOBI - Into The Night.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/02. YOASOBI - Haven't.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/08. YOASOBI - Tracing A Dream.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/06. YOASOBI - Encore.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/07. YOASOBI - Blue.flac
+Dec 18 16:36 : update: added YOASOBI - E-SIDE (2021) [FLAC] [16B-44.1kHz]/03. YOASOBI - Monster.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Afureta Mizuno Yukue (2019) [FLAC] [24B-44.1kHz]/04. Ryokuoushoku Shakai - Saboten.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Afureta Mizuno Yukue (2019) [FLAC] [24B-44.1kHz]/05. Ryokuoushoku Shakai - Bitter.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Afureta Mizuno Yukue (2019) [FLAC] [24B-44.1kHz]/03. Ryokuoushoku Shakai - Never Come Back.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Afureta Mizuno Yukue (2019) [FLAC] [24B-44.1kHz]/02. Ryokuoushoku Shakai - Shisen.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Afureta Mizuno Yukue (2019) [FLAC] [24B-44.1kHz]/01. Ryokuoushoku Shakai - Anokoro Mita Hikari.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Afureta Mizuno Yukue (2019) [FLAC] [24B-44.1kHz]/06. Ryokuoushoku Shakai - Little Singer.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/06. Ryokuoushoku Shakai - Kimiga Nozomu Sekai.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/09. Ryokuoushoku Shakai - Mayonaka Drive.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/07. Ryokuoushoku Shakai - Koitte.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/10. Ryokuoushoku Shakai - Matane.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/08. Ryokuoushoku Shakai - Regret New Rec Version.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/03. Ryokuoushoku Shakai - Otonagokko.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/04. Ryokuoushoku Shakai - Kirakira.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/05. Ryokuoushoku Shakai - Alice.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/02. Ryokuoushoku Shakai - Hajimari No Uta.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Ryokuoushokushakai (2018) [FLAC] [24B-44.1kHz]/01. Ryokuoushoku Shakai - Re.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/08. Ryokuoushoku Shakai - Ippo.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/06. Ryokuoushoku Shakai - Shout Baby.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/10. Ryokuoushoku Shakai - Shiawase.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/13. Ryokuoushoku Shakai - Huyu No Asa.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/11. Ryokuoushoku Shakai - Brand New World.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/09. Ryokuoushoku Shakai - Ai No Katachi.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/07. Ryokuoushoku Shakai - Scarlet.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/01. Ryokuoushoku Shakai - SINGALONG.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/02. Ryokuoushoku Shakai - Sabotage.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/12. Ryokuoushoku Shakai - Anokoro Mita Hikari.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/04. Ryokuoushoku Shakai - Omoibito.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/03. Ryokuoushoku Shakai - Mela!.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Singalong (2020) [FLAC] [24B-44.1kHz]/05. Ryokuoushoku Shakai - Inori.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Litmus (2021) [FLAC] [24B-44.1kHz]/02. Ryokuoushoku Shakai - Are you ready.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Litmus (2021) [FLAC] [24B-44.1kHz]/04. Ryokuoushoku Shakai - Litmus (Instrumental).flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Litmus (2021) [FLAC] [24B-44.1kHz]/01. Ryokuoushoku Shakai - Litmus.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Litmus (2021) [FLAC] [24B-44.1kHz]/05. Ryokuoushoku Shakai - Are you ready (Instrumental).flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Litmus (2021) [FLAC] [24B-44.1kHz]/06. Ryokuoushoku Shakai - Korekara No Koto Sorekara No Koto (Instrumental).flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Litmus (2021) [FLAC] [24B-44.1kHz]/03. Ryokuoushoku Shakai - Korekara No Koto Sorekara No Koto.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Kesshou (2021) [FLAC] [24B-44.1kHz]/03. Ryokuoushoku Shakai - Copy.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Kesshou (2021) [FLAC] [24B-44.1kHz]/02. Ryokuoushoku Shakai - Ladybug.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Kesshou (2021) [FLAC] [24B-44.1kHz]/05. Ryokuoushoku Shakai - Ladybug (Instrumental).flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Kesshou (2021) [FLAC] [24B-44.1kHz]/06. Ryokuoushoku Shakai - Copy (Instrumental).flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Kesshou (2021) [FLAC] [24B-44.1kHz]/01. Ryokuoushoku Shakai - Kesshou.flac
+Dec 18 16:36 : update: added Ryokuoushoku Shakai - Kesshou (2021) [FLAC] [24B-44.1kHz]/04. Ryokuoushoku Shakai - Kesshou (Instrumental).flac
+Dec 18 16:36 : update: added /01. Miura Jam - Iro Kousui (Horimiya).flac
+Dec 18 16:36 : update: added /02. Platina Jazz - Zen Zen Zense (From Your Name) [feat. Josefine Wassler].flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/07. YOASOBI - ハルカ.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/06. YOASOBI - 群青.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/04. YOASOBI - あの夢をなぞって.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/01. YOASOBI - Epilogue.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/05. YOASOBI - たぶん.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/02. YOASOBI - アンコール.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/03. YOASOBI - ハルジオン.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/08. YOASOBI - 夜に駆ける.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK (2021) [FLAC] [16B-44.1kHz]/09. YOASOBI - Prologue.flac
+Dec 18 16:36 : update: added YOASOBI - Romance (2021) [FLAC] [16B-44.1kHz]/01. YOASOBI - Romance.flac
+Dec 18 16:36 : update: added Minami - DROP (2021) [FLAC] [24B-44.1kHz]/04. Minami - Kono Machi Ni Hare Wa Konai.flac
+Dec 18 16:36 : update: added Minami - DROP (2021) [FLAC] [24B-44.1kHz]/01. Minami - Ame Wo Matsu.flac
+Dec 18 16:36 : update: added Minami - DROP (2021) [FLAC] [24B-44.1kHz]/05. Minami - Kimi To Boku No 154 Shosetsu senso.flac
+Dec 18 16:36 : update: added Minami - DROP (2021) [FLAC] [24B-44.1kHz]/02. Minami - Freiheit.flac
+Dec 18 16:36 : update: added Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/01. YOASOBI - ツバメ (feat. ミドリーズ).flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/04. YOASOBI - もう少しだけ.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/07. YOASOBI - もしも命が描けたら.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/05. YOASOBI - 優しい彗星.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/02. YOASOBI - 三原色.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/03. YOASOBI - Romance.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/08. YOASOBI - ラブレター.flac
+Dec 18 16:36 : update: added YOASOBI - THE BOOK 2 (2021) [FLAC] [16B-44.1kHz]/06. YOASOBI - 怪物.flac
+Dec 18 16:36 : update: added YOASOBI - 夜に駆ける (2019) [FLAC] [16B-44.1kHz]/01. YOASOBI - 夜に駆ける.flac
+Dec 18 17:09 : player: played "YOASOBI - 夜に駆ける (2019) [FLAC] [16B-44.1kHz]/01. YOASOBI - 夜に駆ける.flac"
+Dec 18 17:25 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/01. Minami - Ame Wo Matsu.flac"
+Dec 18 18:57 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/02. Minami - Freiheit.flac"
+Dec 19 14:48 : player: played "YOASOBI - 夜に駆ける (2019) [FLAC] [16B-44.1kHz]/01. YOASOBI - 夜に駆ける.flac"
+Dec 19 14:51 : config: option 'device' on line 20 was not recognized
+Dec 19 14:51 : config: option 'mixer_control' on line 21 was not recognized

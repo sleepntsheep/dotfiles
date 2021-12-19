@@ -1,79 +1,129 @@
-set number
-set relativenumber
+
+"   ██    ██ ██ ███    ███ ██████   ██████
+"   ██    ██ ██ ████  ████ ██   ██ ██
+"   ██    ██ ██ ██ ████ ██ ██████  ██
+"    ██  ██  ██ ██  ██  ██ ██   ██ ██
+"██   ████   ██ ██      ██ ██   ██  ██████
+
+"---------GENERAL SETTINGS------------
 set nocompatible
+set nolist
+set rnu
+filetype on
+syntax on
+filetype plugin indent on
+set modelines=0
+set wrap
+set textwidth=79
+set formatoptions=tcqrn1
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
+set scrolloff=5
+set backspace=indent,eol,start
+set ttyfast
+set laststatus=2
+set showmode
+set showcmd
+" Highlight matching pairs of brackets. Use the '%' character to jump between them.
+set matchpairs+=<:>
+set number
+
+" Set status line display
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+
+set encoding=utf-8
+set hlsearch
 set incsearch
-set autoindent
-set ruler
-set autowrite
-set linebreak
-set spell
-set et
-set title
-set mouse=v
-set history=500
-set tabstop=4
-"set matchtime=2
-"set matchpairs+=<:>
+set ignorecase
+set smartcase
 
-filetype plugin indent on  " Load plugins according to detected filetype.
-syntax on                  " Enable syntax highlighting.
+set viminfo='100,<9999,s100
 
-set expandtab              " Use spaces instead of tabs.
-set softtabstop =4         " Tab key indents by 4 spaces.
-set shiftwidth  =4         " >> indents by 4 spaces.
-set shiftround             " >> indents to next multiple of 'shiftwidth'.
-
-set backspace   =indent,eol,start  " Make backspace work as you would expect.
-set hidden                 " Switch between buffers without having to save first.
-set laststatus  =2         " Always show statusline.
-set display     =lastline  " Show as much as possible of the last line.
-
-set showmode               " Show current mode in command-line.
-set showcmd                " Show already typed keys when more are expected.
-
-set incsearch              " Highlight while searching with / or ?.
-set hlsearch               " Keep matches highlighted.
-
-set ttyfast                " Faster redrawing.
-set lazyredraw             " Only redraw when necessary.
-
-set splitbelow             " Open new windows below the current window.
-set splitright             " Open new windows right of the current window.
-
-set cursorline             " Find the current line quickly.
-set wrapscan               " Searches wrap around end-of-file.
-set report      =0         " Always report changed lines.
-set synmaxcol   =200       " Only highlight the first 200 columns.
-
-set list                   " Show non-printable characters.
-if has('multi_byte') && &encoding ==# 'utf-8'
-  let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
-else
-  let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
+" ---------------PLUGINS--------------------
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set packpath=~/vimfiles,~/vimfiles/after
-
-
-"" PLUGIN
 call plug#begin('~/.vim/plugged')
-    Plug 'wakatime/vim-wakatime'
-    Plug 'junegunn/fzf.vim'
-    Plug 'itchyny/lightline.vim'
-    Plug 'terryma/vim-multiple-cursors'
-    Plug 'preservim/nerdtree'
-    Plug 'tpope/vim-surround'
-    "Plug 'pradyungn/Mountain', {'rtp': 'vim'}
+
+"Syntax highlighting and autocompletion
+Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+Plug 'sheerun/vim-polyglot'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'https://github.com/fannheyward/coc-pyright'
+
+"File search and navigation
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+
+"Editor interface and theming
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
+Plug 'yggdroot/indentline'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'pradyungn/Mountain', {'rtp': 'vim'}
+
+"Debugging, refactoring and version control
+Plug 'puremourning/vimspector'
+
 call plug#end()
 
-let g:fzf_preview_window = ['down:40%:hidden', 'ctrl-/']
-let g:fzf_buffers_jump = 1
-let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
-let g:fzf_tags_command = 'ctags -R'
-let g:fzf_commands_expect = 'alt-enter,ctrl-x'
+"---------- PLUGIN VARIABLES---------------
+"
+let g:airline_powerline_fonts = 1
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+autocmd VimEnter * NERDTree | wincmd p
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+colorscheme mountain
+"colorscheme gruvbox
+set bg=dark
 
-nnoremap <C-w> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+"-----------NAVIGATION KEYMAPS-------------
+"
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
-colorscheme sheep16
+" Move 1 more lines up or down in normal and visual selection modes.
+vnoremap J :m '>+1<CR>gv=gv
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv=gv
 
+"Misc
+:imap ii <Esc>
+
+" Map the <Space> key to toggle a selected fold opened/closed.
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
+"Autosave folds
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+"Search shortcuts
+let mapleader = ","
+noremap <leader>w :w<cr>
+noremap <leader>n :NERDTreeToggle<cr>
+noremap <leader>gs :CocSearch
+noremap <leader>fs :Files<cr>
+noremap <leader><cr> <cr><c-w>h:q<cr>
+
+" Vim's auto indentation feature does not work properly with text copied from outside of Vim. Press the <F2> key to toggle paste mode on/off.
+nnoremap <F2> :set invpaste paste?<CR>
+imap <F2> <C-O>:set invpaste paste?<CR>
+set pastetoggle=<F2>

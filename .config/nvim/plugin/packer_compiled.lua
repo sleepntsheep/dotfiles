@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/mountain-theme/vim"
   },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
+  },
   ["wal.vim"] = {
     loaded = true,
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/wal.vim",

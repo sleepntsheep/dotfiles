@@ -7,6 +7,13 @@ lspconfig.pyright.setup {
     },
 }
 
+lspconfig.clangd.setup {
+    on_attach = attach,
+    flags = {
+        debounce_text_changes = 150,
+    },
+}
+
 lspconfig.tsserver.setup {
     on_attach = function(client, bufnr)
        client.resolved_capabilities.document_formatting = false

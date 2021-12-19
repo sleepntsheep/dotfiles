@@ -9,79 +9,137 @@
 
 
 # hlsearch on (H) or off (h):
-~h
+~H
 # Last Search Pattern:
-~MSle0~/countdict\[p-1\]
+~MSle0~/greeter-session
 
 # Last Substitute Search Pattern:
-~MSle0&countdict\[p-1\]
+~MSle0&\s
 
 # Last Substitute String:
-$cdp
+$
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1639827944,,"wq"
 :w
-|2,0,1637134187,,"w"
-:73
-|2,0,1637134130,,"73"
+|2,0,1639827943,,"w"
+:'<,'>s/\s//g
+|2,0,1639722382,,"'<,'>s/\\s//g"
+:q
+|2,0,1639722252,,"q"
+:q!
+|2,0,1639579424,,"q!"
+:%s/grayblocks\//
+|2,0,1639393928,,"%s/grayblocks\\//"
+:colorsche
+|2,0,1639391374,,"colorsche"
 :PlugInstall
-|2,0,1637134031,,"PlugInstall"
-:w! ~/.vimrc
-|2,0,1637134006,,"w! ~/.vimrc"
-:w ~/.vimrc
-|2,0,1637134001,,"w ~/.vimrc"
-:35
-|2,0,1636958318,,"35"
-:345
-|2,0,1636958289,,"345"
-:%s/countdict\[p-1\]/cdp
-|2,0,1636958070,,"%s/countdict\\[p-1\\]/cdp"
-:%s/countdict[p-1\]/cdp
-|2,0,1636958061,,"%s/countdict[p-1\\]/cdp"
-:43
-|2,0,1636957950,,"43"
-:39
-|2,0,1636957889,,"39"
-:29
-|2,0,1636956662,,"29"
-:21
-|2,0,1636956602,,"21"
-:10
-|2,0,1636956006,,"10"
-:13
-|2,0,1636955613,,"13"
-:19
-|2,0,1636954850,,"19"
-:%s/focal/interimsudo apt remove --purge snapd
-|2,0,1636903992,,"%s/focal/interimsudo apt remove --purge snapd"
-:%s/mpv/mpv.exe
-|2,0,1636859463,,"%s/mpv/mpv.exe"
-:145
-|2,0,1634964483,,"145"
-:set ff=unix
-|2,0,1634964196,,"set ff=unix"
+|2,0,1639363342,,"PlugInstall"
+:e
+|2,0,1639303119,,"e"
+:%s/distance)/distance+1)/
+|2,0,1639301891,,"%s/distance)/distance+1)/"
+:%s/distance+1/distance/
+|2,0,1639301656,,"%s/distance+1/distance/"
+:term
+|2,0,1639301614,,"term"
+:CocInstall coc-clangd
+|2,0,1639299006,,"CocInstall coc-clangd"
+:CocInstall
+|2,0,1639299000,,"CocInstall"
+:%s/HDMI1/ output HDMI1
+|2,0,1639227690,,"%s/HDMI1/ output HDMI1"
+:%s/([0-9])/\1 output HDMI1
+|2,0,1639227630,,"%s/([0-9])/\\1 output HDMI1"
+:!poetry run ani
+|2,0,1639224919,,"!poetry run ani"
+:!cd ani_cli
+|2,0,1639224879,,"!cd ani_cli"
+:!python ani_cli/main.py
+|2,0,1639224873,,"!python ani_cli/main.py"
+:!python main.py
+|2,0,1639224867,,"!python main.py"
+:colorscheme gruvbox
+|2,0,1639224788,,"colorscheme gruvbox"
+:NERDTreeToggle
+|2,0,1639224634,,"NERDTreeToggle"
+:NERDTREEToggle
+|2,0,1639224630,,"NERDTREEToggle"
+:NerdTreeToggle
+|2,0,1639224626,,"NerdTreeToggle"
+:100
+|2,0,1639224457,,"100"
+:CocInstall coc-pyright
+|2,0,1639223898,,"CocInstall coc-pyright"
+:%s/Fixedsys Excelsior/Fixedsys Excelsior 3.01-L2/g
+|2,0,1639216710,,"%s/Fixedsys Excelsior/Fixedsys Excelsior 3.01-L2/g"
+:%s/"//
+|2,0,1639216675,,"%s/\"//"
+:%s/ 3.01//
+|2,0,1639216540,,"%s/ 3.01//"
+:%s/-L2 Mono//
+|2,0,1639216283,,"%s/-L2 Mono//"
+:u
+|2,0,1639216199,,"u"
+:%s/L2/L2 Mono/g
+|2,0,1639216180,,"%s/L2/L2 Mono/g"
 
 # Search String History (newest to oldest):
-? countdict\[p-1\]
-|2,1,1636958070,,"countdict\\[p-1\\]"
-? countdict[p-1\]/cdp
-|2,1,1636958061,,"countdict[p-1\\]/cdp"
-? focal
-|2,1,1636903992,,"focal"
-?/focal
-|2,1,1636903856,47,"focal"
-?/DISABLE_LS_
-|2,1,1636902931,47,"DISABLE_LS_"
-?/ZSH_THEME
-|2,1,1636873215,47,"ZSH_THEME"
-? mpv
-|2,1,1636859463,,"mpv"
-? @$
-|2,1,1636262371,,"@$"
-?/logfile
-|2,1,1634964493,47,"logfile"
-?/~
-|2,1,1634964468,47,"~"
+?/greeter-session
+|2,1,1639742831,47,"greeter-session"
+?/greeter
+|2,1,1639742134,47,"greeter"
+?/deepin
+|2,1,1639742129,47,"deepin"
+?/greater
+|2,1,1639742123,47,"greater"
+? \s
+|2,1,1639722382,,"\\s"
+?/ThaiMnc
+|2,1,1639546051,47,"ThaiMnc"
+?/pat
+|2,1,1639546032,47,"pat"
+?/thai
+|2,1,1639546013,47,"thai"
+?/th
+|2,1,1639546010,47,"th"
+?/<iso639Id>tha</iso639Id>
+|2,1,1639545976,47,"<iso639Id>tha</iso639Id>"
+?/dmenu
+|2,1,1639396855,47,"dmenu"
+? grayblocks\/
+|2,1,1639393928,,"grayblocks\\/"
+?/mountain
+|2,1,1639326318,47,"mountain"
+?/flameshot
+|2,1,1639304067,47,"flameshot"
+? distance)
+|2,1,1639301891,,"distance)"
+? distance+1
+|2,1,1639301656,,"distance+1"
+? HDMI1
+|2,1,1639227690,,"HDMI1"
+? ([0-9])
+|2,1,1639227630,,"([0-9])"
+?/comment
+|2,1,1639224336,47,"comment"
+?/gruvbox
+|2,1,1639223695,47,"gruvbox"
+?/log out
+|2,1,1639222219,47,"log out"
+? Fixedsys Excelsior
+|2,1,1639216710,,"Fixedsys Excelsior"
+? "
+|2,1,1639216675,,"\""
+?  3.01
+|2,1,1639216540,," 3.01"
+? -L2 Mono
+|2,1,1639216283,,"-L2 Mono"
+? L2
+|2,1,1639216180,,"L2"
+?/gao
+|2,1,1639215137,47,"gao"
 
 # Expression History (newest to oldest):
 
@@ -91,607 +149,1324 @@ $cdp
 
 # Registers:
 "0	LINE	0
-	    cout << "Score ";
-	    for (int i = 0;  i < n; i++ ) {
-	    cout << score[i]}
-	
-|3,0,0,1,4,0,1636959574,"    cout << \"Score \";","    for (int i = 0;  i < n; i++ ) {","    cout << score[i]}",""
+	Server = https://mirror.kku.ac.th/archlinux/$repo/os/$arch
+|3,0,0,1,1,0,1639743785,"Server = https://mirror.kku.ac.th/archlinux/$repo/os/$arch"
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1637134188,""
+	Raspberry Pi reference 2021-10-30
+	Generated using pi-gen, https://github.com/RPi-Distro/pi-gen, 288b21fc27e128ea6b330777aca68e0061ebf4fe, stage2
+|3,1,1,1,2,0,1639827635,"Raspberry Pi reference 2021-10-30","Generated using pi-gen, https://github.com/RPi-Distro/pi-gen, 288b21fc27e128ea6b330777aca68e0061ebf4fe, stage2"
 "2	LINE	0
-	"
-	"  " [Commands] --expect expression for directly executing the command
-|3,0,2,1,2,0,1637134186,"\"","\"  \" [Commands] --expect expression for directly executing the command"
+	# Collection of quirks and blacklist/whitelists for specific devices.
+|3,0,2,1,1,0,1639747045,"# Collection of quirks and blacklist/whitelists for specific devices."
 "3	LINE	0
-	"
-	"  " [Tags] Command to generate tags file
-|3,0,3,1,2,0,1637134186,"\"","\"  \" [Tags] Command to generate tags file"
+	
+	
+	# https://bugs.freedesktop.org/show_bug.cgi?id=62831
+	# Bug 62831 - Mionix Naos 5000 mouse detected incorrectly
+	Section "InputClass"
+	        Identifier "Tag Mionix Naos 5000 mouse XI_MOUSE"
+	        MatchProduct "La-VIEW Technology Naos 5000 Mouse"
+	        MatchDriver "evdev"
+	        Option "TypeName" "MOUSE"
+	EndSection
+|3,0,3,1,10,0,1639747044,"","","# https://bugs.freedesktop.org/show_bug.cgi?id=62831","# Bug 62831 - Mionix Naos 5000 mouse detected incorrectly","Section \"InputClass\"","        Identifier \"Tag Mionix Naos 5000 mouse XI_MOUSE\"","        MatchProduct \"La-VIEW Technology Naos 5000 Mouse\"","        MatchDriver \"evdev\"","        Option \"TypeName\" \"MOUSE\"","EndSection"
 "4	LINE	0
-	" [Buffers] Jump to the existing window if possible
-|3,0,4,1,1,0,1637134184,"\" [Buffers] Jump to the existing window if possible"
+	# https://bugs.freedesktop.org/show_bug.cgi?id=55867
+	# Bug 55867 - Doesn't know how to tag XI_TRACKBALL
+	Section "InputClass"
+	        Identifier "Tag trackballs as XI_TRACKBALL"
+	        MatchProduct "trackball"
+	        MatchDriver "evdev"
+	        Option "TypeName" "TRACKBALL"
+	EndSection
+	
+|3,0,4,1,9,0,1639747044,"# https://bugs.freedesktop.org/show_bug.cgi?id=55867","# Bug 55867 - Doesn't know how to tag XI_TRACKBALL","Section \"InputClass\"","        Identifier \"Tag trackballs as XI_TRACKBALL\"","        MatchProduct \"trackball\"","        MatchDriver \"evdev\"","        Option \"TypeName\" \"TRACKBALL\"","EndSection",""
 "5	LINE	0
-	" [Buffers] Jump to the existing window if possible
-	let g:fzf_buffers_jump = 1
-|3,0,5,1,2,0,1637134183,"\" [Buffers] Jump to the existing window if possible","let g:fzf_buffers_jump = 1"
+	# https://bugzilla.redhat.com/show_bug.cgi?id=523914
+	# Mouse does not move in PV Xen guest
+	# Explicitly tell evdev to not ignore the absolute axes.
+	Section "InputClass"
+	        Identifier "Xen Virtual Pointer axis blacklist"
+	        MatchProduct "Xen Virtual Pointer"
+	        Option "IgnoreAbsoluteAxes" "off"
+	        Option "IgnoreRelativeAxes" "off"
+	EndSection
+	
+|3,0,5,1,10,0,1639747044,"# https://bugzilla.redhat.com/show_bug.cgi?id=523914","# Mouse does not move in PV Xen guest","# Explicitly tell evdev to not ignore the absolute axes.","Section \"InputClass\"","        Identifier \"Xen Virtual Pointer axis blacklist\"","        MatchProduct \"Xen Virtual Pointer\"","        Option \"IgnoreAbsoluteAxes\" \"off\"","        Option \"IgnoreRelativeAxes\" \"off\"","EndSection",""
 "6	LINE	0
-	"
-	" [[B]Commits] Customize the options used by 'git log':
-|3,0,6,1,2,0,1637134183,"\"","\" [[B]Commits] Customize the options used by 'git log':"
+	# Accelerometer device, posts data through ABS_X/ABS_Y, making X unusable
+	# http://bugs.freedesktop.org/show_bug.cgi?id=22442 
+	Section "InputClass"
+	        Identifier "ThinkPad HDAPS accelerometer blacklist"
+	        MatchProduct "ThinkPad HDAPS accelerometer data"
+	        Option "Ignore" "on"
+	EndSection
+	
+|3,0,6,1,8,0,1639747043,"# Accelerometer device, posts data through ABS_X/ABS_Y, making X unusable","# http://bugs.freedesktop.org/show_bug.cgi?id=22442 ","Section \"InputClass\"","        Identifier \"ThinkPad HDAPS accelerometer blacklist\"","        MatchProduct \"ThinkPad HDAPS accelerometer data\"","        Option \"Ignore\" \"on\"","EndSection",""
 "7	LINE	0
-	
-	
-|3,0,7,1,2,0,1637134182,"",""
+	[Seat:*]
+|3,0,7,1,1,0,1639743108,"[Seat:*]"
 "8	LINE	0
+	  4. Type   2dd   to delete two lines.
 	
-|3,0,8,1,1,0,1637134180,""
+|3,0,8,1,2,0,1639579375,"  4. Type   2dd   to delete two lines.",""
 "9	LINE	0
-	##PLUGIN SETTING
-|3,0,9,1,1,0,1637134180,"##PLUGIN SETTING"
+	  4. Type   2dd   to delete two lines.
+	
+|3,0,9,1,2,0,1639579373,"  4. Type   2dd   to delete two lines.",""
 "-	CHAR	0
-	/
-|3,0,36,0,1,0,1636960091,"/"
+	s
+|3,0,36,0,1,0,1639743786,"s"
+
+# global variables:
 
 # File marks:
-'0  74  0  ~/.vimrc
-|4,48,74,0,1637134188,"~/.vimrc"
-'1  1  0  /mnt/c/Users/micro/.vimrc
-|4,49,1,0,1637134164,"/mnt/c/Users/micro/.vimrc"
-'2  56  0  /mnt/c/Users/micro/.vimrc
-|4,50,56,0,1637134157,"/mnt/c/Users/micro/.vimrc"
-'3  56  0  /mnt/c/Users/micro/.vimrc
-|4,51,56,0,1637134157,"/mnt/c/Users/micro/.vimrc"
-'4  73  1  /mnt/c/Users/micro/.vimrc
-|4,52,73,1,1637134125,"/mnt/c/Users/micro/.vimrc"
-'5  71  1  /mnt/c/Users/micro/.vimrc
-|4,53,71,1,1637134125,"/mnt/c/Users/micro/.vimrc"
-'6  73  1  /mnt/c/Users/micro/.vimrc
-|4,54,73,1,1637134125,"/mnt/c/Users/micro/.vimrc"
-'7  71  1  /mnt/c/Users/micro/.vimrc
-|4,55,71,1,1637134125,"/mnt/c/Users/micro/.vimrc"
-'8  1  0  /mnt/c/Users/micro/.vimrc
-|4,56,1,0,1637134089,"/mnt/c/Users/micro/.vimrc"
-'9  1  0  /mnt/c/Users/micro/.vimrc
-|4,57,1,0,1637134089,"/mnt/c/Users/micro/.vimrc"
+'0  1  0  /tmp/fz3temp-2/known_hosts
+|4,48,1,0,1639900114,"/tmp/fz3temp-2/known_hosts"
+'1  3  0  ~/NERD_tree_1
+|4,49,3,0,1639827945,"~/NERD_tree_1"
+'2  4  0  ~/NERD_tree_1
+|4,50,4,0,1639827945,"~/NERD_tree_1"
+'3  1  0  ~/NERD_tree_1
+|4,51,1,0,1639827636,"~/NERD_tree_1"
+'4  3  0  ~/NERD_tree_1
+|4,52,3,0,1639827636,"~/NERD_tree_1"
+'5  1  0  ~/NERD_tree_1
+|4,53,1,0,1639827636,"~/NERD_tree_1"
+'6  4  0  ~/NERD_tree_1
+|4,54,4,0,1639827636,"~/NERD_tree_1"
+'7  1  0  ~/NERD_tree_1
+|4,55,1,0,1639747082,"~/NERD_tree_1"
+'8  1  0  ~/NERD_tree_1
+|4,56,1,0,1639747082,"~/NERD_tree_1"
+'9  1  0  ~/NERD_tree_1
+|4,57,1,0,1639747082,"~/NERD_tree_1"
 
 # Jumplist (newest first):
--'  74  0  ~/.vimrc
-|4,39,74,0,1637134188,"~/.vimrc"
--'  71  0  ~/.vimrc
-|4,39,71,0,1637134184,"~/.vimrc"
--'  59  0  ~/.vimrc
-|4,39,59,0,1637134179,"~/.vimrc"
--'  68  0  ~/.vimrc
-|4,39,68,0,1637134178,"~/.vimrc"
--'  69  0  ~/.vimrc
-|4,39,69,0,1637134178,"~/.vimrc"
--'  77  0  ~/.vimrc
-|4,39,77,0,1637134172,"~/.vimrc"
--'  79  0  ~/.vimrc
-|4,39,79,0,1637134172,"~/.vimrc"
--'  56  0  ~/.vimrc
-|4,39,56,0,1637134172,"~/.vimrc"
--'  54  0  ~/.vimrc
-|4,39,54,0,1637134172,"~/.vimrc"
--'  47  0  ~/.vimrc
-|4,39,47,0,1637134172,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1637134172,"~/.vimrc"
--'  39  0  ~/.vimrc
-|4,39,39,0,1637134172,"~/.vimrc"
--'  36  0  ~/.vimrc
-|4,39,36,0,1637134172,"~/.vimrc"
--'  33  0  ~/.vimrc
-|4,39,33,0,1637134172,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1637134172,"~/.vimrc"
--'  25  0  ~/.vimrc
-|4,39,25,0,1637134172,"~/.vimrc"
--'  20  0  ~/.vimrc
-|4,39,20,0,1637134172,"~/.vimrc"
--'  17  0  ~/.vimrc
-|4,39,17,0,1637134172,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1637134171,"~/.vimrc"
--'  1  0  /mnt/c/Users/micro/.vimrc
-|4,39,1,0,1637134164,"/mnt/c/Users/micro/.vimrc"
--'  1  0  /mnt/c/Users/micro/.vimrc
-|4,39,1,0,1637134164,"/mnt/c/Users/micro/.vimrc"
--'  56  0  /mnt/c/Users/micro/.vimrc
-|4,39,56,0,1637134157,"/mnt/c/Users/micro/.vimrc"
--'  56  0  /mnt/c/Users/micro/.vimrc
-|4,39,56,0,1637134157,"/mnt/c/Users/micro/.vimrc"
--'  56  0  /mnt/c/Users/micro/.vimrc
-|4,39,56,0,1637134157,"/mnt/c/Users/micro/.vimrc"
--'  56  0  /mnt/c/Users/micro/.vimrc
-|4,39,56,0,1637134157,"/mnt/c/Users/micro/.vimrc"
--'  49  0  /mnt/c/Users/micro/.vimrc
-|4,39,49,0,1637134155,"/mnt/c/Users/micro/.vimrc"
--'  49  0  /mnt/c/Users/micro/.vimrc
-|4,39,49,0,1637134155,"/mnt/c/Users/micro/.vimrc"
--'  49  0  /mnt/c/Users/micro/.vimrc
-|4,39,49,0,1637134155,"/mnt/c/Users/micro/.vimrc"
--'  49  0  /mnt/c/Users/micro/.vimrc
-|4,39,49,0,1637134155,"/mnt/c/Users/micro/.vimrc"
--'  44  0  /mnt/c/Users/micro/.vimrc
-|4,39,44,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  41  0  /mnt/c/Users/micro/.vimrc
-|4,39,41,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  38  0  /mnt/c/Users/micro/.vimrc
-|4,39,38,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  35  0  /mnt/c/Users/micro/.vimrc
-|4,39,35,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  44  0  /mnt/c/Users/micro/.vimrc
-|4,39,44,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  41  0  /mnt/c/Users/micro/.vimrc
-|4,39,41,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  38  0  /mnt/c/Users/micro/.vimrc
-|4,39,38,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  35  0  /mnt/c/Users/micro/.vimrc
-|4,39,35,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  44  0  /mnt/c/Users/micro/.vimrc
-|4,39,44,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  41  0  /mnt/c/Users/micro/.vimrc
-|4,39,41,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  38  0  /mnt/c/Users/micro/.vimrc
-|4,39,38,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  35  0  /mnt/c/Users/micro/.vimrc
-|4,39,35,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  44  0  /mnt/c/Users/micro/.vimrc
-|4,39,44,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  41  0  /mnt/c/Users/micro/.vimrc
-|4,39,41,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  38  0  /mnt/c/Users/micro/.vimrc
-|4,39,38,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  35  0  /mnt/c/Users/micro/.vimrc
-|4,39,35,0,1637134153,"/mnt/c/Users/micro/.vimrc"
--'  32  0  /mnt/c/Users/micro/.vimrc
-|4,39,32,0,1637134152,"/mnt/c/Users/micro/.vimrc"
--'  32  0  /mnt/c/Users/micro/.vimrc
-|4,39,32,0,1637134152,"/mnt/c/Users/micro/.vimrc"
--'  32  0  /mnt/c/Users/micro/.vimrc
-|4,39,32,0,1637134152,"/mnt/c/Users/micro/.vimrc"
--'  32  0  /mnt/c/Users/micro/.vimrc
-|4,39,32,0,1637134152,"/mnt/c/Users/micro/.vimrc"
--'  27  0  /mnt/c/Users/micro/.vimrc
-|4,39,27,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  22  0  /mnt/c/Users/micro/.vimrc
-|4,39,22,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  27  0  /mnt/c/Users/micro/.vimrc
-|4,39,27,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  22  0  /mnt/c/Users/micro/.vimrc
-|4,39,22,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  27  0  /mnt/c/Users/micro/.vimrc
-|4,39,27,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  22  0  /mnt/c/Users/micro/.vimrc
-|4,39,22,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  27  0  /mnt/c/Users/micro/.vimrc
-|4,39,27,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  22  0  /mnt/c/Users/micro/.vimrc
-|4,39,22,0,1637134151,"/mnt/c/Users/micro/.vimrc"
--'  24  0  /mnt/c/Users/micro/.vimrc
-|4,39,24,0,1637134150,"/mnt/c/Users/micro/.vimrc"
--'  24  0  /mnt/c/Users/micro/.vimrc
-|4,39,24,0,1637134150,"/mnt/c/Users/micro/.vimrc"
--'  24  0  /mnt/c/Users/micro/.vimrc
-|4,39,24,0,1637134150,"/mnt/c/Users/micro/.vimrc"
--'  24  0  /mnt/c/Users/micro/.vimrc
-|4,39,24,0,1637134150,"/mnt/c/Users/micro/.vimrc"
--'  17  0  /mnt/c/Users/micro/.vimrc
-|4,39,17,0,1637134146,"/mnt/c/Users/micro/.vimrc"
--'  1  0  /mnt/c/Users/micro/.vimrc
-|4,39,1,0,1637134146,"/mnt/c/Users/micro/.vimrc"
--'  17  0  /mnt/c/Users/micro/.vimrc
-|4,39,17,0,1637134146,"/mnt/c/Users/micro/.vimrc"
--'  17  0  /mnt/c/Users/micro/.vimrc
-|4,39,17,0,1637134146,"/mnt/c/Users/micro/.vimrc"
--'  1  0  /mnt/c/Users/micro/.vimrc
-|4,39,1,0,1637134146,"/mnt/c/Users/micro/.vimrc"
--'  17  0  /mnt/c/Users/micro/.vimrc
-|4,39,17,0,1637134146,"/mnt/c/Users/micro/.vimrc"
--'  59  0  /mnt/c/Users/micro/.vimrc
-|4,39,59,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  59  0  /mnt/c/Users/micro/.vimrc
-|4,39,59,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  62  0  /mnt/c/Users/micro/.vimrc
-|4,39,62,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  72  0  /mnt/c/Users/micro/.vimrc
-|4,39,72,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  74  0  /mnt/c/Users/micro/.vimrc
-|4,39,74,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  80  0  /mnt/c/Users/micro/.vimrc
-|4,39,80,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  59  0  /mnt/c/Users/micro/.vimrc
-|4,39,59,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  62  0  /mnt/c/Users/micro/.vimrc
-|4,39,62,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  72  0  /mnt/c/Users/micro/.vimrc
-|4,39,72,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  74  0  /mnt/c/Users/micro/.vimrc
-|4,39,74,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  80  0  /mnt/c/Users/micro/.vimrc
-|4,39,80,0,1637134145,"/mnt/c/Users/micro/.vimrc"
--'  83  0  /mnt/c/Users/micro/.vimrc
-|4,39,83,0,1637134144,"/mnt/c/Users/micro/.vimrc"
--'  83  0  /mnt/c/Users/micro/.vimrc
-|4,39,83,0,1637134144,"/mnt/c/Users/micro/.vimrc"
--'  76  0  /mnt/c/Users/micro/.vimrc
-|4,39,76,0,1637134140,"/mnt/c/Users/micro/.vimrc"
--'  76  0  /mnt/c/Users/micro/.vimrc
-|4,39,76,0,1637134140,"/mnt/c/Users/micro/.vimrc"
--'  73  1  /mnt/c/Users/micro/.vimrc
-|4,39,73,1,1637134125,"/mnt/c/Users/micro/.vimrc"
--'  71  1  /mnt/c/Users/micro/.vimrc
-|4,39,71,1,1637134125,"/mnt/c/Users/micro/.vimrc"
--'  73  1  /mnt/c/Users/micro/.vimrc
-|4,39,73,1,1637134125,"/mnt/c/Users/micro/.vimrc"
--'  71  1  /mnt/c/Users/micro/.vimrc
-|4,39,71,1,1637134125,"/mnt/c/Users/micro/.vimrc"
--'  61  0  /mnt/c/Users/micro/.vimrc
-|4,39,61,0,1637134122,"/mnt/c/Users/micro/.vimrc"
--'  70  0  /mnt/c/Users/micro/.vimrc
-|4,39,70,0,1637134122,"/mnt/c/Users/micro/.vimrc"
--'  61  0  /mnt/c/Users/micro/.vimrc
-|4,39,61,0,1637134122,"/mnt/c/Users/micro/.vimrc"
--'  70  0  /mnt/c/Users/micro/.vimrc
-|4,39,70,0,1637134122,"/mnt/c/Users/micro/.vimrc"
--'  59  0  /mnt/c/Users/micro/.vimrc
-|4,39,59,0,1637134122,"/mnt/c/Users/micro/.vimrc"
--'  60  0  /mnt/c/Users/micro/.vimrc
-|4,39,60,0,1637134121,"/mnt/c/Users/micro/.vimrc"
--'  60  0  /mnt/c/Users/micro/.vimrc
-|4,39,60,0,1637134121,"/mnt/c/Users/micro/.vimrc"
--'  72  0  /mnt/c/Users/micro/.vimrc
-|4,39,72,0,1637134121,"/mnt/c/Users/micro/.vimrc"
--'  84  18  /mnt/c/Users/micro/.vimrc
-|4,39,84,18,1637134120,"/mnt/c/Users/micro/.vimrc"
--'  58  0  /mnt/c/Users/micro/.vimrc
-|4,39,58,0,1637134120,"/mnt/c/Users/micro/.vimrc"
--'  86  0  /mnt/c/Users/micro/.vimrc
-|4,39,86,0,1637134120,"/mnt/c/Users/micro/.vimrc"
--'  89  0  /mnt/c/Users/micro/.vimrc
-|4,39,89,0,1637134120,"/mnt/c/Users/micro/.vimrc"
--'  90  18  /mnt/c/Users/micro/.vimrc
-|4,39,90,18,1637134120,"/mnt/c/Users/micro/.vimrc"
--'  85  0  /mnt/c/Users/micro/.vimrc
-|4,39,85,0,1637134120,"/mnt/c/Users/micro/.vimrc"
+-'  1  0  /tmp/fz3temp-2/known_hosts
+|4,39,1,0,1639900114,"/tmp/fz3temp-2/known_hosts"
+-'  3  0  ~/NERD_tree_1
+|4,39,3,0,1639827945,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639827945,"~/NERD_tree_1"
+-'  14  0  ~/NERD_tree_1
+|4,39,14,0,1639827912,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639827912,"~/NERD_tree_1"
+-'  15  0  ~/NERD_tree_1
+|4,39,15,0,1639827912,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639827912,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639827636,"~/NERD_tree_1"
+-'  15  0  ~/NERD_tree_1
+|4,39,15,0,1639827636,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639827636,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1639747082,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639747082,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639747082,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639747082,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639747046,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639747045,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639747045,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639743787,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639743786,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639743786,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639743128,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639743127,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639743127,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639742956,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639742956,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639742956,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639742848,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639742833,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639742833,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639742727,"~/NERD_tree_1"
+-'  17  2  ~/NERD_tree_1
+|4,39,17,2,1639742726,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639742726,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639742169,"~/NERD_tree_1"
+-'  15  2  ~/NERD_tree_1
+|4,39,15,2,1639742166,"~/NERD_tree_1"
+-'  16  2  ~/NERD_tree_1
+|4,39,16,2,1639742166,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639742166,"~/NERD_tree_1"
+-'  4  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
+|4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
+-'  4  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
+|4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
+-'  7  2  /usr/share/X11/xorg.conf.d/NERD_tree_1
+|4,39,7,2,1639741484,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
+-'  1  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
+|4,39,1,0,1639741484,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
+-'  7  2  /usr/share/X11/xorg.conf.d/NERD_tree_1
+|4,39,7,2,1639741484,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
+-'  1  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
+|4,39,1,0,1639741484,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639741301,"~/NERD_tree_1"
+-'  12  0  ~/NERD_tree_1
+|4,39,12,0,1639741299,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639741299,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639741299,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639738628,"~/NERD_tree_1"
+-'  15  2  ~/NERD_tree_1
+|4,39,15,2,1639738627,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639738627,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639738252,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639738252,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639738252,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639738240,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639738237,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639738237,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639738206,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639738201,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639738201,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639722507,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639722506,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639722506,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639722386,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639722383,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639722383,"~/NERD_tree_1"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639722252,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639722251,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639722251,"~/NERD_tree_1"
+-'  4  0  /tmp/tutorLdmKKD
+|4,39,4,0,1639668423,"/tmp/tutorLdmKKD"
+-'  4  0  /tmp/tutorLdmKKD
+|4,39,4,0,1639668423,"/tmp/tutorLdmKKD"
+-'  1  0  /tmp/tutorLdmKKD
+|4,39,1,0,1639668397,"/tmp/tutorLdmKKD"
+-'  1  0  /tmp/tutorLdmKKD
+|4,39,1,0,1639668397,"/tmp/tutorLdmKKD"
+-'  9  0  /tmp/tutorLdmKKD
+|4,39,9,0,1639668396,"/tmp/tutorLdmKKD"
+-'  12  0  /tmp/tutorLdmKKD
+|4,39,12,0,1639668396,"/tmp/tutorLdmKKD"
+-'  16  0  /tmp/tutorLdmKKD
+|4,39,16,0,1639668396,"/tmp/tutorLdmKKD"
+-'  20  0  /tmp/tutorLdmKKD
+|4,39,20,0,1639668396,"/tmp/tutorLdmKKD"
+-'  27  0  /tmp/tutorLdmKKD
+|4,39,27,0,1639668396,"/tmp/tutorLdmKKD"
+-'  35  0  /tmp/tutorLdmKKD
+|4,39,35,0,1639668396,"/tmp/tutorLdmKKD"
+-'  38  0  /tmp/tutorLdmKKD
+|4,39,38,0,1639668396,"/tmp/tutorLdmKKD"
+-'  9  0  /tmp/tutorLdmKKD
+|4,39,9,0,1639668396,"/tmp/tutorLdmKKD"
+-'  12  0  /tmp/tutorLdmKKD
+|4,39,12,0,1639668396,"/tmp/tutorLdmKKD"
+-'  16  0  /tmp/tutorLdmKKD
+|4,39,16,0,1639668396,"/tmp/tutorLdmKKD"
+-'  20  0  /tmp/tutorLdmKKD
+|4,39,20,0,1639668396,"/tmp/tutorLdmKKD"
+-'  27  0  /tmp/tutorLdmKKD
+|4,39,27,0,1639668396,"/tmp/tutorLdmKKD"
+-'  35  0  /tmp/tutorLdmKKD
+|4,39,35,0,1639668396,"/tmp/tutorLdmKKD"
+-'  38  0  /tmp/tutorLdmKKD
+|4,39,38,0,1639668396,"/tmp/tutorLdmKKD"
+-'  40  0  /tmp/tutorLdmKKD
+|4,39,40,0,1639668395,"/tmp/tutorLdmKKD"
+-'  26  0  /tmp/tutorLdmKKD
+|4,39,26,0,1639668395,"/tmp/tutorLdmKKD"
+-'  40  0  /tmp/tutorLdmKKD
+|4,39,40,0,1639668395,"/tmp/tutorLdmKKD"
+-'  26  0  /tmp/tutorLdmKKD
+|4,39,26,0,1639668395,"/tmp/tutorLdmKKD"
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639660464,"~/NERD_tree_1"
+-'  13  0  ~/NERD_tree_1
+|4,39,13,0,1639660462,"~/NERD_tree_1"
+-'  14  0  ~/NERD_tree_1
+|4,39,14,0,1639660462,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639660462,"~/NERD_tree_1"
+-'  6  43  ~/Documents/gode-bot/index.js
+|4,39,6,43,1639660441,"~/Documents/gode-bot/index.js"
+-'  6  43  ~/Documents/gode-bot/index.js
+|4,39,6,43,1639660441,"~/Documents/gode-bot/index.js"
+-'  6  43  ~/Documents/gode-bot/index.js
+|4,39,6,43,1639660429,"~/Documents/gode-bot/index.js"
+-'  6  43  ~/Documents/gode-bot/index.js
+|4,39,6,43,1639660429,"~/Documents/gode-bot/index.js"
+-'  1  0  ~/Documents/gode-bot/index.js
+|4,39,1,0,1639660425,"~/Documents/gode-bot/index.js"
+-'  1  0  ~/Documents/gode-bot/index.js
+|4,39,1,0,1639660425,"~/Documents/gode-bot/index.js"
+-'  1  0  ~/Documents/gode-bot/index.js
+|4,39,1,0,1639660425,"~/Documents/gode-bot/index.js"
 
 # History of marks within files (newest to oldest):
 
-> ~/.vimrc
-	*	1637134188	0
-	"	74	0
-	^	79	0
-	.	74	0
-	+	78	19
-	+	1	0
-	+	69	0
-	+	59	0
-	+	71	0
-	+	70	0
-	+	72	0
-	+	73	0
-	+	74	0
-
-> /mnt/c/Users/micro/.vimrc
-	*	1637134162	0
+> /tmp/fz3temp-2/known_hosts
+	*	1639900084	0
 	"	1	0
-	^	19	0
-	.	19	0
-	+	1	0
-	+	73	1
-	+	79	0
-	+	78	0
-	+	77	0
-	+	75	0
-	+	76	0
-	+	80	0
-	+	84	0
-	+	18	0
-	+	19	0
 
-> /mnt/c/Users/micro/Documents/competitive-programming/beta.programming.in.th/2033.cpp
-	*	1636960753	0
-	"	40	17
-	^	40	18
-	.	40	17
-	+	75	0
-	+	68	12
-	+	3	19
-	+	72	5
-	+	69	14
-	+	72	0
-	+	74	0
-	+	69	16
-	+	71	50
-	+	73	0
-	+	67	10
-	+	65	21
-	+	66	22
-	+	64	0
-	+	63	4
-	+	8	13
-	+	9	7
-	+	2	19
-	+	9	22
-	+	15	4
-	+	11	12
-	+	12	16
-	+	11	14
-	+	17	30
-	+	18	9
-	+	11	0
-	+	19	0
-	+	22	0
-	+	12	19
-	+	22	31
-	+	23	36
-	+	28	0
-	+	23	0
-	+	23	34
-	+	63	0
-	+	23	0
-	+	21	4
-	+	22	0
-	+	27	0
-	+	26	0
-	+	44	4
-	+	37	10
-	+	35	25
-	+	13	19
-	+	35	30
-	+	30	0
-	+	35	0
-	+	34	0
-	+	32	45
-	+	37	33
-	+	36	24
-	+	37	36
-	+	37	35
-	+	37	38
+> ~/NERD_tree_1
+	*	1639900083	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /run/media/sheep/boot/wpa_supplicant.conf
+	*	1639827944	0
+	"	8	14
+	^	8	15
+	.	8	14
+	+	1	0
+	+	10	10
+	+	11	13
+	+	1	10
+	+	8	14
+
+> /run/media/sheep/boot/ssh
+	*	1639827636	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /var/tmp/40-libinputXXaLiXq6.conf
+	*	1639747082	0
+	"	19	0
+	^	19	1
+	.	20	0
+	+	20	0
+
+> /var/tmp/10-quirksXXiTOKhY.conf
+	*	1639747045	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /var/tmp/mirrorlist.XXOXzqYL
+	*	1639743786	0
+	"	2	13
+	.	2	13
+	+	2	13
+
+> /var/tmp/lightdmXXhL7o2y.conf
+	*	1639743127	0
+	"	104	0
+	^	103	1
+	.	103	0
+	+	87	0
+	+	86	0
+	+	87	0
+	+	112	0
+	+	103	0
+
+> /var/tmp/lightdmXXGmralv.conf
+	*	1639742956	0
+	"	43	8
+	^	43	9
+	.	43	9
+	+	43	9
+
+> /var/tmp/lightdmXXWeYjGk.conf
+	*	1639742846	0
+	"	102	37
+	^	102	38
+	.	102	37
+	+	111	0
+	+	102	37
+
+> /var/tmp/lightdmXX0YtxPs.conf
+	*	1639742726	0
+	"	43	0
+	.	43	0
 	+	43	0
-	+	60	43
-	+	42	0
-	+	41	34
-	+	60	34
-	+	11	19
-	+	64	0
-	+	62	13
-	+	47	35
-	+	48	19
-	+	50	0
-	+	54	0
-	+	50	17
-	+	52	16
-	+	54	17
-	+	56	16
-	+	55	25
-	+	56	21
-	+	53	4
-	+	49	4
-	+	32	41
-	+	23	0
-	+	24	26
-	+	23	30
-	+	25	0
-	+	23	0
-	+	56	28
-	+	42	21
-	+	60	34
-	+	50	0
-	+	54	0
-	+	39	15
-	+	46	5
-	+	58	5
-	+	39	12
-	+	42	17
-	+	39	0
-	+	60	38
-	+	41	26
-	+	38	40
-	+	42	0
-	+	40	17
 
-> /mnt/c/Users/micro/Documents/mihliving/.gitignore
-	*	1636959799	0
-	"	3	16
-	^	3	17
-	.	3	16
-	+	1	11
-	+	2	8
-	+	3	16
+> /var/tmp/lightdmXX3Np2yx.conf
+	*	1639742168	0
+	"	72	39
+	^	62	40
+	.	62	39
+	+	43	0
+	+	62	39
 
-> /mnt/c/Users/micro/Documents/mihliving/package.json
-	*	1636959614	0
-	"	9	51
-	^	9	52
-	.	9	51
-	+	9	12
-	+	9	51
-
-> /mnt/c/Users/micro/Documents/mihliving/server.js
-	*	1636959476	0
-	"	7	15
-	^	7	16
-	.	7	15
-	+	1	0
-	+	7	15
-
-> /mnt/c/Users/micro/Documents/competitive-programming/beta.programming.in.th/2033.py
-	*	1636958722	0
-	"	30	0
-	.	30	0
-	+	6	62
-	+	9	19
-	+	10	3
-	+	6	66
-	+	31	0
-	+	22	0
-	+	5	0
-	+	6	13
-	+	18	33
-	+	22	0
-	+	18	0
-	+	6	0
-	+	22	0
-	+	7	13
-	+	20	33
-	+	21	29
-	+	25	35
-	+	31	32
-	+	25	18
-	+	31	7
-	+	31	36
-	+	31	0
-	+	31	95
-	+	31	14
-	+	31	15
-	+	20	45
-	+	31	33
-	+	25	0
-	+	31	28
-	+	31	102
-	+	31	10
-	+	31	0
-	+	31	36
-	+	31	33
-	+	31	22
-	+	31	19
-	+	31	0
-	+	31	10
-	+	31	44
-	+	31	8
-	+	31	10
-	+	31	6
-	+	31	17
-	+	31	60
-	+	31	0
-	+	31	47
-	+	31	42
-	+	31	0
-	+	27	37
-	+	31	40
-	+	31	77
-	+	31	0
-	+	31	37
-	+	31	48
-	+	31	0
-	+	31	7
-	+	31	9
-	+	31	7
-	+	31	56
-	+	31	13
-	+	31	93
-	+	31	0
-	+	31	49
-	+	31	22
-	+	31	15
-	+	31	53
-	+	31	38
-	+	31	0
-	+	31	4
-	+	31	0
-	+	31	56
-	+	31	22
-	+	31	83
-	+	31	55
-	+	26	22
-	+	31	0
-	+	21	44
-	+	31	19
-	+	31	0
-	+	31	18
-	+	31	74
-	+	31	48
-	+	31	84
-	+	31	0
-	+	30	0
-	+	28	0
-	+	28	4
-	+	30	0
-
-> /mnt/c/Users/micro/Documents/mihliving/server.sj
-	*	1636957855	0
-	"	1	0
-
-> /mnt/c/Users/micro/Documents/competitive-programming/beta.programming.in.th/2033.pu
-	*	1636954335	0
-	"	1	0
-
-> ~/.zshrc
-	*	1636952613	0
-	"	122	0
-	^	122	1
-	.	122	0
-	+	105	33
-	+	11	37
-	+	116	17
-	+	45	0
-	+	116	0
-	+	117	16
-	+	119	13
-	+	122	0
-	+	119	0
-	+	132	0
-	+	122	0
-	+	124	13
-	+	123	16
-	+	122	0
-
-> /mnt/c/Users/micro/.zshrc
-	*	1636906044	0
-	"	1	0
-
-> /var/tmp/sourcesXXV9Vwlo.list
-	*	1636903995	0
-	"	3	0
-	.	3	0
-	+	3	0
-
-> /var/tmp/release-upgrades.XXSQOHpn
-	*	1636903330	0
-	"	16	12
-	^	16	13
-	.	16	12
-	+	16	12
-
-> /mnt/c/Users/micro/Documents/competitive-programming/beta.programming.in.th/.zshrc
-	*	1636903307	0
-	"	1	0
-
-> /mnt/c/Users/micro/Documents/competitive-programming/beta.programming.in.th/1021.py
-	*	1636903115	0
+> /var/tmp/70-synapticsXXMFH1fm.conf
+	*	1639741484	0
 	"	19	0
 
-> /mnt/c/Users/micro/ani-cli
-	*	1636859463	0
-	"	5	0
-	.	5	0
+> /usr/share/X11/xorg.conf.d/NERD_tree_1
+	*	1639741477	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /var/tmp/30-touchpadXXElNCND.conf
+	*	1639741299	0
+	"	5	24
+	^	5	25
+	.	5	22
+	+	5	22
+
+> ~/.xinitrc
+	*	1639738627	0
+	"	3	0
+	^	3	1
+	.	3	0
+	+	2	6
+	+	1	28
+	+	2	58
+	+	2	0
+	+	3	0
+	+	4	6
+	+	3	0
+
+> /var/tmp/50-libinputXXavOQ4J.conf
+	*	1639738252	0
+	"	6	45
+	^	6	46
+	.	6	44
+	+	6	44
+
+> /var/tmp/50-libinputXXwCHJAT.conf
+	*	1639738237	0
+	"	2	19
+	.	2	0
+	+	2	0
+	+	6	0
 	+	5	0
+	+	2	0
 
-> ~/ani-cli/ani-cli
-	*	1636859387	0
-	"	6	0
-	.	5	0
+> /var/tmp/30-touchpadXXckj3qd.conf
+	*	1639738202	0
+	"	2	5
+	.	2	5
+	+	2	5
+
+> /var/tmp/30-touchpadXXib9ZQx.conf
+	*	1639722506	0
+	"	5	22
+
+> /var/tmp/30-touchpadXXdELLZ8.conf
+	*	1639722383	0
+	"	7	9
+	^	7	30
+	.	7	0
+	+	7	29
+	+	1	0
+	+	3	0
+	+	4	0
 	+	5	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
 
-> ~/.bashrc
-	*	1635216740	0
-	"	119	37
-	^	119	38
-	.	119	37
-	+	119	37
+> /var/tmp/50-libinputXXqjlot0.conf
+	*	1639722251	0
+	"	2	25
+	^	7	66
+	.	1	0
+	+	7	65
+	+	1	0
 
-> /mnt/c/Users/micro/ani-cli/ani-cli
-	*	1634964501	0
-	"	8	36
-	^	2	0
-	.	1	9
-	+	1	9
+> /tmp/tutorLdmKKD
+	*	1639668423	0
+	"	4	0
 
-> /mnt/c/Users/micro/.gtoken
-	*	1634891564	0
-	"	1	39
-	^	1	40
-	.	1	39
-	+	1	39
+> ~/Documents/gode-bot/index.ts
+	*	1639660464	0
+	"	1	0
+
+> ~/Documents/gode-bot/index.js
+	*	1639660441	0
+	"	6	43
+
+> /tmp/tutorUVmBBo
+	*	1639579423	0
+	"	395	0
+	^	121	1
+	.	335	8
+	+	121	0
+	+	122	0
+	+	121	0
+	+	122	0
+	+	199	0
+	+	202	46
+	+	311	0
+	+	315	3
+	+	334	9
+	+	335	8
+
+> ~/Documents/lrgs-nocheat/src/App.svelte
+	*	1639565605	0
+	"	9	0
+
+> ~/Documents/lrgs-nocheat/src/NERD_tree_1
+	*	1639565603	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /var/tmp/th.XXr21ksv
+	*	1639546081	0
+	"	245	16
+	^	245	16
+	.	245	15
+	+	245	15
+
+> /usr/share/X11/xkb/symbols/NERD_tree_1
+	*	1639546067	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /var/tmp/baseXXOgOx8Z.xml
+	*	1639546054	0
+	"	5394	16
+	^	5394	17
+	.	5394	16
+	+	5394	16
+
+> /var/tmp/baseXXaNSwD1.lst
+	*	1639546045	0
+	"	699	4
+	^	699	5
+	.	699	4
+	+	699	4
+
+> /var/tmp/baseXXkjnu1P.xml
+	*	1639546024	0
+	"	5397	13
+	^	5397	14
+	.	5397	14
+	+	5398	0
+	+	5397	14
+
+> /var/tmp/evdevXX4qO2bw.xml
+	*	1639545997	0
+	"	5394	16
+	^	5394	17
+	.	5394	16
+	+	5397	14
+	+	5394	16
+
+> ~/Documents/baht.js-web/rollup.config.js
+	*	1639490867	0
+	"	13	2
+
+> ~/Music/7!! - オレンジ-Acoustic Ver.-.mp3
+	*	1639490862	0
+	"	1	0
+
+> ~/.ncmpcpp/config
+	*	1639485076	0
+	"	92	20
+	^	92	21
+	.	92	20
+	+	92	20
+
+> ~/.mpd/mpd.conf
+	*	1639484964	0
+	"	16	0
+	^	22	1
+	.	22	0
+	+	22	0
+
+> /run/media/sheep/BOOT_MNJRO/ssh
+	*	1639484250	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /run/media/sheep/boot/cmdline.txt
+	*	1639480747	0
+	"	1	101
+	.	1	102
+	+	1	102
+
+> /run/media/sheep/boot/config.txt
+	*	1639479959	0
+	"	80	4
+
+> /run/media/sheep/boot/NERD_tree_1
+	*	1639479958	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/i3/config
+	*	1639397010	0
+	"	193	47
+	^	193	48
+	.	193	47
+	+	1	0
+	+	17	0
+	+	18	0
+	+	20	0
+	+	22	0
+	+	24	0
+	+	26	0
+	+	41	0
+	+	43	0
+	+	45	0
+	+	48	0
+	+	53	0
+	+	58	0
+	+	63	0
+	+	68	0
+	+	69	0
+	+	71	0
+	+	73	0
+	+	72	0
+	+	128	0
+	+	127	0
+	+	126	0
+	+	128	0
+	+	163	12
+	+	164	12
+	+	163	11
+	+	160	26
+	+	161	74
+	+	58	19
+	+	59	19
+	+	60	19
+	+	61	19
+	+	51	13
+	+	50	13
+	+	49	13
+	+	48	13
+	+	68	22
+	+	156	30
+	+	155	0
+	+	136	0
+	+	132	0
+	+	159	170
+	+	159	11
+	+	3	0
+	+	7	16
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	8	10
+	+	9	10
+	+	10	10
+	+	11	10
+	+	12	10
+	+	13	10
+	+	14	10
+	+	15	10
+	+	8	0
+	+	4	0
+	+	159	86
+	+	4	9
+	+	160	27
+	+	161	27
+	+	159	27
+	+	16	0
+	+	18	0
+	+	2	12
+	+	27	0
+	+	28	13
+	+	29	13
+	+	30	13
+	+	31	0
+	+	166	32
+	+	45	0
+	+	191	0
+	+	194	0
+	+	191	0
+	+	192	37
+	+	193	47
+
+> ~/.config/polybar/NERD_tree_1
+	*	1639396852	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/polybar/user_modules.ini
+	*	1639393928	0
+	"	229	0
+	.	16	0
+	+	16	0
+
+> /var/tmp/pacmanXXL6N1WH.conf
+	*	1639391602	0
+	"	94	0
+	.	94	0
+	+	93	0
+	+	94	0
+
+> ~/Documents/ani-cli/ani_cli/__main__.py
+	*	1639391374	0
+	"	1	0
+	^	83	65
+	.	99	18
+	+	9	0
+	+	7	0
+	+	6	31
+	+	4	0
+	+	1	0
+	+	7	0
+	+	197	0
+	+	11	0
+	+	53	60
+	+	7	23
+	+	53	57
+	+	7	23
+	+	18	30
+	+	49	15
+	+	96	14
+	+	37	56
+	+	49	18
+	+	50	21
+	+	37	48
+	+	114	18
+	+	109	0
+	+	114	8
+	+	115	10
+	+	114	8
+	+	115	0
+	+	114	12
+	+	116	23
+	+	120	19
+	+	109	42
+	+	128	0
+	+	129	0
+	+	130	0
+	+	109	48
+	+	7	30
+	+	124	36
+	+	124	41
+	+	109	66
+	+	120	24
+	+	154	52
+	+	164	18
+	+	161	21
+	+	164	0
+	+	124	21
+	+	124	41
+	+	126	0
+	+	125	0
+	+	99	15
+	+	99	0
+	+	98	7
+	+	99	18
+
+> ~/Documents/ani-cli/NERD_tree_1
+	*	1639391366	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/ani-cli/NERD_tree_2
+	*	1639391364	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_2
+	*	1639390387	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/sleepntsheep.github.io/_posts/2021-12-12-ArchBtw.md
+	*	1639389867	0
+	"	64	2
+	^	64	5
+	.	64	0
+	+	3	22
+	+	4	15
+	+	6	0
+	+	3	13
+	+	6	0
+	+	7	57
+	+	9	51
+	+	8	0
+	+	11	5
+	+	12	3
+	+	12	0
+	+	12	3
+	+	12	0
+	+	11	47
+	+	13	60
+	+	15	77
+	+	17	0
+	+	14	0
+	+	17	11
+	+	15	45
+	+	23	1
+	+	19	0
+	+	20	0
+	+	23	0
+	+	19	4
+	+	22	9
+	+	84	0
+	+	58	0
+	+	59	0
+	+	61	0
+	+	65	0
+	+	64	0
+
+> ~/Documents/sleepntsheep.github.io/NERD_tree_1
+	*	1639389847	0
+	"	28	28
+	.	1	0
+	+	1	0
+
+> ~/Documents/sleepntsheep.github.io/NERD_tree_2
+	*	1639389845	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/nvim/NERD_tree_1
+	*	1639368952	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.zshrc
+	*	1639367187	0
+	"	27	14
+	^	27	15
+	.	27	13
+	+	1	33
+	+	14	0
+	+	16	0
+	+	22	33
+	+	30	0
+	+	22	0
+	+	6	0
+	+	1	0
+	+	8	0
+	+	10	0
+	+	12	0
+	+	11	0
+	+	16	0
+	+	18	0
+	+	14	0
+	+	20	0
+	+	20	1
+	+	20	0
+	+	30	26
+	+	30	0
+	+	23	0
+	+	30	0
+	+	33	8
+	+	38	0
+	+	1	58
+	+	24	15
+	+	27	13
+
+> ~/.config/nvim/init.vim
+	*	1639365868	0
+	"	74	0
+	.	32	0
+	+	49	0
+	+	48	0
+	+	27	0
+	+	26	0
+	+	9	0
+	+	10	0
+	+	8	0
+	+	6	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
+	+	7	0
+	+	41	0
+	+	43	0
+	+	25	28
+	+	26	0
+	+	32	0
+
+> ~/.config/nvim/lua/options/test.js
+	*	1639365359	0
+	"	1	0
+	^	3	18
+	.	3	17
+	+	3	17
+
+> ~/.config/nvim/lua/options/NERD_tree_1
+	*	1639365359	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/nvim/init.
+	*	1639364988	0
+	"	1	0
+
+> ~/.config/nvim/lua/plugins/init.lua
+	*	1639364243	0
+	"	1	0
+
+> ~/.config/nvim/lua/plugins/NERD_tree_1
+	*	1639364242	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/nvim/init.lua
+	*	1639364204	0
+	"	1	3
+	^	75	4
+	.	75	3
+	+	75	3
+
+> ~/.config/nvim/lua/init
+	*	1639363962	0
+	"	1	0
+
+> ~/.config/nvim/lua/NERD_tree_1
+	*	1639363962	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.vimrc
+	*	1639362602	0
+	"	75	16
+	^	90	1
+	.	90	0
+	+	79	47
+	+	64	41
+	+	64	0
+	+	75	0
+	+	89	19
+	+	90	18
+	+	63	0
+	+	61	47
+	+	79	0
+	+	62	0
+	+	63	0
+	+	121	32
+	+	119	20
+	+	37	0
+	+	38	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	43	0
+	+	45	0
+	+	46	0
+	+	44	0
+	+	32	0
+	+	30	0
+	+	28	0
+	+	27	0
+	+	26	0
+	+	25	0
+	+	24	0
+	+	16	0
+	+	17	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	9	0
+	+	8	0
+	+	119	17
+	+	90	0
+
+> ~/Documents/NERD_tree_1
+	*	1639362477	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/windowsfont/kasdljf
+	*	1639361536	0
+	"	1	3
+	^	1	4
+	.	1	6
+	+	1	6
+
+> ~/Downloads/windowsfont/NERD_tree_1
+	*	1639361534	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/windowsfont/NERD_tree_2
+	*	1639361530	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.profile
+	*	1639360849	0
+	"	3	0
+	^	3	27
+	.	3	26
+	+	3	26
+
+> ~/Documents/sleepntsheep.github.io/_posts/NERD_tree_1
+	*	1639326324	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/main_web/linux/alpine.txt
+	*	1639324098	0
+	"	8	143
+	^	8	144
+	.	8	143
+	+	8	143
+
+> ~/Documents/main_web/linux/NERD_tree_1
+	*	1639324079	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/main_web/index.hmtl
+	*	1639324003	0
+	"	7	6
+	^	7	7
+	.	7	6
+	+	7	6
+
+> ~/Documents/main_web/NERD_tree_1
+	*	1639323990	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/competitive-programming/aoc/6-2-rewrite.py
+	*	1639316841	0
+	"	5	4
+	^	13	17
+	.	15	0
+	+	15	0
+	+	12	5
+	+	9	19
+	+	12	0
+	+	10	6
+	+	14	6
+	+	15	0
+	+	10	4
+	+	14	3
+	+	5	0
+	+	7	15
+	+	13	6
+	+	3	16
+	+	13	17
+	+	10	0
+	+	14	0
+	+	15	0
+
+> ~/Documents/competitive-programming/aoc/NERD_tree_1
+	*	1639315653	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/competitive-programming/aoc/6-1.py
+	*	1639315615	0
+	"	3	24
+	^	11	26
+	.	11	24
+	+	3	41
+	+	16	13
+	+	8	34
+	+	9	20
+	+	10	21
+	+	13	15
+	+	1	10
+	+	5	28
+	+	9	12
+	+	11	0
+	+	15	24
+	+	9	0
+	+	6	4
+	+	15	0
+	+	16	0
+	+	15	0
+	+	8	14
+	+	10	15
+	+	13	15
+	+	11	0
+	+	9	0
+	+	6	0
+	+	15	0
+	+	6	0
+	+	7	0
+	+	12	19
+	+	13	0
+	+	12	0
+	+	11	24
+	+	7	4
+	+	14	14
+	+	11	24
+
+> ~/Documents/competitive-programming/aoc/6-1.ts
+	*	1639302739	0
+	"	1	0
+	^	1	0
+
+> ~/Documents/competitive-programming/aoc/6-1.cpp
+	*	1639302660	0
+	"	9	0
+	^	9	0
+	.	9	0
+	+	7	21
+	+	9	0
+
+> ~/Documents/competitive-programming/aoc/6-1
+	*	1639302573	0
+	"	1	0
+
+> ~/Documents/competitive-programming/aoc/5-2.py
+	*	1639302107	0
+	"	31	5
+	^	31	6
+	.	31	5
+	+	7	0
+	+	1	8
+	+	7	27
+	+	4	29
+	+	8	25
+	+	17	26
+	+	19	0
+	+	9	18
+	+	2	17
+	+	10	21
+	+	11	13
+	+	12	21
+	+	13	0
+	+	13	19
+	+	14	17
+	+	15	11
+	+	16	19
+	+	8	45
+	+	7	47
+	+	19	16
+	+	18	0
+	+	6	12
+	+	19	51
+	+	20	0
+	+	25	7
+	+	25	26
+	+	26	35
+	+	27	18
+	+	26	13
+	+	29	12
+	+	26	0
+	+	29	22
+	+	26	35
+	+	29	25
+	+	28	35
+	+	29	41
+	+	24	0
+	+	30	0
+	+	31	23
+	+	32	27
+	+	33	29
+	+	32	35
+	+	33	38
+	+	35	36
+	+	32	14
+	+	38	38
+	+	39	35
+	+	40	40
+	+	42	18
+	+	41	35
+	+	34	36
+	+	28	36
+	+	42	34
+	+	45	14
+	+	47	0
+	+	44	8
+	+	48	0
+	+	47	11
+	+	48	21
+	+	50	10
+	+	5	17
+	+	19	15
+	+	46	13
+	+	28	0
+	+	19	56
+	+	28	0
+	+	31	5
+
+> ~/Documents/competitive-programming/aoc/5-2.cpp
+	*	1639299685	0
+	"	7	29
+	^	7	30
+	.	7	29
+	+	1	19
+	+	5	17
+	+	6	16
+	+	14	23
+	+	9	0
+	+	10	20
+	+	14	36
+	+	19	0
+	+	6	0
+	+	7	29
+
+> ~/.config/i3/NERD_tree_1
+	*	1639230806	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.ssh/config
+	*	1639227331	0
+	"	5	30
+	^	5	31
+	.	5	30
+	+	5	63
+	+	4	11
+	+	3	11
+	+	2	25
+	+	1	16
+	+	2	24
+	+	1	7
+	+	2	26
+	+	5	30
+
+> ~/.ssh/NERD_tree_1
+	*	1639227324	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /tmp/fz3temp-2/id_rsa
+	*	1639227173	0
+	"	1	0
+
+> /tmp/fz3temp-2/authorized_keys
+	*	1639227161	0
+	"	1	0
+
+> /var/tmp/fstab.XXOdyZZq
+	*	1639226737	0
+	"	7	98
+	^	7	99
+	.	7	98
+	+	1	0
+	+	7	98
+
+> ~/Downloads/ntfs-3g-2021.8.22/NERD_tree_1
+	*	1639226706	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /var/tmp/fstab.XXjvHZqM
+	*	1639226702	0
+	"	7	59
+	^	7	60
+	.	7	59
+	+	7	59
+
+> /var/tmp/fstab.XXJyuTMK
+	*	1639226473	0
+	"	1	0
+
+> /var/tmp/fstab.XXeN0BbT
+	*	1639226454	0
+	"	7	98
+	^	7	99
+	.	7	98
+	+	7	98
+
+> /var/tmp/fstab.XXuWJfSv
+	*	1639226377	0
+	"	7	46
+	.	7	46
+	+	7	46
+
+> /var/tmp/fstab.XXsRPZqA
+	*	1639226341	0
+	"	7	133
+	^	7	134
+	.	7	133
+	+	7	136
+	+	7	133
+
+> /var/tmp/fstab.XX5FGR95
+	*	1639226307	0
+	"	7	134
+	.	7	0
+	+	7	0
+	+	7	49
+	+	7	0
+
+> /var/tmp/fstab.XXry1x5n
+	*	1639226293	0
+	"	8	50
+	^	8	51
+	.	8	50
+	+	8	50
+
+> /var/tmp/fstab.XX9fA4YZ
+	*	1639226269	0
+	"	8	44
+	^	8	53
+	.	8	52
+	+	8	52
+
+> /var/tmp/fstab.XXwPJdQ0
+	*	1639226242	0
+	"	7	49
+	^	7	50
+	.	7	49
+	+	7	49
+
+> /var/tmp/fstab.XX9JimXf
+	*	1639226232	0
+	"	3	0

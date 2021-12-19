@@ -15,4 +15,5 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua'
   use 'neovim/nvim-lspconfig'
   use 'dylanaraps/wal.vim'
+  use 'wakatime/vim-wakatime'
 end)
