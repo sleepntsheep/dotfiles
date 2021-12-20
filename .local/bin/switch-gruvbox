@@ -1,6 +1,9 @@
 #!/bin/sh
 
-if [ $1 == "light" ]
+ctheme=`cat ~/.local/bin/theme`
+echo "$ctheme"
+
+if [ "$ctheme" = "dark" ]
 then
     # Neovim
     sed -i 's/background = "dark"/background = "light"/g' ~/.config/nvim/lua/options/init.lua
@@ -13,9 +16,10 @@ then
     # Dunst
     cp ~/.config/dunst/gruvbox-light ~/.config/dunst/dunstrc
     # Code
-    sed -i "s/Gruvbox Material Dark/Gruvbox Material Light/g" ~/.config/Code/User/settings.json
+    sed -i "s/Gruvbox Material Dark/Gruvbox Material Light/g" ~/.config/Code\ -\ OSS/User/settings.json
     notify-send "Switched theme to gruvbox light"
-elif [ $1 == "dark" ]
+    echo "light > ~/.local/bin/theme"
+elif [ "$ctheme" = "light" ]
 then
     # Neovim
     sed -i 's/background = "light"/background = "dark"/g' ~/.config/nvim/lua/options/init.lua
@@ -30,6 +34,7 @@ then
     # Code
     sed -i "s/Gruvbox Material Light/Gruvbox Material Dark/g" ~/.config/Code\ -\ OSS/User/settings.json
     notify-send "Switched theme to gruvbox light"
+    echo "dark > ~/.local/bin/theme"
 fi
 
 pkill dunst
