@@ -1,0 +1,38 @@
+#!/bin/sh
+
+if [ $1 == "light" ]
+then
+    # Neovim
+    sed -i 's/background = "dark"/background = "light"/g' ~/.config/nvim/lua/options/init.lua
+    # Alacritty
+    cp ~/.config/alacritty/gruvbox-light.yml ~/.config/alacritty/alacritty.yml
+    # Polybar
+    cp ~/.config/polybar/gruvbox-light.ini ~/.config/polybar/colors.ini
+    # Rofi
+    sed -i "s/gruvbox-dark/gruvbox-light/g" ~/.config/rofi/config.rasi
+    # Dunst
+    cp ~/.config/dunst/gruvbox-light ~/.config/dunst/dunstrc
+    # Code
+    sed -i "s/Gruvbox Material Dark/Gruvbox Material Light/g" ~/.config/Code/User/settings.json
+    notify-send "Switched theme to gruvbox light"
+elif [ $1 == "dark" ]
+then
+    # Neovim
+    sed -i 's/background = "light"/background = "dark"/g' ~/.config/nvim/lua/options/init.lua
+    # Alacritty
+    cp ~/.config/alacritty/gruvbox-dark.yml ~/.config/alacritty/alacritty.yml
+    # Polybar
+    cp ~/.config/polybar/gruvbox-dark.ini ~/.config/polybar/colors.ini
+    # Rofi
+    sed -i "s/gruvbox-light/gruvbox-dark/g" ~/.config/rofi/config.rasi
+    # Dunst
+    cp ~/.config/dunst/gruvbox-dark ~/.config/dunst/dunstrc
+    # Code
+    sed -i "s/Gruvbox Material Light/Gruvbox Material Dark/g" ~/.config/Code\ -\ OSS/User/settings.json
+    notify-send "Switched theme to gruvbox light"
+fi
+
+pkill dunst
+pkill polybar
+
+~/.config/polybar/launch.sh &

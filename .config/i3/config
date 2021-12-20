@@ -157,6 +157,7 @@ for_window [class="^.*"] border pixel 2
 #bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 bindsym $mod+d exec rofi -modi drun -show drun
 bindsym $mod+Shift+s exec rofi -modi ssh -show ssh
+bindsym $mod+period exec rofi -show emoji -modi emoji
 
 #exec_always --no-startup-id wal -i ~/Pictures/wall6
 exec --no-startup-id discord --start-minimized

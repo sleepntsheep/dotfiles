@@ -29,5 +29,7 @@ vim.o.signcolumn = 'yes'
 vim.o.wrap = true
 vim.o.cursorline = true
 
-vim.o.background = "light" -- or "light" for light mode
+vim.g.gruvbox_contrast_light = "hard"
+vim.g.gruvbox_transparent_bg = 1
+vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
