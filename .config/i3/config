@@ -162,3 +162,8 @@ bindsym $mod+period exec rofi -show emoji -modi emoji
 #exec_always --no-startup-id wal -i ~/Pictures/wall6
 exec --no-startup-id discord --start-minimized
 exec feh --bg-scale ~/Pictures/wall7
+
+for_window [class="Nautilus"] floating enable
+for_window [window_role="pop-up"] floating enable
+
+

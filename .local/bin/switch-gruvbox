@@ -1,7 +1,8 @@
 #!/bin/sh
 
 ctheme=`cat ~/.local/bin/theme`
-echo "$ctheme"
+
+#rm ~/.config/BetterDiscord/themes/gruvbox.theme.css
 
 if [ "$ctheme" = "dark" ]
 then
@@ -17,8 +18,13 @@ then
     cp ~/.config/dunst/gruvbox-light ~/.config/dunst/dunstrc
     # Code
     sed -i "s/Gruvbox Material Dark/Gruvbox Material Light/g" ~/.config/Code\ -\ OSS/User/settings.json
-    notify-send "Switched theme to gruvbox light"
-    echo "light > ~/.local/bin/theme"
+    # Betterdiscord
+    cat ~/.config/BetterDiscord/themes/gruvbox-light.css >| ~/.config/BetterDiscord/themes/gruvbox.theme.css
+    # Notify
+    notify-send "Switched theme to gruvbox light" -t 3000
+    # Store current theme
+    echo "light" >| ~/.local/bin/theme
+
 elif [ "$ctheme" = "light" ]
 then
     # Neovim
@@ -33,11 +39,15 @@ then
     cp ~/.config/dunst/gruvbox-dark ~/.config/dunst/dunstrc
     # Code
     sed -i "s/Gruvbox Material Light/Gruvbox Material Dark/g" ~/.config/Code\ -\ OSS/User/settings.json
+    cat ~/.config/BetterDiscord/themes/gruvbox-dark.css >| ~/.config/BetterDiscord/themes/gruvbox.theme.css
     notify-send "Switched theme to gruvbox light"
-    echo "dark > ~/.local/bin/theme"
+    echo "dark" >| ~/.local/bin/theme
 fi
 
 pkill dunst
 pkill polybar
+
+# nvim -c "luafile %"
+# trying to figure out how to reload nvim config
 
 ~/.config/polybar/launch.sh &
