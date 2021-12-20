@@ -17649,3 +17649,5 @@ Dec 19 21:33 : config: option 'mixer_control' on line 21 was not recognized
 Dec 19 21:42 : player: played "Miles Davis - Kind Of Blue/1. So What.flac"
 Dec 19 23:32 : config: option 'device' on line 20 was not recognized
 Dec 19 23:32 : config: option 'mixer_control' on line 21 was not recognized
+Dec 20 08:29 : config: option 'device' on line 20 was not recognized
+Dec 20 08:29 : config: option 'mixer_control' on line 21 was not recognized
