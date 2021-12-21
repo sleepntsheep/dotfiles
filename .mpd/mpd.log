@@ -17658,3 +17658,13 @@ Dec 20 10:19 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Min
 Dec 20 10:19 : player: played "YOASOBI - 夜に駆ける (2019) [FLAC] [16B-44.1kHz]/01. YOASOBI - 夜に駆ける.flac"
 Dec 20 10:23 : config: option 'device' on line 20 was not recognized
 Dec 20 10:23 : config: option 'mixer_control' on line 21 was not recognized
+Dec 20 13:54 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac"
+Dec 20 13:55 : config: option 'device' on line 20 was not recognized
+Dec 20 13:55 : config: option 'mixer_control' on line 21 was not recognized
+Dec 20 15:39 : config: option 'device' on line 20 was not recognized
+Dec 20 15:39 : config: option 'mixer_control' on line 21 was not recognized
+Dec 20 20:27 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac"
+Dec 20 20:27 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac"
+Dec 21 19:28 : config: option 'device' on line 20 was not recognized
+Dec 21 19:28 : config: option 'mixer_control' on line 21 was not recognized
+Dec 21 19:59 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac"

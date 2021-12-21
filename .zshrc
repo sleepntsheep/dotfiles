@@ -23,10 +23,8 @@ plugins=(git yarn)
 export ZSH="/home/sheep/.oh-my-zsh"
 
 
-alias py='python'
 source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
-alias vi='nvim'
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -39,4 +37,3 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 #. "${HOME}/.cache/wal/colors.sh"
 
 shisutemu
-

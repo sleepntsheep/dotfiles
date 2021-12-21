@@ -90,6 +90,10 @@ $azukifontB
 |2,0,1639216180,,"%s/L2/L2 Mono/g"
 
 # Search String History (newest to oldest):
+?/pico
+|2,1,1639991536,47,"pico"
+?/kmspico
+|2,1,1639991534,47,"kmspico"
 ?/actionButt
 |2,1,1639978778,47,"actionButt"
 ? TypoPRO Iosevka Term
@@ -1018,16 +1022,16 @@ $azukifontB
 # global variables:
 
 # File marks:
-'0  14  19  ~/NERD_tree_1
-|4,48,14,19,1639979090,"~/NERD_tree_1"
-'1  6  0  ~/obsidian/.obsidian/appearance.json
-|4,49,6,0,1639978091,"~/obsidian/.obsidian/appearance.json"
-'2  6  0  ~/obsidian/.obsidian/app.json
-|4,50,6,0,1639978077,"~/obsidian/.obsidian/app.json"
-'3  1  0  ~/NERD_tree_1
-|4,51,1,0,1639978003,"~/NERD_tree_1"
-'4  1  0  ~/NERD_tree_1
-|4,52,1,0,1639978003,"~/NERD_tree_1"
+'0  4  0  ~/NERD_tree_1
+|4,48,4,0,1639991548,"~/NERD_tree_1"
+'1  1  19  ~/NERD_tree_1
+|4,49,1,19,1639979090,"~/NERD_tree_1"
+'2  14  19  ~/NERD_tree_1
+|4,50,14,19,1639979090,"~/NERD_tree_1"
+'3  6  0  ~/obsidian/.obsidian/appearance.json
+|4,51,6,0,1639978091,"~/obsidian/.obsidian/appearance.json"
+'4  6  0  ~/obsidian/.obsidian/app.json
+|4,52,6,0,1639978077,"~/obsidian/.obsidian/app.json"
 '5  1  0  ~/NERD_tree_1
 |4,53,1,0,1639978003,"~/NERD_tree_1"
 '6  1  0  ~/NERD_tree_1
@@ -1040,6 +1044,12 @@ $azukifontB
 |4,57,1,0,1639978003,"~/NERD_tree_1"
 
 # Jumplist (newest first):
+-'  4  0  ~/NERD_tree_1
+|4,39,4,0,1639991548,"~/NERD_tree_1"
+-'  17  0  ~/NERD_tree_1
+|4,39,17,0,1639991548,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1639991548,"~/NERD_tree_1"
 -'  14  19  ~/NERD_tree_1
 |4,39,14,19,1639979090,"~/NERD_tree_1"
 -'  17  0  ~/NERD_tree_1
@@ -1234,14 +1244,18 @@ $azukifontB
 |4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
 -'  4  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
 |4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
--'  4  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
-|4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
--'  4  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
-|4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
--'  4  0  /usr/share/X11/xorg.conf.d/NERD_tree_1
-|4,39,4,0,1639741489,"/usr/share/X11/xorg.conf.d/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
+
+> ~/Downloads/activator.cmd
+	*	1639991548	0
+	"	18	9
+
+> ~/NERD_tree_1
+	*	1639991525	0
+	"	4	0
+	.	1	0
+	+	1	0
 
 > ~/.config/BetterDiscord/themes/discord-duvbox.theme.css
 	*	1639979090	0
@@ -1253,12 +1267,6 @@ $azukifontB
 	+	338	59
 	+	334	58
 	+	342	58
-
-> ~/NERD_tree_1
-	*	1639978531	0
-	"	14	19
-	.	1	0
-	+	1	0
 
 > ~/obsidian/.obsidian/appearance.json
 	*	1639978090	0
@@ -2257,9 +2265,3 @@ $azukifontB
 	^	7	99
 	.	7	98
 	+	7	98
-
-> /var/tmp/fstab.XXuWJfSv
-	*	1639226377	0
-	"	7	46
-	.	7	46
-	+	7	46

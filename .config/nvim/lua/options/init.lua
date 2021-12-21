@@ -31,7 +31,7 @@ vim.o.cursorline = true
 
 vim.g.gruvbox_contrast_light = "hard"
 vim.g.gruvbox_transparent_bg = 1
-vim.o.background = "dark"
+vim.o.background = "light"
 vim.cmd([[colorscheme gruvbox]])
 
 -- reload nvim on global colorscheme change

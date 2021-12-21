@@ -6,3 +6,5 @@ alias suspend='systemctl suspend'
 alias shutdown='systemctl poweroff'
 alias reboot='systemctl reboot'
 
+alias py='python'
+alias vi='nvim'
