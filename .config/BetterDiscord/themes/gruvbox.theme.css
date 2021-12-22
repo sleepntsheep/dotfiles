@@ -1,39 +1,42 @@
 //META{"name":"gruvbox","description":"A Discord theme based on Gruvbox, a Vim theme","author":"CircuitRCAY","version":"1.6.0"}*//
 
-.theme-dark {
-    --background-primary: #fbf1c7;
-    --background-secondary: #ebdbb2;
-    --background-tertiary: #d5c4a1;
-    --background-accent: #f2e5bc;
-    --text-normal: #3c3836;
-    --text-muted: #504945;
-    --text-link: #076678;
-    --header-primary: #3c3836;
-    --header-secondary: #504945;
-    --header-spotify: #98971a;
-    --background-floating: #ebdbb2;
-    --interactive-normal: #665c54;
-    --interactive-muted: #928374;
-    --interactive-hover: #504945;
-    --interactive-active: #7c6f64;
+.theme-light {
+    --background-primary: #282828;
+    --background-secondary: #3c3836;
+    --background-tertiary: #504945;
+    --background-accent: #32302f;
+    --text-normal: #ebdbb2;
+    --text-spotify: #fbf1c7;
+    --text-muted: #bdae93;
+    --text-link: #458588;
+    --background-floating: #3c3836;
+    --header-primary: #ebdbb2;
+    --header-secondary: #bdae93;
+    --header-spotify: #b8bb26;
+    --interactive-normal: #ebdbb2;
+    --interactive-hover: #bdae93;
+    --interactive-active: #fbf1c7;
+    
 }
 
-.theme-light {
-    --background-primary: #fbf1c7;
-    --background-secondary: #ebdbb2;
-    --background-tertiary: #d5c4a1;
-    --background-accent: #f2e5bc;
-    --text-normal: #3c3836;
-    --text-muted: #504945;
-    --text-link: #076678;
-    --header-primary: #3c3836;
-    --header-secondary: #504945;
-    --header-spotify: #98971a;
-    --background-floating: #ebdbb2;
-    --interactive-normal: #665c54;
-    --interactive-muted: #928374;
-    --interactive-hover: #504945;
-    --interactive-active: #7c6f64;
+
+.theme-dark {
+    --background-primary: #282828;
+    --background-secondary: #3c3836;
+    --background-tertiary: #504945;
+    --background-accent: #32302f;
+    --text-normal: #ebdbb2;
+    --text-spotify: #fbf1c7;
+    --text-muted: #bdae93;
+    --text-link: #458588;
+    --background-floating: #3c3836;
+    --header-primary: #ebdbb2;
+    --header-secondary: #bdae93;
+    --header-spotify: #b8bb26;
+    --interactive-normal: #ebdbb2;
+    --interactive-hover: #bdae93;
+    --interactive-active: #fbf1c7;
+    
 }
 
 ::-webkit-scrollbar,
