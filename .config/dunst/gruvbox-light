@@ -1,8 +1,8 @@
 [colors]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#fbf1c7"
+	foreground = "#3c3836"
     urgent = "#458588"
-    frame = "#fbf1c7"
+    frame = "#282828"
 
 [global]
     ### Display ###
@@ -13,7 +13,7 @@
     origin = top-right
     width = 372
     height = 150
-    offset = 20x69
+    offset = 20x70
     
     indicate_hidden = yes
     shrink = no
