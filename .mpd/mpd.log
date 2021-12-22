@@ -17668,3 +17668,13 @@ Dec 20 20:27 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Min
 Dec 21 19:28 : config: option 'device' on line 20 was not recognized
 Dec 21 19:28 : config: option 'mixer_control' on line 21 was not recognized
 Dec 21 19:59 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac"
+Dec 21 22:58 : config: option 'device' on line 20 was not recognized
+Dec 21 22:58 : config: option 'mixer_control' on line 21 was not recognized
+Dec 21 22:59 : player: played "YOASOBI - Romance.mp3"
+Dec 22 09:39 : config: option 'device' on line 20 was not recognized
+Dec 22 09:39 : config: option 'mixer_control' on line 21 was not recognized
+Dec 22 09:39 : player: played "YOASOBI - Romance.mp3"
+Dec 22 09:44 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/01. Minami - Ame Wo Matsu.flac"
+Dec 22 09:49 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/02. Minami - Freiheit.flac"
+Dec 22 09:58 : player: played "Miles Davis - Kind Of Blue/1. So What.flac"
+Dec 22 10:03 : player: played "Minami - DROP (2021) [FLAC] [24B-44.1kHz]/03. Minami - DROP.flac"
