@@ -17,9 +17,11 @@ then
     # Dunst
     cp ~/.config/dunst/gruvbox-light ~/.config/dunst/dunstrc
     # Code
-    sed -i "s/Gruvbox Material Dark/Gruvbox Material Light/g" ~/.config/Code\ -\ OSS/User/settings.json
+    sed -i "s/Gruvbox Material Dark/Gruvbox Material Light/g" ~/.config/Code/User/settings.json
     # Betterdiscord
     cat ~/.config/BetterDiscord/themes/gruvbox-light.css >| ~/.config/BetterDiscord/themes/gruvbox.theme.css
+    # i3wm
+    cat ~/.config/i3/config-light >| ~/.config/i3/config
     # Notify
     notify-send "Switched theme to gruvbox light" -t 3000
     # Store current theme
@@ -38,16 +40,17 @@ then
     # Dunst
     cp ~/.config/dunst/gruvbox-dark ~/.config/dunst/dunstrc
     # Code
-    sed -i "s/Gruvbox Material Light/Gruvbox Material Dark/g" ~/.config/Code\ -\ OSS/User/settings.json
+    sed -i "s/Gruvbox Material Light/Gruvbox Material Dark/g" ~/.config/Code/User/settings.json
+    #BetterDiscord
     cat ~/.config/BetterDiscord/themes/gruvbox-dark.css >| ~/.config/BetterDiscord/themes/gruvbox.theme.css
+    # i3wm
+    cat ~/.config/i3/config-dark >| ~/.config/i3/config
     notify-send "Switched theme to gruvbox light"
     echo "dark" >| ~/.local/bin/theme
 fi
 
 pkill dunst
 pkill polybar
-
-# nvim -c "luafile %"
-# trying to figure out how to reload nvim config
+i3-msg restart
 
 ~/.config/polybar/launch.sh &

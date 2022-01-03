@@ -2,11 +2,11 @@ set $mod Mod4
 set $alt Mod1
 
 # class                 border  backgr. text indicator child_border
-client.focused          #fbf1c7    #fbf1c7    #fbf1c7    #fbf1c7    #fbf1c7    
-client.focused_inactive #bdae93     #bdae93     #bdae93     #bdae93     #bdae93     
-client.unfocused        #bdae93     #bdae93     #bdae93     #bdae93     #bdae93     
-client.urgent           #cc241d     #cc241d     #cc241d     #cc241d     #cc241d     
-client.placeholder      #bdae93    #bdae93    #bdae93     #bdae93     #bdae93    
+client.focused          #282828 #282828 #282828 #282828 #282828 
+client.focused_inactive #665c54 #665c54 #665c54 #665c54 #665c54 
+client.unfocused        #665c54 #665c54 #665c54 #665c54 #665c54  
+client.urgent           #cc241d  #cc241d #cc241d #cc241d #cc241d 
+client.placeholder       #282828 #282828 #282828 #282828 #282828 
 
 font pango:azukifontB
 
@@ -118,7 +118,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id setxkbmap -model pc104 -layout us,th -variant ,mnc -option grp:caps_toggle
 
 gaps inner 10

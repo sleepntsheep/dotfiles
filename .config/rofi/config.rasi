@@ -5,4 +5,4 @@ configuration {
 	display-drun: "App";
 }
 
-@theme "~/.config/rofi/gruvbox-dark.rasi"
+@theme "~/.config/rofi/gruvbox-light.rasi"
