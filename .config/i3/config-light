@@ -140,7 +140,7 @@ bindsym $mod+Shift+s exec rofi -modi ssh -show ssh
 bindsym $mod+period exec rofi -show emoji -modi emoji
 
 exec --no-startup-id discord --start-minimized
-exec feh --bg-scale ~/Pictures/wall7
+exec_always feh --bg-scale ~/Pictures/wall7.png
 
 for_window [class="Nautilus"] floating enable
 for_window [window_role="pop-up"] floating enable
