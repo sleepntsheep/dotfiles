@@ -130,9 +130,11 @@ bindsym $mod+Escape exec betterlockscreen -l
 bindsym $mod+Shift+Return exec nautilus
 
 for_window [class="^.*"] border pixel 2
+#for_window [class="^.*"] border radius 15
 
 #exec_always --no-startup-id picom --experimental-backends
 
+#bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
 bindsym $mod+d exec rofi -modi drun -show drun
 bindsym $mod+Shift+s exec rofi -modi ssh -show ssh
 bindsym $mod+period exec rofi -show emoji -modi emoji

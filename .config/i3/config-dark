@@ -119,7 +119,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id setxkbmap -model pc104 -layout us,th -variant ,mnc -option grp:caps_toggle
+exec_always --no-startup-id setxkbmap -model pc104 -layout us,th -variant ,ThaiMnc -option grp:alt_shift_toggle
 
 gaps inner 10
 gaps outer 5
