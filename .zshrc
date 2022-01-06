@@ -1,6 +1,6 @@
 # pywal colors
 #(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
 ZSH_THEME="lambda"
 
 CASE_SENSITIVE="true"
@@ -24,7 +24,7 @@ export ZSH="/home/sheep/.oh-my-zsh"
 
 
 source $ZSH/oh-my-zsh.sh
-export EDITOR=vim
+export EDITOR=nvim
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -36,4 +36,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 
 #. "${HOME}/.cache/wal/colors.sh"
 
-shisutemu
+#shisutemu
+alias emccload='source ~/emsdk/emsdk_env.sh'
+
