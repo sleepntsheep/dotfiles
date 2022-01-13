@@ -1,3 +1,5 @@
+vim.g.nvim_tree_refresh_wait = 50
+
 require'nvim-tree'.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
@@ -43,7 +45,7 @@ require'nvim-tree'.setup {
     height = 30,
     hide_root_folder = false,
     side = 'left',
-    auto_resize = false,
+    auto_resize = true,
     mappings = {
       custom_only = false,
       list = {}

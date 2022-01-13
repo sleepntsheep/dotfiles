@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "html", "python", "lua", "javascript" },
+  ensure_installed = { "html", "python", "lua", "javascript", "svelte"},
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { "javascript" },
   highlight = {

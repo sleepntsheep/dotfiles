@@ -74,10 +74,20 @@ _G.packer_plugins = {
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
+  },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   gruvbox = {
     loaded = true,
