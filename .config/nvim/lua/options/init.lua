@@ -45,4 +45,3 @@ vim.g.neovide_cursor_antialiasing=0
 vim.g.neovide_cursor_vfx_mode="pixiedust"
 --vim.o.guifont="Fixedsys Excelsior 3.01-L2,JetbrainsMono Nerd Font:h12"
 vim.o.guifont="JetbrainsMono Nerd Font:h12"
-
