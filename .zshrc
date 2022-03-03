@@ -1,7 +1,7 @@
 # pywal colors
 #(cat ~/.cache/wal/sequences &)
 #source ~/.cache/wal/colors-tty.sh
-ZSH_THEME="lambda"
+ZSH_THEME="robbyrussell"
 
 CASE_SENSITIVE="true"
 
