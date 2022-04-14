@@ -1,0 +1,8 @@
+require('plugins')
+require('treesitter-config')
+require('lualine-config')
+require('nvim-tree-config')
+require('bufferline-config')
+require('lspconfig-config')
+require('keybind')
+require('options')

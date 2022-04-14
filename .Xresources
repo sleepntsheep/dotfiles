@@ -1,0 +1,38 @@
+
+*.foreground:  #d3c6aa
+*.background:  #2b3339
+*.cursorColor: #503946
+*.tabspaces: 4
+
+*.color0: #2b3339 
+! Default Background
+*.color1: #323c41 
+! Lighter Background (Used for status bars, line number and folding marks)
+*.color2: #503946 
+! Selection Background
+*.color3: #868d80 
+! Comments, Invisibles, Line Highlighting
+*.color4: #d3c6aa 
+! Dark Foreground (Used for status bars)
+*.color5: #d3c6aa 
+! Default Foreground, Caret, Delimiters, Operators
+*.color6: #e9e8d2 
+! Light Foreground (Not often used)
+*.color7: #fff9e8 
+! Light Background (Not often used)
+*.color8: #7fbbb3 
+! Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+*.color9: #d699b6 
+! Integers, Boolean, Constants, XML Attributes, Markup Link Url
+*.color10: #83c092 
+! Classes, Markup Bold, Search Text Background
+*.color11: #dbbc7f 
+! Strings, Inherited Class, Markup Code, Diff Inserted
+*.color12: #e69875 
+! Support, Regular Expressions, Escape Characters, Markup Quotes
+*.color13: #a7c080 
+! Functions, Methods, Attribute IDs, Headings
+*.color14: #e67e80 
+! Keywords, Storage, Selector, Markup Italic, Diff Changed
+*.color15: #d699b6 
+! Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
