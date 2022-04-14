@@ -1,8 +1,0 @@
-configuration {
-    modi: "window,combi,ssh,drun,run,windowcd,keys";
-	font: "azukifontb 12";
-	icon-theme: "papirus";
-	display-drun: "App";
-}
-
-@theme "~/.config/rofi/gruvbox-dark.rasi"
