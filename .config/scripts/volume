@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied"
+fi
+
+if [ $1 == mute ]
+    then
+        pactl set-sink-mute 0 toggle
+else
+    pactl set-sink-volume 0 $1%
+fi
+
+kill -45 $(pidof dwmblocks)

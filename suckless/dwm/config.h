@@ -93,6 +93,8 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+#define SCPATH "/home/sheep/.config/scripts/"
+
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
@@ -102,9 +104,9 @@ static const char *neovimcmd[] = { "st", "-e", "nvim", NULL };
 static const char *slockcmd[] = { "slock", NULL };
 static const char *brupcmd[] = { "brightnessctl", "s", "+5%", NULL };
 static const char *brdowncmd[] = { "brightnessctl", "s", "5%-", NULL };
-static const char *mutecmd[] = { "pactl", "set-sink-mute", "0", "toggle", NULL };
-static const char *volupcmd[] = { "pactl", "set-sink-volume", "0", "+5%", NULL };
-static const char *voldowncmd[] = { "pactl", "set-sink-volume", "0", "-5%", NULL };
+static const char *mutecmd[] = { SCPATH "volume", "mute", NULL };
+static const char *volupcmd[] = { SCPATH "volume", "+2", NULL };
+static const char *voldowncmd[] = { SCPATH "volume", "-2", NULL };
 static const char *scrshotcmd[] = { "scrot", "-s", NULL };
 
 static Key keys[] = {
@@ -116,11 +118,13 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Escape, spawn,          {.v = slockcmd } },
     { ALTKEY,                       XK_s,      spawn,          {.v = scrshotcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ 0, XF86XK_AudioMute, spawn, {.v = mutecmd } },
-	{ 0, XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
-	{ 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
-	{ 0, XF86XK_MonBrightnessUp, spawn, {.v = brupcmd} },
-	{ 0, XF86XK_MonBrightnessDown, spawn, {.v = brdowncmd} },
+	{ 0,                            XF86XK_AudioMute,        spawn, {.v = mutecmd } },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
+	{ MODKEY,                       XK_q,      spawn,          {.v = voldowncmd } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = volupcmd } },
+	{ 0,                            XF86XK_MonBrightnessUp,  spawn, {.v = brupcmd} },
+	{ 0,                            XF86XK_MonBrightnessDown,spawn, {.v = brdowncmd} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },

@@ -1,5 +1,7 @@
 CC = gcc
 
+DEST = /usr/local/bin/
+
 CFLAGS = -std=c99 -Wall -Werror -pedantic
 	
 SRCS = $(wildcard *.c)
@@ -10,3 +12,4 @@ all: $(PROGS)
 
 %: %.c
 	$(CC) $(CFLAGS) -o $@ $<
+
