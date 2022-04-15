@@ -18,7 +18,13 @@ return require('packer').startup(function()
     use 'wakatime/vim-wakatime'
     use 'eddyekofo94/gruvbox-flat.nvim'
     use 'morhetz/gruvbox'
-    use {'neoclide/coc.nvim', branch = 'release'}
     use 'Mofiqul/dracula.nvim'
     use 'sainnhe/everforest'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'L3MON4D3/LuaSnip'
 end)
