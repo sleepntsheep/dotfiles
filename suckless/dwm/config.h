@@ -107,7 +107,8 @@ static const char *brdowncmd[] = { "brightnessctl", "s", "5%-", NULL };
 static const char *mutecmd[] = { SCPATH "volume", "mute", NULL };
 static const char *volupcmd[] = { SCPATH "volume", "+2", NULL };
 static const char *voldowncmd[] = { SCPATH "volume", "-2", NULL };
-static const char *scrshotcmd[] = { "scrot", "-s", NULL };
+static const char *scrshotcmd[] = { "scrot", "-s", "-e", "‘mv $f ~/scrot/’", NULL };
+static const char *pcmanfmcmd[] = { "pcmanfm", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -117,6 +118,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_v,      spawn,          {.v = neovimcmd } },
 	{ MODKEY,                       XK_Escape, spawn,          {.v = slockcmd } },
     { ALTKEY,                       XK_s,      spawn,          {.v = scrshotcmd } },
+    { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = pcmanfmcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ 0,                            XF86XK_AudioMute,        spawn, {.v = mutecmd } },
 	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
