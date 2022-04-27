@@ -21,12 +21,12 @@ static const int topbar             = 1;     /* 0 means bottom bar */
 static const int statusmarkup       = 1;     /* True means use pango markup in status message */
 
 /* tagging */
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+static char normbgcolor[]           = "#2b3339";
+static char normbordercolor[]       = "#323c41";
+static char normfgcolor[]           = "#d3c6aa";
+static char selfgcolor[]            = "#d3c6aa";
+static char selbordercolor[]        = "#445055";
+static char selbgcolor[]            = "#445055";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -102,13 +102,15 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *chromecmd[] = { "google-chrome-unstable", NULL };
 static const char *neovimcmd[] = { "st", "-e", "nvim", NULL };
 static const char *slockcmd[] = { "slock", NULL };
-static const char *brupcmd[] = { "brightnessctl", "s", "+5%", NULL };
-static const char *brdowncmd[] = { "brightnessctl", "s", "5%-", NULL };
+static const char *brupcmd[] = { "brightnessctl", "s", "+2%", NULL };
+static const char *brdowncmd[] = { "brightnessctl", "s", "2%-", NULL };
 static const char *mutecmd[] = { SCPATH "volume", "mute", NULL };
 static const char *volupcmd[] = { SCPATH "volume", "+2", NULL };
 static const char *voldowncmd[] = { SCPATH "volume", "-2", NULL };
+static const char *touchpadtogglecmd[] = { SCPATH "touchpad_toggle.sh" , NULL };
 static const char *scrshotcmd[] = { "scrot", "-s", "-e", "‘mv $f ~/scrot/’", NULL };
 static const char *pcmanfmcmd[] = { "pcmanfm", NULL };
+static const char *xkillcmd[] = { "xkill", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -117,13 +119,16 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = chromecmd } },
 	{ MODKEY,                       XK_v,      spawn,          {.v = neovimcmd } },
 	{ MODKEY,                       XK_Escape, spawn,          {.v = slockcmd } },
+	{ ALTKEY,                       XK_Escape, spawn,          {.v = xkillcmd } },
     { ALTKEY,                       XK_s,      spawn,          {.v = scrshotcmd } },
     { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = pcmanfmcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ 0,                            XF86XK_AudioMute,        spawn, {.v = mutecmd } },
 	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
 	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
+	{ 0,                            XF86XK_TouchpadToggle,   spawn, {.v = touchpadtogglecmd } },
 	{ MODKEY,                       XK_q,      spawn,          {.v = voldowncmd } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = mutecmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = volupcmd } },
 	{ 0,                            XF86XK_MonBrightnessUp,  spawn, {.v = brupcmd} },
 	{ 0,                            XF86XK_MonBrightnessDown,spawn, {.v = brdowncmd} },
@@ -161,6 +166,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = gappx  } },
+	{ MODKEY,                       XK_s,      togglesticky,   {0} },
 };
 
 /* button definitions */

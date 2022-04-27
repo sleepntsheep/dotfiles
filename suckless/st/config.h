@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-#define JBFONT "JetBrainsMono NF:size=13:antialias=true:autohint=true";
+#define JBFONT "ComicCodeLigatures Nerd Font:size=12:antialias=true:autohint=true";
 static char *font = JBFONT;
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
