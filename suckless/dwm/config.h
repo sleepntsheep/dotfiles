@@ -108,7 +108,8 @@ static const char *mutecmd[] = { SCPATH "volume", "mute", NULL };
 static const char *volupcmd[] = { SCPATH "volume", "+2", NULL };
 static const char *voldowncmd[] = { SCPATH "volume", "-2", NULL };
 static const char *touchpadtogglecmd[] = { SCPATH "touchpad_toggle.sh" , NULL };
-static const char *scrshotcmd[] = { "scrot", "-s", "-e", "‘mv $f ~/scrot/’", NULL };
+static const char *scrshotcmd[] = { "scrot", "-s", "~/scrot/%b%d_%H%M%S.png", NULL };
+static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
 static const char *pcmanfmcmd[] = { "pcmanfm", NULL };
 static const char *xkillcmd[] = { "xkill", NULL };
 
@@ -120,7 +121,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_v,      spawn,          {.v = neovimcmd } },
 	{ MODKEY,                       XK_Escape, spawn,          {.v = slockcmd } },
 	{ ALTKEY,                       XK_Escape, spawn,          {.v = xkillcmd } },
-    { ALTKEY,                       XK_s,      spawn,          {.v = scrshotcmd } },
+    { ALTKEY|ShiftMask,                       XK_s,      spawn,          {.v = scrshotcmd } },
+    { ALTKEY,                       XK_s,      spawn,          {.v = flameshotcmd } },
     { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = pcmanfmcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ 0,                            XF86XK_AudioMute,        spawn, {.v = mutecmd } },
