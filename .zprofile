@@ -1,3 +1,3 @@
-if [[ -z $DISPLAY ]]; then
+if [[ 100 -gt 200 ]]; then
 startx
 fi

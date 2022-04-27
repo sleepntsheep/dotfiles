@@ -109,7 +109,8 @@ alias la='exa -a'
 alias ll='exa -la'
 
 export LITE_SCALE=1
-export PYTHON_KEYRING_BACKEND=keyring.backends.kwallet.Keyring
+export PYTHON_KEYRING_BACKEND=keyring.backends.kwallet.DBusKeyring
+#simplekeyring.SimpleKeyring
 
 zstyle ':completion:*'  list-colors '=*=90'
 

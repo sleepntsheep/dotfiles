@@ -1,38 +1,35 @@
 
 *.foreground:  #d3c6aa
-*.background:  #2b3339
+*.background:  #2f383e
 *.cursorColor: #503946
 *.tabspaces: 4
 
-*.color0: #2b3339 
-! Default Background
-*.color1: #323c41 
-! Lighter Background (Used for status bars, line number and folding marks)
-*.color2: #503946 
-! Selection Background
-*.color3: #868d80 
-! Comments, Invisibles, Line Highlighting
-*.color4: #d3c6aa 
-! Dark Foreground (Used for status bars)
-*.color5: #d3c6aa 
-! Default Foreground, Caret, Delimiters, Operators
-*.color6: #e9e8d2 
-! Light Foreground (Not often used)
-*.color7: #fff9e8 
-! Light Background (Not often used)
-*.color8: #7fbbb3 
-! Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-*.color9: #d699b6 
-! Integers, Boolean, Constants, XML Attributes, Markup Link Url
-*.color10: #83c092 
-! Classes, Markup Bold, Search Text Background
-*.color11: #dbbc7f 
-! Strings, Inherited Class, Markup Code, Diff Inserted
-*.color12: #e69875 
-! Support, Regular Expressions, Escape Characters, Markup Quotes
-*.color13: #a7c080 
-! Functions, Methods, Attribute IDs, Headings
-*.color14: #e67e80 
-! Keywords, Storage, Selector, Markup Italic, Diff Changed
-*.color15: #d699b6 
-! Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+!! for st
+! 8 normal colors
+*.color0: #2f383e
+!*.color1: #544247
+!*.color2: #445349
+!*.color3: #504f45
+!*.color4: #3b5360
+!*.color5: #8f3f71 
+!*.color6: #326b48
+!*.color7: #7a8478
+*.color1: #e67e80
+*.color2: #a7c080
+*.color3: #dbbc7f
+*.color4: #7fbbb3
+*.color5: #d699b6
+*.color6: #83c092
+*.color7: #d3c6aa
+
+! 8 bright colors
+*.color8: #859289
+*.color9: #e67e80
+*.color10: #a7c080
+*.color11: #dbbc7f
+*.color12: #7fbbb3
+*.color13: #d699b6
+*.color14: #83c092
+*.color15: #d3c6aa
+
+!!*.Xft.dpi: 100
