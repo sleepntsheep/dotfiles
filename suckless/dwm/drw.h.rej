@@ -1,11 +1,20 @@
 --- drw.h
 +++ drw.h
-@@ -39,7 +39,7 @@ void drw_font_getexts(Fnt *font, const char *text, unsigned int len, unsigned in
+@@ -46,7 +49,7 @@ typedef struct {
+ } Extnts;
  
- /* Colorscheme abstraction */
- void drw_clr_create(Drw *drw, Clr *dest, const char *clrname);
--Clr *drw_scm_create(Drw *drw, const char *clrnames[], size_t clrcount);
-+Clr *drw_scm_create(Drw *drw, char *clrnames[], size_t clrcount);
+ /* Drawable abstraction */
+-Drw *drw_create(Display *, int, Window, unsigned int, unsigned int);
++Drw *drw_create(Display *, int, Window, unsigned int, unsigned int, Visual*, unsigned int, Colormap);
+ void drw_resize(Drw *, unsigned int, unsigned int);
+ void drw_free(Drw *);
+ 
+@@ -58,7 +61,7 @@ void drw_font_getexts(Fnt *, const char *, unsigned int, Extnts *);
+ unsigned int drw_font_getexts_width(Fnt *, const char *, unsigned int);
+ 
+ /* Colour abstraction */
+-Clr *drw_clr_create(Drw *, const char *);
++Clr *drw_clr_create(Drw *, const char *, unsigned int);
+ void drw_clr_free(Clr *);
  
  /* Cursor abstraction */
- Cur *drw_cur_create(Drw *drw, int shape);
