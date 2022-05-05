@@ -1,27 +1,26 @@
 --- x.c
 +++ x.c
-@@ -1127,11 +1136,23 @@ xinit(int cols, int rows)
- 	Window parent;
- 	pid_t thispid = getpid();
- 	XColor xmousefg, xmousebg;
-+	XWindowAttributes attr;
-+	XVisualInfo vis;
+@@ -833,17 +838,20 @@ xloadfonts(char *fontstr, double fontsize)
+ 	win.ch = ceilf(dc.font.height * chscale);
  
- 	if (!(xw.dpy = XOpenDisplay(NULL)))
- 		die("can't open display\n");
- 	xw.scr = XDefaultScreen(xw.dpy);
--	xw.vis = XDefaultVisual(xw.dpy, xw.scr);
-+
-+	if (!(opt_embed && (parent = strtol(opt_embed, NULL, 0)))) {
-+		parent = XRootWindow(xw.dpy, xw.scr);
-+		xw.depth = 32;
-+	} else {
-+		XGetWindowAttributes(xw.dpy, parent, &attr);
-+		xw.depth = attr.depth;
-+	}
-+
-+	XMatchVisualInfo(xw.dpy, xw.scr, xw.depth, TrueColor, &vis);
-+	xw.vis = vis.visual;
+ 	FcPatternDel(pattern, FC_SLANT);
+-	FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ITALIC);
++	if (!disableitalic)
++		FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ITALIC);
+ 	if (xloadfont(&dc.ifont, pattern))
+ 		die("st: can't open font %s\n", fontstr);
  
- 	/* font */
- 	if (!FcInit())
+ 	FcPatternDel(pattern, FC_WEIGHT);
+-	FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
++	if (!disablebold)
++		FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
+ 	if (xloadfont(&dc.ibfont, pattern))
+ 		die("st: can't open font %s\n", fontstr);
+ 
+ 	FcPatternDel(pattern, FC_SLANT);
+-	FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
++	if (!disableroman)
++		FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
+ 	if (xloadfont(&dc.bfont, pattern))
+ 		die("st: can't open font %s\n", fontstr);
+ 

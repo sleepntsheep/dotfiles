@@ -5,13 +5,23 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-#define JBFONT "ComicCodeLigatures Nerd Font:size=12:antialias=true:autohint=true";
-static char *font = JBFONT;
-static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+
+static char *fonts[] = {
+    "ComicCodeLigatures Nerd Font:size=12:antialias=true:autohint=true",
+    "Fixedsys Excelsior:size=14:antialias=false:autohint=false",
 };
+
+static char *font2[] = {
+//    "ComicCodeLigatures Nerd Font:size=12:antialias=true:autohint=true",
+//    "Fixedsys Excelsior:size=12:antialias=false:autohint=false",
+};
+
 static int borderpx = 16;
+static int fonts_current = 0;
+
+int disablebold = 1;
+int disableitalic = 0;
+int disableroman = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -182,7 +192,7 @@ static unsigned int defaultrcs = 257;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
+		//{ "font",         STRING,  &font },
 		{ "color0",       STRING,  &colorname[0] },
 		{ "color1",       STRING,  &colorname[1] },
 		{ "color2",       STRING,  &colorname[2] },
@@ -249,6 +259,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_S,           cyclefonts,     {}        },
 };
 
 /*

@@ -12,7 +12,17 @@ static char *font2[] = {
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
 
+static char *fonts[] = {
+  "Liberation Mono:pixelsize=12:antialias=true:autohint=true",
+  "tewi:pixelsize=12:antialias=true:autohint=true"
+};
+static int fonts_current = 0;
+
 static int borderpx = 2;
+
+int disablebold = 0;
+int disableitalic = 0;
+int disableroman = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -250,6 +260,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_S,           cyclefonts,     {}        },
 };
 
 /*
