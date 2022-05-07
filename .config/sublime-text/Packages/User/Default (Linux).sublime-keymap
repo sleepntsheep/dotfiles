@@ -1,0 +1,9 @@
+[
+	{ 
+        "keys": ["ctrl+;"], "command": "toggle_terminus_panel", "args": {
+        	"cwd": "${file_path:${folder}}",
+        },
+    },
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+]
