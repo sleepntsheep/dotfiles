@@ -20,6 +20,18 @@ static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
 static const int statusmarkup       = 1;     /* True means use pango markup in status message */
 
+static const char *const autostart[] = {
+	"slstatus", NULL,
+    "sh", "-c", "setxkbmap -layout 'us,th' -variant ,ThaiMnc -option 'grp:alt_shift_toggle'", NULL,
+    "sh", "-c", "xrdb ~/.Xresources", NULL,
+    "xcompmgr", NULL,
+    "sh", "-c", "feh --bg-scale ~/d/pic/wall/momokuri_crop.png", NULL,
+    "redshift", NULL,
+    "mpd", NULL,
+    "picom --experimental-backends", NULL,
+	NULL /* terminate */
+};
+
 /* tagging */
 static char normbgcolor[]           = "#2b3339";
 static char normbordercolor[]       = "#323c41";
@@ -102,8 +114,8 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *chromecmd[] = { "google-chrome-unstable", NULL };
 static const char *neovimcmd[] = { "st", "-e", "nvim", NULL };
 static const char *slockcmd[] = { "slock", NULL };
-static const char *brupcmd[] = { "brightnessctl", "s", "+2%", NULL };
-static const char *brdowncmd[] = { "brightnessctl", "s", "2%-", NULL };
+static const char *brupcmd[] = { "xbacklight", "-inc", "2", NULL };
+static const char *brdowncmd[] = { "xbacklight", "-dec", "2", NULL };
 static const char *mutecmd[] = { SCPATH "volume", "mute", NULL };
 static const char *volupcmd[] = { SCPATH "volume", "+2", NULL };
 static const char *voldowncmd[] = { SCPATH "volume", "-2", NULL };
