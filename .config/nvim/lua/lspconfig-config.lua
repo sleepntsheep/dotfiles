@@ -4,11 +4,12 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 local lspconfig = require('lspconfig')
 
-local servers = { 'clangd', 'pylsp', 'sumneko_lua', 'tsserver' }
+local servers = { 'clangd', 'pylsp', 'sumneko_lua', 'tsserver', 'html', 'eslint', 'texlab' }
 
 for _, v in ipairs(servers)
 do
-    lspconfig[v].setup {capabilities = capabilities}
+    lspconfig[v].setup {
+        capabilities = capabilities
+    }
 end
-
 

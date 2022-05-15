@@ -109,25 +109,20 @@ _G.packer_plugins = {
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
   everforest = {
     loaded = true,
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
-  gruvbox = {
+  ["goyo.vim"] = {
     loaded = true,
-    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/goyo.vim",
+    url = "https://github.com/junegunn/goyo.vim"
   },
-  ["gruvbox-flat.nvim"] = {
+  ["limelight.vim"] = {
     loaded = true,
-    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/gruvbox-flat.nvim",
-    url = "https://github.com/eddyekofo94/gruvbox-flat.nvim"
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/limelight.vim",
+    url = "https://github.com/junegunn/limelight.vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -169,20 +164,10 @@ _G.packer_plugins = {
     path = "/home/sheep/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  vim = {
+  vimtex = {
     loaded = true,
-    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/vim",
-    url = "https://github.com/mountain-theme/vim"
-  },
-  ["vim-wakatime"] = {
-    loaded = true,
-    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/vim-wakatime",
-    url = "https://github.com/wakatime/vim-wakatime"
-  },
-  ["wal.vim"] = {
-    loaded = true,
-    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/wal.vim",
-    url = "https://github.com/dylanaraps/wal.vim"
+    path = "/home/sheep/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 

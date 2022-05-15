@@ -1,5 +1,4 @@
 vim.cmd('filetype plugin indent on')
-
 vim.o.fileencoding = 'utf-8'
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true
@@ -21,7 +20,7 @@ vim.o.writebackup = false
 vim.o.updatetime = 300
 vim.o.clipboard = 'unnamedplus'
 vim.o.hlsearch = true
-vim.o.scrolloff = 3
+vim.o.scrolloff = 999
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cursorline = true
@@ -29,22 +28,12 @@ vim.o.signcolumn = 'yes'
 vim.o.wrap = true
 vim.o.cursorline = true
 
+vim.cmd [[:set nofen]]
+
 --vim.g.gruvbox_contrast_light = "hard"
 --vim.g.gruvbox_transparent_bg = 1
 --vim.o.background = "dark"
 --vim.cmd([[colorscheme gruvbox]])
 --vim.cmd([[colorscheme dracula]])
-vim.cmd([[colorscheme everforest]])
-vim.g.everforest_better_performance = 1
-vim.g.everforest_background = "hard"
+--vim.cmd([[colorscheme everforest]])
 
--- neovide
-vim.g.neovide_refresh_rate=75
-vim.g.neovide_transparency=1
-vim.g.neovide_no_idle=1
-vim.g.neovide_cursor_animation_length=0.11
-vim.g.neovide_cursor_trail_length=0.8
-vim.g.neovide_cursor_antialiasing=0
-vim.g.neovide_cursor_vfx_mode="pixiedust"
---vim.o.guifont="Fixedsys Excelsior 3.01-L2,JetbrainsMono Nerd Font:h12"
-vim.o.guifont="JetbrainsMono Nerd Font:h12"
