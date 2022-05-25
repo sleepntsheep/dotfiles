@@ -8,7 +8,7 @@
 
 static char *fonts[] = {
     "ComicCodeLigatures Nerd Font:size=12:antialias=true:autohint=true",
-    "Fixedsys Excelsior:size=14:antialias=false:autohint=false",
+    "Fixedsys Excelsior:size=12:antialias=false:autohint=false",
 };
 
 static char *font2[] = {

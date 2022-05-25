@@ -4,7 +4,7 @@
 #define JBFONT "JetBrainsMono NF:size=13"
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const int borderpx  = 1;        /* border pixel of windows */
 static const char *fonts[]          = { JBFONT, "monospace:size=13" }; /* index > 1 are fallback fonts */
 static const char pangofont[]       = JBFONT;
 static const char dmenufont[]       = JBFONT;
@@ -13,23 +13,24 @@ static const unsigned int snap           = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft  = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
-static const int gappx              = 5;
-static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
-static const int showsystray        = 1;     /* 0 means no systray */
-static const int showbar            = 1;     /* 0 means no bar */
-static const int topbar             = 1;     /* 0 means bottom bar */
-static const int statusmarkup       = 1;     /* True means use pango markup in status message */
+static const unsigned int gappx              = 10;
+static const unsigned int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
+static const unsigned int showsystray        = 1;     /* 0 means no systray */
+static const unsigned int showbar            = 1;     /* 0 means no bar */
+static const unsigned int topbar             = 1;     /* 0 means bottom bar */
+static const unsigned int statusmarkup       = 1;     /* True means use pango markup in status message */
 
 static const char *const autostart[] = {
-	"slstatus", NULL,
-    "sh", "-c", "setxkbmap -layout 'us,th' -variant ,ThaiMnc -option 'grp:alt_shift_toggle'", NULL,
-    "sh", "-c", "xrdb ~/.Xresources", NULL,
-    "xcompmgr", NULL,
-    "sh", "-c", "feh --bg-scale ~/d/pic/wall/momokuri_crop.png", NULL,
-    "redshift", NULL,
-    "mpd", NULL,
-    "picom --experimental-backends", NULL,
-	NULL /* terminate */
+//	"slstatus", NULL,
+//    "sh", "-c", "setxkbmap -layout 'us,th' -variant ,ThaiMnc -option 'grp:alt_shift_toggle'", NULL,
+//    "sh", "-c", "xrdb ~/.Xresources", NULL,
+//    "xcompmgr", NULL,
+//    "sh", "-c", "feh --bg-scale ~/d/pic/wall/momokuri_crop.png", NULL,
+//    "redshift", NULL,
+//    "mpd", NULL,
+//    "picom --experimental-backends", NULL,
+//	NULL /* terminate */
+    NULL, NULL
 };
 
 /* tagging */
@@ -46,9 +47,8 @@ static char *colors[][3] = {
 	   [SchemeUrgent]=	 { selfgcolor,  selbgcolor,  selbordercolor  },
 };
  
-/*
- * Xresources preferences to load at startup
- */
+
+/* Xresources preferences to load at startup */
 ResourcePref resources[] = {
 		{ "font",               STRING,  &fonts[0] },
 		{ "dmenufont",          STRING,  &dmenufont },
@@ -105,7 +105,7 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
-#define SCPATH "/home/sheep/.config/scripts/"
+#define SCPATH "/home/sheep/.scripts/"
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -116,14 +116,15 @@ static const char *neovimcmd[] = { "st", "-e", "nvim", NULL };
 static const char *slockcmd[] = { "slock", NULL };
 static const char *brupcmd[] = { "xbacklight", "-inc", "2", NULL };
 static const char *brdowncmd[] = { "xbacklight", "-dec", "2", NULL };
-static const char *mutecmd[] = { SCPATH "volume", "mute", NULL };
-static const char *volupcmd[] = { SCPATH "volume", "+2", NULL };
-static const char *voldowncmd[] = { SCPATH "volume", "-2", NULL };
-static const char *touchpadtogglecmd[] = { SCPATH "touchpad_toggle.sh" , NULL };
+static const char *mutecmd[] = { "volume", "mute", NULL };
+static const char *volupcmd[] = { "volume", "+2", NULL };
+static const char *voldowncmd[] = { "volume", "-2", NULL };
+static const char *touchpadtogglecmd[] = { "touchpad_toggle.sh" , NULL };
 static const char *scrshotcmd[] = { "scrot", "-s", "~/scrot/%b%d_%H%M%S.png", NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
 static const char *pcmanfmcmd[] = { "pcmanfm", NULL };
 static const char *xkillcmd[] = { "xkill", NULL };
+static const char *powermenucmd[] = { "powerdmenu", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -131,21 +132,22 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = chromecmd } },
 	{ MODKEY,                       XK_v,      spawn,          {.v = neovimcmd } },
-	{ MODKEY,                       XK_Escape, spawn,          {.v = slockcmd } },
+	{ MODKEY,             XK_Escape, spawn,          {.v = slockcmd } },
+	{ MODKEY|ShiftMask,                       XK_Escape, spawn,          {.v = powermenucmd } },
 	{ ALTKEY,                       XK_Escape, spawn,          {.v = xkillcmd } },
-    { ALTKEY|ShiftMask,                       XK_s,      spawn,          {.v = scrshotcmd } },
+    { ALTKEY|ShiftMask,             XK_s,      spawn,          {.v = scrshotcmd } },
     { ALTKEY,                       XK_s,      spawn,          {.v = flameshotcmd } },
     { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = pcmanfmcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ 0,                            XF86XK_AudioMute,        spawn, {.v = mutecmd } },
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
-	{ 0,                            XF86XK_TouchpadToggle,   spawn, {.v = touchpadtogglecmd } },
+	{ 0,                            XF86XK_AudioMute,          spawn, {.v = mutecmd } },
+	{ 0,                            XF86XK_AudioLowerVolume,   spawn, {.v = voldowncmd } },
+	{ 0,                            XF86XK_AudioRaiseVolume,   spawn, {.v = volupcmd } },
+	{ 0,                            XF86XK_TouchpadToggle,     spawn, {.v = touchpadtogglecmd } },
 	{ MODKEY,                       XK_q,      spawn,          {.v = voldowncmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = mutecmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = volupcmd } },
-	{ 0,                            XF86XK_MonBrightnessUp,  spawn, {.v = brupcmd} },
-	{ 0,                            XF86XK_MonBrightnessDown,spawn, {.v = brdowncmd} },
+	{ 0,                            XF86XK_MonBrightnessUp,    spawn, {.v = brupcmd} },
+	{ 0,                            XF86XK_MonBrightnessDown,  spawn, {.v = brdowncmd} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
