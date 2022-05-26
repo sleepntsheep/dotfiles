@@ -8,7 +8,7 @@ case "$chosen" in
     lock) slock ;;
     logout) pkill dwm ;;
     suspend) systemctl suspend ;;
-    shutdown) shutdown now ;;
-    reboot) reboot ;;
+    shutdown) systemctl poweroff ;;
+    reboot) systemctl restart ;;
 esac
 
