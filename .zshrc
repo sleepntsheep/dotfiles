@@ -1,4 +1,4 @@
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.scripts"
 export EDITOR="nvim"
 
 alias gaa='git add -A'
