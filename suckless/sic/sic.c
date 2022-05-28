@@ -24,8 +24,8 @@ static char channel[256];
 static time_t trespond;
 static FILE *srv;
 
-#undef strlcpy
-#include "strlcpy.c"
+/*#undef strlcpy
+#include "strlcpy.c" */
 #include "util.c"
 
 static void
@@ -85,7 +85,7 @@ parsein(char *s) {
             case 'j':
                 sout("JOIN %s", p);
                 if(channel[0] == '\0')
-                    strlcpy(channel, p, sizeof channel);
+                    strncpy(channel, p, sizeof channel);
                 return;
             case 'l':
                 s = eat(p, isspace, 1);
@@ -106,7 +106,7 @@ parsein(char *s) {
                 privmsg(s, p);
                 return;
             case 's':
-                strlcpy(channel, p, sizeof channel);
+                strncpy(channel, p, sizeof channel);
                 return;
         }
     }
@@ -154,7 +154,7 @@ parsesrv(char *cmd) {
         else {
             pout(usr, ">< %s (%s): %s", cmd, par, txt);
             if(!strcmp("NICK", cmd) && !strcmp(usr, nick))
-                strlcpy(nick, txt, sizeof nick);
+                strncpy(nick, txt, sizeof nick);
         }
     }
 }
@@ -176,9 +176,9 @@ main(int argc, char *argv[]) {
     auth = NULL;
 
     if (defaultuser)
-        strlcpy(nick, defaultuser, sizeof nick);
+        strncpy(nick, defaultuser, sizeof nick);
     else 
-        strlcpy(nick, user ? user : "unknown", sizeof nick);
+        strncpy(nick, user ? user : "unknown", sizeof nick);
 
     ARGBEGIN {
         case 'h':
@@ -188,7 +188,7 @@ main(int argc, char *argv[]) {
             port = NXARG(usage());
             break;
         case 'n':
-            strlcpy(nick, NXARG(usage()), sizeof nick);
+            strncpy(nick, NXARG(usage()), sizeof nick);
             break;
         case 'a':
             if (defaultauth)

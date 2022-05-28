@@ -21,7 +21,7 @@ all: ${BIN}
 
 ${BIN}: ${@:=.o}
 
-${OBJ}: config.h strlcpy.c util.c
+${OBJ}: config.h util.c
 
 .o:
 	${CC} -o $@ $< ${SIC_LDFLAGS}
