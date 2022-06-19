@@ -24,8 +24,6 @@ static char channel[256];
 static time_t trespond;
 static FILE *srv;
 
-/*#undef strlcpy
-#include "strlcpy.c" */
 #include "util.c"
 
 static void
@@ -142,7 +140,7 @@ parsesrv(char *cmd) {
     }
     else if (!strcmp("AUTHENTICATE", cmd) && auth != NULL) {
         sout("AUTHENTICATE %s", auth);
-        pout(usr, "AUTHENTICATE KioqKioAKioqKioAKioqKio=");
+        pout(usr, "AUTHENTICATE %s", auth);
     }
     else {
         if (!strncmp("90", cmd, 2)) {
@@ -195,6 +193,7 @@ main(int argc, char *argv[]) {
                 auth = (char *)defaultauth;
             else
                 auth = NXARG(usage());
+            puts("auth");
             break;
         case 'k':
             password = NXARG(usage());

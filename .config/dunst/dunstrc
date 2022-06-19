@@ -1,4 +1,4 @@
-#   %a  appname
+#  %a  appname
 #   %s  summary
 #   %b  body
 #   %i  iconname (including its path)
@@ -7,12 +7,6 @@
 #   %n  progress value if set without any extra characters
 #   %%  Literal %
 # Markup is allowed
-
-#[colors]
-#	background = "#2f383e"
-#	foreground = "#d3c6aa"
-#    urgent = "#859289"
-#    frame = "#e67e80"
 
 [global]
     monitor = 0
@@ -57,7 +51,12 @@
     title = Dunst
     class = Dunst
     force_xinerama = false
+	background = "#fafafa"
+	foreground = "#383a42"
+	urgent = "#fafafa"
+    #urgent = "#e45649"
     frame_color = "#e67e80"
+    timeout = 10
 
     # Left click
     mouse_left_click = close_current
@@ -75,16 +74,7 @@
     per_monitor_dpi = false
 
 [urgency_low]
-	background = "#2f383e"
-	foreground = "#d3c6aa"
-    timeout = 10
 
 [urgency_normal]
-	background = "#2f383e"
-	foreground = "#d3c6aa"
-    timeout = 10
 
 [urgency_critical]
-    background = "#859289"
-	foreground = "#d3c6aa"
-    timeout = 10

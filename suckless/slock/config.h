@@ -10,6 +10,3 @@ static const char *colorname[NUMCOLS] = {
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
-
-/* Background image path, should be available to the user above */
-static const char* background_image = "/mnt/d/pic/wall/catto.png";

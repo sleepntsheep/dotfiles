@@ -20,15 +20,14 @@ static const unsigned int statusmarkup       = 1;     /* True means use pango ma
 
 /* i use xinitrc instead but the patch is there*/
 static const char *const autostart[] = {
-//	"slstatus", NULL,
-//    "sh", "-c", "setxkbmap -layout 'us,th' -variant ,ThaiMnc -option 'grp:alt_shift_toggle'", NULL,
-//    "sh", "-c", "xrdb ~/.Xresources", NULL,
-//    "xcompmgr", NULL,
-//    "sh", "-c", "feh --bg-scale ~/d/pic/wall/momokuri_crop.png", NULL,
-//    "redshift", NULL,
-//    "mpd", NULL,
-//    "picom --experimental-backends", NULL,
-//	NULL /* terminate */
+	"slstatus", NULL,
+    "fcitx5", NULL,
+    "sh", "-c", "xrdb ~/.Xresources", NULL,
+    "xcompmgr", NULL,
+    "sh", "-c", "feh --bg-scale ~/d/pic/Random/wall7.png", NULL,
+    /*"redshift", NULL,*/
+    "mpd", NULL,
+    /* "picom --experimental-backends", NULL, */
     NULL, NULL
 };
 
@@ -143,7 +142,6 @@ static Key keys[] = {
 	{ 0,                            XF86XK_TouchpadToggle,     spawn, {.v = touchpadtogglecmd } },
 	{ MODKEY,                       XK_q,      spawn,          {.v = voldowncmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = mutecmd } },
-	{ MODKEY,                       XK_e,      spawn,          {.v = volupcmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = volupcmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = emojipickcmd } },
 	{ 0,                            XF86XK_MonBrightnessUp,    spawn, {.v = brupcmd} },
