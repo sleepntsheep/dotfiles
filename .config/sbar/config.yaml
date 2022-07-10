@@ -1,0 +1,24 @@
+list:
+
+  - name: echo
+    params:
+      - " Welcome sheep"
+  - name: sep
+  - name: echo
+    params:
+      - " "
+  - name: exec
+    params:
+      - pamixer
+      - "--get-volume-human"
+  - name: sep
+  - name: battery
+  - name: sep
+  - name: memory
+  - name: sep
+  - name: time
+sep: " | "
+autosep: false 
+# autosep - insert sep between every component
+delay: 1000
+# updating interval, in milliseconds
