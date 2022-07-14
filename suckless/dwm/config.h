@@ -1,71 +1,80 @@
+#define FONT "JetBrainsMono Nerd Font:size=13"
+#define BROWSER "google-chrome-unstable"
+#define TERM "kitty"
+#define FILEMAN "pcmanfm"
+#define SCP "/home/sheep/.scripts/" /* script path */
+
+/* See LICENSE file for copyright and license details. */
+
+/* including these header file to get rid of annoying LSP warning when editing config 💀 */
+#include <stddef.h>
+#include <errno.h>
+#include <locale.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <X11/cursorfont.h>
+#include <X11/keysym.h>
+#include <X11/Xatom.h>
+#include <X11/Xlib.h>
+#include <X11/Xproto.h>
+#include <X11/Xutil.h>
+#ifdef XINERAMA
+#include <X11/extensions/Xinerama.h>
+#endif /* XINERAMA */
+#include <X11/Xft/Xft.h>
 #include <X11/XF86keysym.h>
 
-#define JBFONT "JetBrainsMono Nerd Font:size=13"
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const char *fonts[]          = { JBFONT, "monospace:size=13" }; /* index > 1 are fallback fonts */
-static const char pangofont[]       = JBFONT;
-
-static const unsigned int snap           = 32;       /* snap pixel */
+static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft  = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
-static const unsigned int gappx              = 10;
-static const unsigned int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
-static const unsigned int showsystray        = 1;     /* 0 means no systray */
-static const unsigned int showbar            = 1;     /* 0 means no bar */
-static const unsigned int topbar             = 1;     /* 0 means bottom bar */
-static const unsigned int statusmarkup       = 1;     /* True means use pango markup in status message */
+static const unsigned int systrayspacing = 3;   /* systray spacing */
+static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
+static const int showsystray        = 0;     /* 0 means no systray */
+static const int showbar            = 1;     /* 0 means no bar */
+static const int topbar             = 1;     /* 0 means bottom bar */
+static const char *fonts[]          = { FONT };
 
-/* i use xinitrc instead but the patch is there*/
+#include "catppuccin.h"
+static const char *colors[][3]      = {
+    /*                     fg       bg      border */
+    [SchemeNorm]       = { textc,   black,  gray2 },
+    [SchemeSel]        = { gray4,   blue,   blue  },
+    [SchemeUrg]        = { textc,   red,    red   },  /* new window created */
+    { blue,    gray2,  black },
+    { gray3,   black,  black },
+    { gray3,   black,  black },
+    { blue,    black,  black },
+    { red,     black,  black },
+    { orange,  black,  black },
+    { green,   black,  black },
+    { pink,    black,  black },
+    { green,   black,  black },
+    { green,   black,  black },
+    { yellow,  black,  black },
+    { red,     black,  black },
+};
+
 static const char *const autostart[] = {
-	"slstatus", NULL,
+    "sbar", NULL,
     "fcitx5", NULL,
-    "sh", "-c", "xrdb ~/.Xresources", NULL,
-    "xcompmgr", NULL,
-    "sh", "-c", "feh --bg-scale ~/d/pic/Random/wall7.png", NULL,
-    /*"redshift", NULL,*/
+    "sh", "-c", "xrdb -merge ~/.Xresources", NULL,
+    "sh", "-c", "feh --bg-scale ~/d/pic/background.png", NULL, 
+    "wmname" "LG3D", NULL,
     "mpd", NULL,
-    /* "picom --experimental-backends", NULL, */
-    NULL, NULL
+    NULL, NULL /* terminate */
 };
 
 /* tagging */
-static char normbgcolor[]           = "#2b3339";
-static char normbordercolor[]       = "#323c41";
-static char normfgcolor[]           = "#d3c6aa";
-static char selfgcolor[]            = "#d3c6aa";
-static char selbordercolor[]        = "#445055";
-static char selbgcolor[]            = "#445055";
-static char *colors[][3] = {
-       /*               fg           bg           border   */
-       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
-	   [SchemeUrgent]=	 { selfgcolor,  selbgcolor,  selbordercolor  },
-};
- 
-
-/* Xresources preferences to load at startup */
-ResourcePref resources[] = {0};
-/* ResourcePref resources[] = {
-		{ "font",               STRING,  &fonts[0] },
-		{ "normbgcolor",        STRING,  &normbgcolor },
-		{ "normbordercolor",    STRING,  &normbordercolor },
-		{ "normfgcolor",        STRING,  &normfgcolor },
-		{ "selbgcolor",         STRING,  &selbgcolor },
-		{ "selbordercolor",     STRING,  &selbordercolor },
-		{ "selfgcolor",         STRING,  &selfgcolor },
-		{ "borderpx",          	INTEGER, &borderpx },
-		{ "snap",          		INTEGER, &snap },
-		{ "showbar",          	INTEGER, &showbar },
-		{ "topbar",          	INTEGER, &topbar },
-		{ "nmaster",          	INTEGER, &nmaster },
-		{ "resizehints",       	INTEGER, &resizehints },
-		{ "mfact",      	 	FLOAT,   &mfact },
-}; */
-
-
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
@@ -74,8 +83,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	//{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+    { "Gimp",     NULL,       NULL,       0,            1,           -1 },
+    /* zero initing this will cause dwm to behave weird with multi monitor steup */
 };
 
 /* layout(s) */
@@ -92,8 +101,8 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define ALTKEY Mod1Mask
 #define MODKEY Mod4Mask
+#define ALTKEY Mod1Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -103,47 +112,42 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+static char dmenumon[] = "0";
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
-static const char *termcmd[]  = { "tabbed", "st", "-w", NULL };
-static const char *chromecmd[] = { "google-chrome-unstable", NULL };
-static const char *slockcmd[] = { "slock", NULL };
+static const char *jdmenucmd[] = { "j4-dmenu-desktop", "--dmenu=\"/usr/local/bin/dmenu\"", "--term=" TERM };
+static const char *termcmd[]  = { TERM, NULL };
+static const char *browsercmd[] = { BROWSER, NULL };
+static const char *lockcmd[] = { "slock", NULL };
 static const char *brupcmd[] = { "xbacklight", "-inc", "2", NULL };
 static const char *brdowncmd[] = { "xbacklight", "-dec", "2", NULL };
-static const char *mutecmd[] = { "volume", "mute", NULL };
-static const char *volupcmd[] = { "volume", "+2", NULL };
-static const char *voldowncmd[] = { "volume", "-2", NULL };
-static const char *touchpadtogglecmd[] = { "touchpad_toggle.sh" , NULL };
-static const char *scrshotcmd[] = { "scrot", "-s", "~/scrot/%b%d_%H%M%S.png", NULL };
+static const char *mutecmd[] = { SCP"volume", "mute", NULL };
+static const char *volupcmd[] = { SCP"volume", "+2", NULL };
+static const char *voldowncmd[] = { SCP"volume", "-2", NULL };
+static const char *touchpadtogglecmd[] = { SCP"touchpad_toggle" , NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
-static const char *pcmanfmcmd[] = { "pcmanfm", NULL };
-static const char *xkillcmd[] = { "xkill", NULL };
-static const char *powermenucmd[] = { "sudo", "powerdmenu", NULL };
-static const char *emojipickcmd[] = { "emojipick", NULL };
-static const char *surfcmd[] = { "tabbed", "surf", "-e", NULL };
+static const char *filemancmd[] = { FILEMAN, NULL };
+static const char *powermenucmd[] = { "sudo", SCP"powerdmenu", NULL };
+static const char *emojipickcmd[] = { SCP"emojipick", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = jdmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = chromecmd } },
-    { MODKEY,                       XK_b,      spawn,          {.v = surfcmd } },
-	{ MODKEY,                       XK_Escape, spawn,          {.v = slockcmd } },
+	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = browsercmd } },
+	{ MODKEY,                       XK_Escape, spawn,          {.v = lockcmd } },
 	{ MODKEY|ShiftMask,             XK_Escape, spawn,          {.v = powermenucmd } },
-	{ ALTKEY,                       XK_Escape, spawn,          {.v = xkillcmd } },
-    { ALTKEY|ShiftMask,             XK_s,      spawn,          {.v = scrshotcmd } },
     { ALTKEY,                       XK_s,      spawn,          {.v = flameshotcmd } },
-    { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = pcmanfmcmd } },
+    { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = filemancmd } },
 	{ ALTKEY,                       XK_b,      togglebar,      {0} },
-	{ 0,                            XF86XK_AudioMute,          spawn, {.v = mutecmd } },
-	{ 0,                            XF86XK_AudioLowerVolume,   spawn, {.v = voldowncmd } },
-	{ 0,                            XF86XK_AudioRaiseVolume,   spawn, {.v = volupcmd } },
-	{ 0,                            XF86XK_TouchpadToggle,     spawn, {.v = touchpadtogglecmd } },
 	{ MODKEY,                       XK_q,      spawn,          {.v = voldowncmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = mutecmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = volupcmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = emojipickcmd } },
+	{ 0,                            XF86XK_AudioMute,          spawn, {.v = mutecmd } },
+	{ 0,                            XF86XK_AudioLowerVolume,   spawn, {.v = voldowncmd } },
+	{ 0,                            XF86XK_AudioRaiseVolume,   spawn, {.v = volupcmd } },
+	{ 0,                            XF86XK_TouchpadToggle,     spawn, {.v = touchpadtogglecmd } },
 	{ 0,                            XF86XK_MonBrightnessUp,    spawn, {.v = brupcmd} },
 	{ 0,                            XF86XK_MonBrightnessDown,  spawn, {.v = brdowncmd} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -181,14 +185,17 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = gappx  } },
 	{ MODKEY,                       XK_s,      togglesticky,   {0} },
+	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
+	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
 };
+
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
-	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
-	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
+	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
@@ -199,4 +206,79 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+
+void
+setlayoutex(const Arg *arg)
+{
+	setlayout(&((Arg) { .v = &layouts[arg->i] }));
+}
+
+void
+viewex(const Arg *arg)
+{
+	view(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void
+viewall(const Arg *arg)
+{
+	view(&((Arg){.ui = ~0}));
+}
+
+void
+toggleviewex(const Arg *arg)
+{
+	toggleview(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void
+tagex(const Arg *arg)
+{
+	tag(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void
+toggletagex(const Arg *arg)
+{
+	toggletag(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void
+tagall(const Arg *arg)
+{
+	tag(&((Arg){.ui = ~0}));
+}
+
+/* signal definitions */
+/* signum must be greater than 0 */
+/* trigger signals using `xsetroot -name "fsignal:<signame> [<type> <value>]"` */
+static Signal signals[] = {
+	/* signum           function */
+	{ "focusstack",     focusstack },
+	{ "setmfact",       setmfact },
+	{ "togglebar",      togglebar },
+	{ "incnmaster",     incnmaster },
+	{ "togglefloating", togglefloating },
+	{ "focusmon",       focusmon },
+	{ "tagmon",         tagmon },
+	{ "zoom",           zoom },
+	{ "view",           view },
+	{ "viewall",        viewall },
+	{ "viewex",         viewex },
+	{ "toggleview",     view },
+	{ "toggleviewex",   toggleviewex },
+	{ "tag",            tag },
+	{ "tagall",         tagall },
+	{ "tagex",          tagex },
+	{ "toggletag",      tag },
+	{ "toggletagex",    toggletagex },
+	{ "killclient",     killclient },
+	{ "quit",           quit },
+	{ "setlayout",      setlayout },
+	{ "setlayoutex",    setlayoutex },
+};
+
+/* sticky indicator */
+static const XPoint stickyicon[]    = { {0,0}, {4,0}, {4,8}, {2,6}, {0,8}, {0,0} }; /* represents the icon as an array of vertices */
+static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner of the polygon's bounding box (speeds up scaling) */
 
