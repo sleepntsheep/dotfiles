@@ -7,12 +7,13 @@ static const char *fonts[] = {
 	"JetBrainsMono Nerd Font:size=13"
 };
 
+#include "catppuccin.h"
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#d3c6aa", "#2b3339" },
-	[SchemeSel] = { "#d3c6aa", "#445055" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+                    /* fg         bg */
+	[SchemeNorm] ={ textc, black },
+	[SchemeSel] = { textc, gray3 },
+	[SchemeNorm] ={ textc, black },
 };
 
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
