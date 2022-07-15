@@ -1,24 +1,40 @@
 list:
-
   - name: echo
-    params:
-      - " Welcome sheep"
-  - name: sep
-  - name: echo
-    params:
-      - " "
+    params: 
+      - ""
+    bg: '#f5c2e7'
+    fg: '#1e1e2e'
   - name: exec
     params:
       - pamixer
-      - "--get-volume-human"
-  - name: sep
+      - "--get-volume"
+    signal: 46
+  - name: battery_icon
+    interval: 30
+    bg: '#a6e3a1'
+    fg: '#1e1e2e'
   - name: battery
-  - name: sep
+    interval: 30
+  - name: echo
+    params:
+      - ""
+    bg: "#f38ba8"
+    fg: '#1e1e2e'
   - name: memory
-  - name: sep
+    interval: 10
+  - name: echo
+    params:
+      - ""
+    fg: '#000000'
+    bg: '#ffffff'
   - name: time
-sep: " | "
-autosep: false 
-# autosep - insert sep between every component
-delay: 1000
-# updating interval, in milliseconds
+    params:
+      - "%Y-%m-%d %I:%M:%S"
+    interval: 1
+
+# placed between every component
+sep: ""
+# global prefix, suffix
+prefix: " "
+suffix: " "
+status2d_color: true
