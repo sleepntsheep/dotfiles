@@ -2,13 +2,13 @@
 
 choices="lock\nlogout\nsuspend\nshutdown\nreboot"
 
-chosen=$(echo -e "$choices" | dmenu)
+chosen=$(echo -e "$choices" | dmenu) 3<&0
 
 case "$chosen" in
     lock) slock ;;
     logout) pkill dwm ;;
-    suspend) systemctl suspend ;;
+    suspend) systemctl suspend;;
     shutdown) systemctl poweroff ;;
-    reboot) systemctl restart ;;
+    reboot) sudo reboot ;;
 esac
 

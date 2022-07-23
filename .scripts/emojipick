@@ -1,50 +1,10 @@
 #!/bin/sh
 
-# Name-Size
-font_family='Noto Color Emoji'
-font_size="13"
-
-emolist=emojilist
-
-copy_to_clipboard=true
-show_notification=true
-print_emoji=true
-lines=10
-
 basedir=$(dirname "$0")
-emolist="$basedir/$emolist"
+emolist="$basedir/emojilist"
 
-function check_program {
-    if ! command -v "$1" &> /dev/null
-    then
-        echo "$1 could not be found"
-        rm -f -I "$file_check_program"
-        exit
-    fi
-}
+emoji=$(cat "$emolist" | dmenu -l 30 | cut -d ' ' -f1)
 
-check_program python3
-check_program awk
-check_program xclip
-check_program notify-send
-check_program dmenu
+echo "$emoji" | xclip -selection clipboard -i
+notify-send "$emoji"
 
-emoji=$(cat "$emolist" | dmenu -l "$lines")
-emoji=${emoji:0:1}
-
-#| tr '\n' ' '")
-
-if [[ ! -z "$emoji" ]]
-then
-    if [[ "$copy_to_clipboard" -eq true ]]; then
-        echo -n "$emoji" | xclip -rmlastnl -selection clipboard
-    fi
-
-    if [[ "$show_notification" -eq true ]]; then
-        notify-send --urgency=low "$emoji"
-    fi
-
-    if [[ "$print_emoji" -eq 1 ]]; then
-        echo "$emoji"
-    fi
-fi

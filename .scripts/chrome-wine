@@ -1,3 +1,0 @@
-#!/bin/sh
-
-env WINEPREFIX="/home/sheep/.wine" wine "C:\\users\\Public\\Desktop\\Google Chrome.lnk" --new-http --in-process-plugins
