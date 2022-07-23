@@ -8,11 +8,9 @@ fi
 if [ $1 == mute ]
     then
         pactl set-sink-mute 0 toggle
-        notify-send "Mute toggled"
 
 else
     pactl set-sink-volume 0 $1%
-    notify-send "Volume $1"
 fi
 
 kill -46 $(pidof sbar)
