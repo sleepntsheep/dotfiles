@@ -5,6 +5,6 @@ emolist="$basedir/emojilist"
 
 emoji=$(cat "$emolist" | dmenu -l 30 | cut -d ' ' -f1)
 
-echo "$emoji" | xclip -selection clipboard -i
+echo -n "$emoji" | xclip -selection clipboard -i
 notify-send "$emoji"
 

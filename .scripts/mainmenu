@@ -1,0 +1,15 @@
+#!/bin/sh
+
+choice=$(echo -e 'emoji\nmanpages\nbrightness\nvolume\nscreen shot\ntouchpad toggle\nlock\nsuspend\nshutdown' | dmenu -l 30)
+
+case "$choice" in
+    emoji) emojipick ;;
+    manpages) manpdf ;;
+    brightness) echo "" | dmenu -p "Input brightness: " | xargs -r xbacklight -set ;;
+    volume) echo "" | dmenu -p "Input volume: " | xargs -r volume ;;
+    'screen shot') flameshot gui ;;
+    'touchpad toggle') touchpad_toggle ;;
+    lock) slock ;;
+    suspend) sudo systemctl suspend;;
+    shutdown) sudo systemctl poweroff ;;
+esac

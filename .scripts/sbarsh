@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while true
+do
+    xsetroot -name "[$(pamixer --get-volume-human)] [$(expr $(cat /sys/class/thermal/thermal_zone0/temp) / 1000)C] [bat: $battery]"
+    sleep 1
+done

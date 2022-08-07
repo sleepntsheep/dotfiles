@@ -1,0 +1,7 @@
+#!/bin/sh
+
+_date=$(date +'%Y-%m-%d %I:%M:%S')
+_vol=$(pamixer --get-volume-human)
+_bat=$(cat /sys/class/power_supply/BAT0/capacity)
+_temp=$(cat /sys/class/thermal/thermal_zone0/temp | cut -c1-2)
+echo "date: $_date | vol: $_vol | bat: $_bat | temp: $_temp"
