@@ -14,3 +14,4 @@ else
 fi
 
 kill -46 $(pidof sbar)
+kill -46 $(pidof sbar)

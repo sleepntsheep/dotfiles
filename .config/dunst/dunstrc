@@ -51,11 +51,9 @@
     title = Dunst
     class = Dunst
     force_xinerama = false
-	background = "#fafafa"
-	foreground = "#383a42"
-	urgent = "#fafafa"
-    #urgent = "#e45649"
-    frame_color = "#e67e80"
+	background = "#1e1e2e"
+	foreground = "#CDD6F4"
+    frame_color = "#b4befe"
     timeout = 10
 
     # Left click
@@ -65,8 +63,7 @@
     # Right click
     mouse_right_click = close_all
 
-    close = ctrl+shift+space
-    history = ctrl+space
+    history = ctrl+shift+space
     #close_all = ctrl+shift+space
     context = ctrl+shift+period
 
@@ -78,3 +75,4 @@
 [urgency_normal]
 
 [urgency_critical]
+    background = "#f38ba8"

@@ -1,35 +1,32 @@
+Xft.dpi: 141
 
-*.foreground:  #d3c6aa
-*.background:  #2f383e
-*.cursorColor: #503946
-*.tabspaces: 4
+Xft.autohint: 0
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.antialias: 1
+Xft.rgba: rgb
 
-!! for st
-! 8 normal colors
-*.color0: #2f383e
-!*.color1: #544247
-!*.color2: #445349
-!*.color3: #504f45
-!*.color4: #3b5360
-!*.color5: #8f3f71 
-!*.color6: #326b48
-!*.color7: #7a8478
-*.color1: #e67e80
-*.color2: #a7c080
-*.color3: #dbbc7f
-*.color4: #7fbbb3
-*.color5: #d699b6
-*.color6: #83c092
-*.color7: #d3c6aa
+Xcursor.size: 42
+Xcursor.theme: default
 
-! 8 bright colors
-*.color8: #859289
-*.color9: #e67e80
-*.color10: #a7c080
-*.color11: #dbbc7f
-*.color12: #7fbbb3
-*.color13: #d699b6
-*.color14: #83c092
-*.color15: #d3c6aa
+XTerm*termName: st
+XTerm*geometry: 48x10
+XTerm*internalBorder: 90
+XTerm*borderWidth: 0
+XTerm*utf8: true
+XTerm*scrollBar: false
+XTerm*cursorBlink: true
+XTerm*selectToClipboard: true
+XTerm*trimSelection: true
+XTerm*renderFont: true
+XTerm*wideChars: true
+XTerm*visualBell: false
 
-!!*.Xft.dpi: 100
+XTerm.vt100.translations: #override \n\
+    Shift Ctrl <KeyPress> v:insert-selection(CLIPBOARD) \n\
+    Shift Ctrl <KeyPress> c:select-set(CLIPBOARD)
+
+! pixelsize is relative to screen resolution, size is relative to DPI.
+XTerm*faceName: xft:monospace:pixelsize=30
+!*font: xft:monospace:pixelsize=30

@@ -1,80 +1,21 @@
 --- dwm.c
 +++ dwm.c
-@@ -57,27 +57,12 @@
- #define TAGMASK                 ((1 << LENGTH(tags)) - 1)
- #define TEXTW(X)                (drw_fontset_getwidth(drw, (X)) + lrpad)
- 
--#define SYSTEM_TRAY_REQUEST_DOCK    0
--/* XEMBED messages */
--#define XEMBED_EMBEDDED_NOTIFY      0
--#define XEMBED_WINDOW_ACTIVATE      1
--#define XEMBED_FOCUS_IN             4
--#define XEMBED_MODALITY_ON         10
--#define XEMBED_MAPPED              (1 << 0)
--#define XEMBED_WINDOW_ACTIVATE      1
--#define XEMBED_WINDOW_DEACTIVATE    2
--#define VERSION_MAJOR               0
--#define VERSION_MINOR               0
--#define XEMBED_EMBEDDED_VERSION (VERSION_MAJOR << 16) | VERSION_MINOR
--
- /* enums */
- enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
- enum { SchemeNorm, SchemeSel }; /* color schemes */
- enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
--       NetSystemTray, NetSystemTrayOP, NetSystemTrayOrientation, NetSystemTrayOrientationHorz,
-        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
-        NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
--enum { Manager, Xembed, XembedInfo, XLast }; /* Xembed atoms */
- enum { WMProtocols, WMDelete, WMState, WMTakeFocus, WMLast }; /* default atoms */
- enum { ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle,
-        ClkClientWin, ClkRootWin, ClkLast }; /* clicks */
-@@ -239,23 +213,18 @@ static int updategeom(void);
- static void updatenumlockmask(void);
- static void updatesizehints(Client *c);
- static void updatestatus(void);
--static void updatesystray(void);
--static void updatesystrayicongeom(Client *i, int w, int h);
--static void updatesystrayiconstate(Client *i, XPropertyEvent *ev);
- static void updatetitle(Client *c);
- static void updatewindowtype(Client *c);
- static void updatewmhints(Client *c);
- static void view(const Arg *arg);
- static Client *wintoclient(Window w);
- static Monitor *wintomon(Window w);
--static Client *wintosystrayicon(Window w);
- static int xerror(Display *dpy, XErrorEvent *ee);
- static int xerrordummy(Display *dpy, XErrorEvent *ee);
- static int xerrorstart(Display *dpy, XErrorEvent *ee);
- static void zoom(const Arg *arg);
- 
- /* variables */
--static Systray *systray = NULL;
- static const char broken[] = "broken";
- static char stext[256];
- static int screen;
-@@ -1578,22 +1396,15 @@ setup(void)
- 	wmatom[WMState] = XInternAtom(dpy, "WM_STATE", False);
- 	wmatom[WMTakeFocus] = XInternAtom(dpy, "WM_TAKE_FOCUS", False);
- 	netatom[NetActiveWindow] = XInternAtom(dpy, "_NET_ACTIVE_WINDOW", False);
--   netatom[NetSupported] = XInternAtom(dpy, "_NET_SUPPORTED", False);
--	netatom[NetSystemTray] = XInternAtom(dpy, "_NET_SYSTEM_TRAY_S0", False);
--	netatom[NetSystemTrayOP] = XInternAtom(dpy, "_NET_SYSTEM_TRAY_OPCODE", False);
--	netatom[NetSystemTrayOrientation] = XInternAtom(dpy, "_NET_SYSTEM_TRAY_ORIENTATION", False);
--	netatom[NetSystemTrayOrientationHorz] = XInternAtom(dpy, "_NET_SYSTEM_TRAY_ORIENTATION_HORZ", False);
--    netatom[NetWMName] = XInternAtom(dpy, "_NET_WM_NAME", False);
-+	netatom[NetSupported] = XInternAtom(dpy, "_NET_SUPPORTED", False);
-+	netatom[NetWMName] = XInternAtom(dpy, "_NET_WM_NAME", False);
- 	netatom[NetWMState] = XInternAtom(dpy, "_NET_WM_STATE", False);
- 	netatom[NetWMCheck] = XInternAtom(dpy, "_NET_SUPPORTING_WM_CHECK", False);
- 	netatom[NetWMFullscreen] = XInternAtom(dpy, "_NET_WM_STATE_FULLSCREEN", False);
- 	netatom[NetWMWindowType] = XInternAtom(dpy, "_NET_WM_WINDOW_TYPE", False);
- 	netatom[NetWMWindowTypeDialog] = XInternAtom(dpy, "_NET_WM_WINDOW_TYPE_DIALOG", False);
- 	netatom[NetClientList] = XInternAtom(dpy, "_NET_CLIENT_LIST", False);
--	xatom[Manager] = XInternAtom(dpy, "MANAGER", False);
--	xatom[Xembed] = XInternAtom(dpy, "_XEMBED", False);
--	xatom[XembedInfo] = XInternAtom(dpy, "_XEMBED_INFO", False);
--    /* init cursors */
-+	/* init cursors */
- 	cursor[CurNormal] = drw_cur_create(drw, XC_left_ptr);
- 	cursor[CurResize] = drw_cur_create(drw, XC_sizing);
- 	cursor[CurMove] = drw_cur_create(drw, XC_fleur);
+@@ -49,7 +49,8 @@
+ #define CLEANMASK(mask)         (mask & ~(numlockmask|LockMask) & (ShiftMask|ControlMask|Mod1Mask|Mod2Mask|Mod3Mask|Mod4Mask|Mod5Mask))
+ #define INTERSECT(x,y,w,h,m)    (MAX(0, MIN((x)+(w),(m)->wx+(m)->ww) - MAX((x),(m)->wx)) \
+                                * MAX(0, MIN((y)+(h),(m)->wy+(m)->wh) - MAX((y),(m)->wy)))
+-#define ISVISIBLE(C)            ((C->tags & C->mon->tagset[C->mon->seltags]))
++#define ISVISIBLEONTAG(C, T)    ((C->tags & T))
++#define ISVISIBLE(C)            ISVISIBLEONTAG(C, C->mon->tagset[C->mon->seltags])
+ #define LENGTH(X)               (sizeof X / sizeof X[0])
+ #define MOUSEMASK               (BUTTONMASK|PointerMotionMask)
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw)
+@@ -1914,7 +1938,7 @@ updategeom(void)
+ 					m->clients = c->next;
+ 					detachstack(c);
+ 					c->mon = mons;
+-					attach(c);
++					attachaside(c);
+ 					attachstack(c);
+ 				}
+ 				if (m == selmon)

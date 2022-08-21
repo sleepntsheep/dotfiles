@@ -2,18 +2,26 @@
 #define BROWSER "google-chrome"
 #define TERM "st"
 #define FILEMAN "pcmanfm"
-#define SCP "/home/sheep/.scripts/" /* script path */
+#define S "/home/sheep/.scripts/"
 
 /* See LICENSE file for copyright and license details. */
 
 #include <X11/XF86keysym.h>
 
+#ifndef uint
+#define uint unsigned int
+#endif /* uint */
+#ifndef NULL
+#define NULL (void*) 
+#endif /* NULL */
+
+
 /* appearance */
-static unsigned borderpx                    = 1;        /* border pixel of windows */
-static unsigned snap                        = 32;       /* snap pixel */
+static uint borderpx                    = 1;        /* border pixel of windows */
+static uint snap                        = 32;       /* snap pixel */
 static int     systraypinning              = 0;
 static int     systrayonleft               = 0;
-static unsigned systrayspacing              = 3; 
+static uint systrayspacing              = 3; 
 static int     systraypinningfailfirst     = 1; 
 /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static int     showsystray                 = 1;
@@ -61,12 +69,15 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-    /*"sbar", NULL,
-    "fcitx5", NULL,
-    "sh", "-c", "feh --bg-scale ~/d/pic/background.png", NULL, 
-    "wmname" "LG3D", NULL,
     "xss-lock", "--", "slock", NULL,
-    "mpd", NULL,*/
+    "sh", "-c", "feh --bg-scale ~/d/pic/background.png &", NULL,
+    "sbar", NULL,
+    "fcitx5", NULL,
+    "wmname" "LG3D", NULL,
+    "mpd", NULL,
+    "xrandr", "--dpi", "141", NULL,
+    "xrdb", "-load", "/home/sheep/.Xresources", NULL,
+    "aw-qt", NULL,
     NULL, NULL /* terminate */
 };
 
@@ -103,16 +114,16 @@ static const char *browsercmd[] = { BROWSER, NULL };
 static const char *lockcmd[] = { "slock", NULL };
 static const char *brupcmd[] = { "xbacklight", "-inc", "2", NULL };
 static const char *brdowncmd[] = { "xbacklight", "-dec", "2", NULL };
-static const char *mutecmd[] = { "volume", "mute", NULL };
-static const char *volupcmd[] = { "volume", "+2", NULL };
-static const char *voldowncmd[] = { "volume", "-2", NULL };
-static const char *touchpadtogglecmd[] = { "touchpad_toggle" , NULL };
+static const char *mutecmd[] = { S"volume", "mute", NULL };
+static const char *volupcmd[] = { S"volume", "+2", NULL };
+static const char *voldowncmd[] = { S"volume", "-2", NULL };
+static const char *touchpadtogglecmd[] = { S"touchpad_toggle" , NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
 static const char *filemancmd[] = { FILEMAN, NULL };
 //static const char *powermenucmd[] = { "sudo", "powerdmenu", NULL };
-static const char *emojipickcmd[] = { "emojipick", NULL };
-static const char *displaycmd[] = { "display", NULL };
-static const char *mainmenucmd[] = { "mainmenu", NULL };
+static const char *emojipickcmd[] = { S"emojipick", NULL };
+static const char *displaycmd[] = { S"display", NULL };
+static const char *mainmenucmd[] = { S"mainmenu", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -123,7 +134,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Escape, spawn,          {.v = lockcmd } },
 	//{ MODKEY|ShiftMask,             XK_Escape, spawn,          {.v = powermenucmd } },
 	{ MODKEY|ShiftMask,             XK_d, spawn,               {.v = displaycmd } },
-    { MODKEY,                       XK_s,      spawn,          {.v = flameshotcmd } },
+    { ALTKEY,                       XK_s,      spawn,          {.v = flameshotcmd } },
     { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = filemancmd } },
 	{ ALTKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_q,      spawn,          {.v = voldowncmd } },
@@ -148,7 +159,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
+	//{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
@@ -166,6 +177,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
+	{ MODKEY,                       XK_s,      togglesticky,   {0} },
 };
 
 
@@ -196,8 +208,8 @@ static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner 
 ///* See LICENSE file for copyright and license details. */
 //
 ///* appearance */
-//static const unsigned int borderpx  = 1;        /* border pixel of windows */
-//static const unsigned int snap      = 32;       /* snap pixel */
+//static const uint int borderpx  = 1;        /* border pixel of windows */
+//static const uint int snap      = 32;       /* snap pixel */
 //static const int showbar            = 1;        /* 0 means no bar */
 //static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char *fonts[]          = { "monospace:size=10" };

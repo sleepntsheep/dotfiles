@@ -1,6 +1,7 @@
 #!/bin/sh
 
 choice=$(echo -e 'emoji\nmanpages\nbrightness\nvolume\nscreen shot\ntouchpad toggle\nlock\nsuspend\nshutdown' | dmenu -l 30)
+PATH="$PATH:$HOME/.scripts"
 
 case "$choice" in
     emoji) emojipick ;;

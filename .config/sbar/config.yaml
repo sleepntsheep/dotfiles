@@ -1,40 +1,75 @@
 list:
-  - name: echo
-    params: 
-      - ""
-    bg: '#f5c2e7'
-    fg: '#1e1e2e'
   - name: exec
     params:
-      - pamixer
-      - "--get-volume"
+      - "sh"
+      - "-c"
+      - 'pamixer --get-volume-human'
     signal: 46
-  - name: battery_icon
-    interval: 30
-    bg: '#a6e3a1'
-    fg: '#1e1e2e'
+    prefix: "  vol: "
+  - name: temp
+    interval: 10
+    prefix: "  temp: "
   - name: battery
     interval: 30
-  - name: echo
-    params:
-      - ""
-    bg: "#f38ba8"
-    fg: '#1e1e2e'
+    prefix: "  bat: "
   - name: memory
     interval: 10
-  - name: echo
-    params:
-      - ""
-    fg: '#000000'
-    bg: '#ffffff'
+    prefix: "  mem: "
   - name: time
     params:
       - "%Y-%m-%d %I:%M:%S"
     interval: 1
+    prefix: "  date: "
+prefix: "  "
+suffix: "  "
+sep: ''
+stdout: false
 
-# placed between every component
-sep: ""
-# global prefix, suffix
-prefix: " "
-suffix: " "
-status2d_color: true
+#list:
+#  - name: echo
+#    params: 
+#      - ""
+#    bg: '#f5c2e7'
+#    fg: '#1e1e2e'
+#  - name: exec
+#    params:
+#      - "sh"
+#      - "-c"
+#      - 'pamixer --get-volume-human | sed "s/%//"'
+#    signal: 46
+#  - name: echo
+#    params:
+#      - ""
+#    bg: '#eba0ac'
+#    fg: '#1e1e2e'
+#  - name: temp
+#    interval: 10
+#  - name: battery_icon
+#    interval: 30
+#    bg: '#a6e3a1'
+#    fg: '#1e1e2e'
+#  - name: battery
+#    interval: 30
+#  - name: echo
+#    params:
+#      - ""
+#    bg: "#f38ba8"
+#    fg: '#1e1e2e'
+#  - name: memory
+#    interval: 10
+#  - name: echo
+#    params:
+#      - ""
+#    fg: '#000000'
+#    bg: '#ffffff'
+#  - name: time
+#    params:
+#      - "%Y-%m-%d %I:%M:%S"
+#    interval: 1
+#
+## placed between every component
+#sep: ""
+## global prefix, suffix
+#prefix: " "
+#suffix: " "
+#status2d_color: true

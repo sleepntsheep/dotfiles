@@ -1,10 +1,14 @@
 --- st.c
 +++ st.c
-@@ -2594,7 +2594,6 @@ draw(void)
- 			term.ocx, term.ocy, term.line[term.ocy][term.ocx]);
- 	term.ocx = cx, term.ocy = term.c.y;
- 	xfinishdraw();
--	xximspot(term.ocx, term.ocy);
- }
+@@ -2743,8 +2813,9 @@ draw(void)
+ 		cx--;
  
- void
+ 	drawregion(0, 0, term.col, term.row);
+-	xdrawcursor(cx, term.c.y, term.line[term.c.y][cx],
+-			term.ocx, term.ocy, term.line[term.ocy][term.ocx]);
++	if (term.scr == 0)
++		xdrawcursor(cx, term.c.y, term.line[term.c.y][cx],
++				term.ocx, term.ocy, term.line[term.ocy][term.ocx]);
+ 	term.ocx = cx;
+ 	term.ocy = term.c.y;
+ 	xfinishdraw();
