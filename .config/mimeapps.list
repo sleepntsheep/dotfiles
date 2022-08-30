@@ -1,0 +1,46 @@
+[Added Associations]
+application/pdf=calibre-gui.desktop;org.pwmt.zathura.desktop;
+application/zip=xarchiver.desktop;
+audio/mp4=mpv.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;
+inode/directory=pcmanfm.desktop;
+video/webm=mpv.desktop;
+video/x-matroska=mpv.desktop;
+x-scheme-handler/geo=qwant-maps-geo-handler.desktop;
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+application/x-cd-image=pcmanfm.desktop
+application/vnd.rar=xarchiver.desktop;
+application/epub+zip=org.pwmt.zathura.com.github.johnfactotum.Foliate.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
+
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+application/zip=xarchiver.desktop
+image/jpeg=feh.desktop
+image/png=feh.desktop
+inode/directory=org.kde.dolphin.desktop;
+text/html=google-chrome.desktop
+text/plain=featherpad.desktop
+video/mp4=mpv.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/discord-474605546457137157=discord-474605546457137157.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_usr_lib_eclipse_.desktop
+x-scheme-handler/geo=qwant-maps-geo-handler.desktop;
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/mailto=org.kde.kmail2.desktop;
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
+x-scheme-handler/unknown=google-chrome.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+video/webm=mpv.desktop
+x-scheme-handler/magnet=qbittorent.desktop
+application/epub+zip=org.pwmt.zathura.desktop
+video/x-matroska=mpv.desktop
+text/x-csrc=featherpad.desktop
+
+[Removed Associations]
+font/ttf=userapp-ft-ZPSVK1.desktop;
+inode/directory=pcmanfm.desktop;
