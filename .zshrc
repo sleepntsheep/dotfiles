@@ -28,7 +28,8 @@ PS1='%F{yellow}@ %/ $ %f'
 bindkey -e
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-#alias ls='exa'
+bindkey "^[[P" delete-char
+bindkey "^[[3~" delete-char
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
