@@ -23,7 +23,7 @@ list:
 prefix: "  "
 suffix: "  "
 sep: ''
-stdout: false
+stdout: true
 
 #list:
 #  - name: echo

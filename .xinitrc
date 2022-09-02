@@ -1,9 +1,9 @@
 #!/bin/sh
 
-session=${1:-dwm}
+xrandr --dpi 141
+xrdb -load "$HOME/.Xresources"
 
-case $session in 
-    dwm  ) sbar & exec dbus-launch dwm ;;
-    gnome) exec gnome-session ;;
-    *    ) exec dbus-launch sowm ;;
+case $1 in 
+    c* ) exec cinnamon ;;
+    *    ) exec dwm ;;
 esac

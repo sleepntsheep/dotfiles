@@ -28,8 +28,8 @@ PS1='%F{yellow}@ %/ $ %f'
 bindkey -e
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-alias ls='exa'
+#alias ls='exa'
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-plc
+#plc

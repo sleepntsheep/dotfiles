@@ -11,10 +11,6 @@
 #ifndef uint
 #define uint unsigned int
 #endif /* uint */
-#ifndef NULL
-#define NULL (void*) 
-#endif /* NULL */
-
 
 /* appearance */
 static uint borderpx                    = 1;        /* border pixel of windows */
@@ -43,7 +39,7 @@ static const int lockfullscreen = 1;
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "><>",      0 },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
@@ -69,16 +65,15 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-    "xss-lock", "--", "slock", NULL,
-    "sh", "-c", "feh --bg-scale ~/d/pic/background.png &", NULL,
-    "sbar", NULL,
-    "fcitx5", NULL,
-    "wmname" "LG3D", NULL,
-    "mpd", NULL,
-    "xrandr", "--dpi", "141", NULL,
-    "xrdb", "-load", "/home/sheep/.Xresources", NULL,
-    "aw-qt", NULL,
-    NULL, NULL /* terminate */
+    "xss-lock", "--", "slock", 0,
+    "sh", "-c", "feh --bg-scale ~/d/pic/background.png &", 0,
+    "sh", "-c", "xrandr --dpi 141", 0,
+    "sh", "-c", "xrdb -load /home/sheep/X.resources", 0,
+    "sbar", 0,
+    "wmname" "LG3D", 0,
+    "mpd", 0,
+    "aw-qt", 0,
+    0, 0 /* terminate */
 };
 
 /* tagging */
@@ -91,7 +86,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-    { "Gimp",     NULL,       NULL,       0,            1,           -1 },
+    { "Gimp",     0,       0,       0,            1,           -1 },
     /* zero initing this will cause dwm to behave weird with multi monitor steup */
 };
 
@@ -107,23 +102,23 @@ static const Rule rules[] = {
 
 static char dmenumon[] = "0";
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, 0 };
 static const char *jdmenucmd[] = { "j4-dmenu-desktop", "--dmenu=\"/usr/local/bin/dmenu\"", "--term=" TERM };
-static const char *termcmd[]  = { TERM, NULL };
-static const char *browsercmd[] = { BROWSER, NULL };
-static const char *lockcmd[] = { "slock", NULL };
-static const char *brupcmd[] = { "xbacklight", "-inc", "2", NULL };
-static const char *brdowncmd[] = { "xbacklight", "-dec", "2", NULL };
-static const char *mutecmd[] = { S"volume", "mute", NULL };
-static const char *volupcmd[] = { S"volume", "+2", NULL };
-static const char *voldowncmd[] = { S"volume", "-2", NULL };
-static const char *touchpadtogglecmd[] = { S"touchpad_toggle" , NULL };
-static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
-static const char *filemancmd[] = { FILEMAN, NULL };
-//static const char *powermenucmd[] = { "sudo", "powerdmenu", NULL };
-static const char *emojipickcmd[] = { S"emojipick", NULL };
-static const char *displaycmd[] = { S"display", NULL };
-static const char *mainmenucmd[] = { S"mainmenu", NULL };
+static const char *termcmd[]  = { TERM, 0 };
+static const char *browsercmd[] = { BROWSER, 0 };
+static const char *lockcmd[] = { "slock", 0 };
+static const char *brupcmd[] = { "xbacklight", "-inc", "2", 0 };
+static const char *brdowncmd[] = { "xbacklight", "-dec", "2", 0 };
+static const char *mutecmd[] = { S"volume", "mute", 0 };
+static const char *volupcmd[] = { S"volume", "+2", 0 };
+static const char *voldowncmd[] = { S"volume", "-2", 0 };
+static const char *touchpadtogglecmd[] = { S"touchpad_toggle" , 0 };
+static const char *flameshotcmd[] = { "flameshot", "gui", 0 };
+static const char *filemancmd[] = { FILEMAN, 0 };
+//static const char *powermenucmd[] = { "sudo", "powerdmenu", 0 };
+static const char *emojipickcmd[] = { S"emojipick", 0 };
+static const char *displaycmd[] = { S"display", 0 };
+static const char *mainmenucmd[] = { S"mainmenu", 0 };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -234,8 +229,8 @@ static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner 
 //	 *	WM_NAME(STRING) = title
 //	 */
 //	/* class      instance    title       tags mask     isfloating   monitor */
-//	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-//	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+//	{ "Gimp",     0,       0,       0,            1,           -1 },
+//	{ "Firefox",  0,       0,       1 << 8,       0,           -1 },
 //};
 //
 ///* layout(s) */
@@ -247,7 +242,7 @@ static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner 
 //static const Layout layouts[] = {
 //	/* symbol     arrange function */
 //	{ "[]=",      tile },    /* first entry is default */
-//	{ "><>",      NULL },    /* no layout function means floating behavior */
+//	{ "><>",      0 },    /* no layout function means floating behavior */
 //	{ "[M]",      monocle },
 //};
 //
@@ -260,12 +255,12 @@ static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner 
 //	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 //
 ///* helper for spawning shell commands in the pre dwm-5.0 fashion */
-//#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+//#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, 0 } }
 //
 ///* commands */
 //static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-//static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-//static const char *termcmd[]  = { "st", NULL };
+//static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, 0 };
+//static const char *termcmd[]  = { "st", 0 };
 //
 //static Key keys[] = {
 //	/* modifier                     key        function        argument */
